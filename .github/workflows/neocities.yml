@@ -17,5 +17,5 @@ jobs:
       uses: bcomnes/deploy-to-neocities@v1
       with:
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-        cleanup: true #removes files on the neocities site that aren't in the directory
+        cleanup: false
         dist_dir: site

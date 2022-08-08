@@ -14,7 +14,7 @@
 /* --- ESSENTIALS (START) --- */
 
 body {
-    background-image: url(+graphics/space_bg_3.gif);
+    background-image: url(/graphics/sitestuff/space_bg_3.gif);
     background-color: #141314;
     padding: 20px;
     max-width: 80%;

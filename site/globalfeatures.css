@@ -19,17 +19,17 @@
 
     @font-face { /* font for important text */
         font-family: "Moon";
-        src: url(/+fonts/Moon.ttf) format("truetype");
+        src: url(/fonts/Moon.ttf) format("truetype");
     }
 
     @font-face { /* font for usual text */
         font-family: "Pangolin";
-        src: url(/+fonts/Pangolin.ttf) format("truetype");
+        src: url(/fonts/Pangolin.ttf) format("truetype");
     }
 
     @font-face {
         font-family: "FA-Solid";
-        src: url(/+fonts/FA-Solid.ttf) format("truetype");
+        src: url(/fonts/FA-Solid.ttf) format("truetype");
     }
 
 /* --- WEBSITE FONTS (END) --- */
@@ -207,7 +207,7 @@
             position: relative;
             color:#a468ff;
             text-decoration: none;
-            cursor: url(/+graphics/star_cursor_click.png), default;
+            cursor: url(/graphics/sitestuff/star_cursor_click.png), default;
         }
 
         a:hover { /* will revamp soon */
@@ -215,7 +215,7 @@
             background-image: linear-gradient(to right, rgb(255, 54, 104), rgb(255, 132, 95), rgb(255, 210, 126),rgb(93, 255, 185), rgb(105, 185, 255), rgb(109, 96, 255), rgb(218, 85, 255));
             background-clip: text;
             transition: all 300ms;
-            cursor: url(/+graphics/star_cursor_click.png), default;
+            cursor: url(/graphics/sitestuff/star_cursor_click.png), default;
         }
 
         /*
@@ -393,7 +393,7 @@
     /* cursor */
 
         html {
-            cursor: url(/+graphics/star_cursor.png), default;
+            cursor: url(/graphics/sitestuff/star_cursor.png), default;
         }
     
 /* --- CUSTOM GLOBAL ELEMENTS (END) --- */

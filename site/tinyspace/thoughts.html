@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>a tiny space in space</title>
+        <link rel="icon" type="image/x-icon" href="/graphics/sitestuff/star_favicon.gif">
+        
+        <link rel="stylesheet" href="/globalfeatures.css">
+        <link rel="stylesheet" href="otherpages.css">
+
+        <style>
+            li { /* compatible with border-radius and the like */
+                overflow: auto;
+                position: relative;
+                padding: 25px 35px 25px 25px;
+            }
+
+            li::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 15px; 
+                pointer-events: none;
+                padding: 2px; /* this is the border */ 
+                background: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1); 
+                mask: 
+                    linear-gradient(#fff 0 0) content-box, 
+                    linear-gradient(#fff 0 0);
+                mask-composite: exclude; 
+            }
+
+            .grid-blog-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 10px;
+            }
+
+            .grid-blog-list p {
+                margin: 3px 0 0 0;
+                text-align: left;
+            }
+
+            .grid-blog-list a::before {
+                content: url(/graphics/webgoodies/pixels/link_bullet.gif);
+                font-size: 20%;
+                margin-right: 10px;
+                vertical-align: bottom;
+            }
+        </style>
+    </head>
+    
+
+
+    <body>
+        <div class="main-div">
+            <!-- START -->
+            <div>
+                <!-- rainbow title -->
+                <div style="display: flex; justify-content: center; padding-bottom:-5px;">
+                    <div class= "text-wave">
+                        <span style="--i:1; color:#db1748;">T</span>
+                        <span style="--i:2; color:#e8653d;">H</span>
+                        <span style="--i:3; color:#e3aa40;">O</span>
+                        <span style="--i:4; color:#24997C;">U</span>
+                        <span style="--i:5; color:#4794D9;">G</span>
+                        <span style="--i:6; color:#463acf;">H</span>
+                        <span style="--i:7; color:#b0169c">T</span>
+                        <span style="--i:8; color:#db1748;">S</span>
+                    </div>
+                </div>
+
+                <!-- opening statement -->
+                <div style="display: flex;">
+                    <div style="text-align:justify;">
+                        <p style="margin-bottom: 0;">
+                            This is where I post my thoughts on various things. The length of my writing will probably vary...
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="rainbow-divider">
+
+            <!-- JOURNAL -->
+            <div>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><!-- label/button -->
+                    <div class="rainbow-header" style="margin: 0px 0px 10px 0px; font-size: 150%;">Blog</div>
+                </div>
+                <div class="description">
+                    <img class="rainbow-border" src="/graphics/sitestuff/tinyspace/sections/art_section.jpg">
+                    <div class="rainbow-border" style="text-align: justify;">
+                        <p>
+                            Here's my blog, where I write about various things pertaining to my life in general. 
+                            Don't expect anything long or formal- This is mostly for writing whatever!
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <ul class="grid-blog-list">
+                        <li class="li-1"><a href="thoughts/blog/blog1.html">Functionality or Aesthetic?</a>
+                            <p>[7/10/22] &#8902; I talk about how I made the website.</p>
+                        </li>
+                        <li class="li-1"><a href="thoughts/blog/blog1.html">Test Blog</a>
+                            <p>[8/9/22] &#8902; Trying out some blog features for my site! :3</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="dashed-divider">
+
+            <!-- GAMELOG -->
+            <div>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><!-- label/button -->
+                    <div class="rainbow-header" style="margin: 0px 0px 10px 0px; font-size: 150%;">Gamelog</div>
+                </div>
+                <p style="margin: 10px 0 15px 0; text-align: justify;">
+                    I play a lot of different kinds of games, so I'm going to log them here!
+                </p>
+                <div style="width: 70%; margin: 0 auto;">
+                    <ul>
+                        <li class="li-1">Check back soon!</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="dashed-divider">
+
+            <!-- GUIDES -->
+            <div>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><!-- label/button -->
+                    <div class="rainbow-header" style="margin: 0px 0px 10px 0px; font-size: 150%;">Guides</div>
+                </div>
+                <p style="margin: 10px 0 15px 0; text-align: justify;">
+                    If I find anything useful, I'll try to write them down here. Other than the guides listed here, you
+                        could also check the resources for more useful stuff!
+                </p>
+                <div style="width: 70%; margin: 0 auto;">
+                    <ul>
+                        <li class="li-1">Check back soon!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="width: fit-content; margin: 20px auto auto auto; font-size: 65%;">
+                <a target="_self" onclick=window.scroll(0,0);>Back to top?</a> // 
+                <a href="/tinyspace/?e=/tinyspace/thoughts.html" target="_top">Outside the iframe? </a>
+            </div>
+        </div>
+
+        <script src="/tinyspace_features.js"></script>
+
+    </body>
+</html>

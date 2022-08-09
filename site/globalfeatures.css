@@ -246,7 +246,7 @@
         /* rainbow divider */
 
         hr.rainbow-divider { 
-            background: url("/+graphics/tinyspace/rainbow_stars_divider.gif") repeat-x top right;
+            background: url("/graphics/sitestuff/tinyspace/rainbow_stars_divider.gif") repeat-x top right;
             background-size: contain;
             display: block;
             height: 10px;

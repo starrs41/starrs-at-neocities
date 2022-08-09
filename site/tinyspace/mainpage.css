@@ -37,9 +37,13 @@
     }
 
     #statuscafe-username { /* going to add a "current status" label to the status cafe part for less confusion */
-    margin-bottom: 5px;
-    text-align: center;
-    color: #ccaaff;
+        margin-bottom: 5px;
+        text-align: center;
+        color: #ccaaff;
+    }
+
+    #statuscafe-username a:hover {
+        color: transparent;
     }
 
     #statuscafe-content { /* the content goes out of the box when on mobile. gotta fix that... */

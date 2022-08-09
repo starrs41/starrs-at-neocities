@@ -1,0 +1,257 @@
+<!-- hello, internet stranger! i see you're taking a look at my code! :o -->
+<!-- well, that's quite alright!! feel free to take what you need.
+    good luck with coding your own website! ^w^ -->
+<!-- (oh and please don't mind the mess in here ToT)-->
+
+<!-- this is the main page that users visit first -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>a tiny space in space</title>
+        <link rel="icon" type="image/x-icon" href="/graphics/sitestuff/star_favicon.gif">
+        
+        <link rel="stylesheet" href="/globalfeatures.css">
+        <link rel="stylesheet" href="mainpage.css">
+
+        <style>
+            body {
+                /* space bg */
+                background-image: url(/graphics/sitestuff/space_bg_1.gif);
+                background-color:#130d1a;
+            }
+        </style>
+
+        <!-- needs to be at head because of iframe script -->
+        <!-- ...well, it works but "mainFrame" keeps returning as null...-->
+        <script src="/tinyspace/tinyspace_iframe.js"></script>
+        
+    </head>
+    
+    <body>
+        <!-- little loading/arriving screen -->
+        <!-- will add soon -->
+        <!--
+        <div id="preload" style="opacity: 1;">
+            <img>
+        </div>
+        -->
+
+        <div class="actual-site">
+        <div class="actual-site-center">
+
+        <!-- main container for spacing-->
+        <div class="main-container">
+
+            <!-- header START!!!-->
+            <header class="header-container">
+                <!-- the marquee-->
+                <div class="opening-marquee round-corners graphics-row"> <!-- marquee div (parent)-->
+                    <ul class="graphics-row-item second-graphics second-graphics-row-animation" style="padding-left: 0px;">
+                        <!-- marquee starts here -->
+                        <li><img src="/graphics/webgoodies/stamps/neon_old_computer.gif" alt="neon computer"></li>
+                        <li><img src="/graphics/webgoodies/stamps/neon_buildings.png" alt="neon buildings"></li>
+                        <li><img src="/graphics/webgoodies/stamps/nothing_i_say_makes_sense.png" alt="nothing i say makes sense"></li>
+                        <li><img src="/graphics/webgoodies/stamps/uwu.gif" alt="uwu"></li>
+                        <li><img src="/graphics/webgoodies/stamps/everything_will_be_alright.png" alt="everything will be alright"></li>
+                        <li><img src="/graphics/webgoodies/stamps/neon_rainbow.png" alt="rainbow"></li>
+                        <li><img src="/graphics/webgoodies/stamps/i_love_colors.gif" alt="i love colors"></li>
+                        <li><img src="/graphics/webgoodies/stamps/rainbow_computer_window.gif" alt="rainbow window"></li>
+                        <li><img src="/graphics/webgoodies/stamps/rainbow_llama.png" alt="rainbow llama"></li>
+                        <li><img src="/graphics/webgoodies/stamps/rainbow_gradients_are_awesome.gif" alt="rainbow gradients are awesome"></li>
+                        <li><img src="/graphics/webgoodies/stamps/the_internet_is_cool_because.png" alt="the internet is cool because"></li>
+                        <li><img src="/graphics/webgoodies/stamps/css_stamp.png" alt="stamp described in css"></li>
+                        <li><img src="/graphics/webgoodies/stamps/star_tree.png" alt="star tree"></li>
+                        <li><img src="/graphics/webgoodies/stamps/yellow_moon_and_stars.png" alt="yellow moon and stars"></li>
+                        <li><img src="/graphics/webgoodies/stamps/i_love_stars.gif" alt="i love stars"></li>
+                        <li><img src="/graphics/webgoodies/stamps/shiny_moon_and_stars.png" alt="shiny moon and stars"></li>
+                        <li><img src="/graphics/webgoodies/stamps/purple_night_sky.gif" alt="purple glitter"></li>
+                        <li><img src="/graphics/webgoodies/stamps/what.png" alt="what"></li>
+                        <li><img src="/graphics/webgoodies/stamps/i_love_old_web.png" alt="i love old web"></li>
+                        <li><img src="/graphics/webgoodies/stamps/i_heart_nintendo_wii.gif" alt="i love my nintendo wii"></li>
+                        <li><img src="/graphics/webgoodies/stamps/3ds_owner.jpg" alt="3ds owner"></li>
+                        <li><img src="/graphics/webgoodies/stamps/gameboy.gif" alt="gameboy"></li>
+                        <li><img src="/graphics/webgoodies/stamps/ow.png" alt="ow"></li>
+                        <li><img src="/graphics/webgoodies/stamps/life_love_luigi.jpg" alt="live love luigi"></li>
+                        <li><img src="/graphics/webgoodies/stamps/slight_smiley_face.gif" alt="smiley face"></li>
+                        <li><img src="/graphics/webgoodies/stamps/this_cat_thinks.png" alt="this cat thinks u're 12/10"></li>
+                        <li><img src="/graphics/webgoodies/stamps/always_tired.gif" alt="always tired"></li>
+                        <li><img src="/graphics/webgoodies/stamps/you_must_die.png" alt="you must die"></li>
+                        <!-- add more graphics here! -->
+                    </ul>
+                </div>
+                <!-- the website title -->
+                <div class="website-title">
+                    <img src="/graphics/sitestuff/tinyspace/tiny_space_title.gif">
+                </div>
+                <!-- the status cloud -->
+                <div class="status-cloud">
+                        <div id="statuscafe" class="status-positioning" style="display: flex; flex-direction: column; place-content: center;">
+                            <div id="statuscafe-username"><a href="https://status.cafe/users/starrs" target="_blank"></a></div>
+                           <div id="statuscafe-content" style="text-align:center;"></div>
+                       </div>
+                       <script src="https://status.cafe/current-status.js?name=starrs" defer=""></script>
+                    <img src="/graphics/sitestuff/tinyspace/status_cloud.png">
+                </div>
+            </header>
+            
+                
+
+
+
+
+            <!-- content container START!!! -->
+            <div class="content-container">
+
+                <!-- --- LEFT COLUMN --- -->
+                <aside class="left-column">
+                    <!-- navigation -->
+                    <div class="link-navigation box-content" style="color:#E4CAED;">
+                        <div class="box-label" style="margin-bottom: 10px;">Navigation</div>
+                        <nav>
+                            <ul style="list-style-image: url(/graphics/webgoodies/pixels/link_bullet.gif); margin-bottom: 5px;">
+                                <li><a href="home.html" onclick="iframeScroll('home.html')" target="mainFrame">home</a></li>
+                                <li><a href="about.html" onclick="iframeScroll('about.html')" target="mainFrame">about me</a></li>
+                                <li><a href="thoughts.html" onclick="iframeScroll('thoughts.html')" target="mainFrame">thoughts</a></li>
+                                <li><a href="creations.html" onclick="iframeScroll('creations.html')" target="mainFrame">creations</a></li>
+                                <hr class="dashed-divider" style="margin: 12px 0;">
+                                <li><a href="ocs.html" onclick="iframeScroll('ocs.html')" target="mainFrame">OCs</a></li>
+                                <li><a href="shrines.html" onclick="iframeScroll('shrines.html')" target="mainFrame">e-shrines</a></li>
+                                <hr class="dashed-divider" style="margin: 12px 0;">
+                                <li><a href="resources.html" onclick="iframeScroll('resources.html')" target="mainFrame">resources</a></li>
+                                <li><a href="neighbors.html" onclick="iframeScroll('neighbors.html')" target="mainFrame">neighbors</a></li>
+                                <hr class="dashed-divider" style="margin: 12px 0;">
+                                <li><a href="sitemap.html" onclick="iframeScroll('sitemap.html')" target="mainFrame">sitemap</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- music player-->
+                    <div class="music-box">
+                        <!-- music graphics-->
+                        <div style="position: relative; width: 0px; height: 0px;"> <!-- parent div -->
+                            <div class="music-guy" style="width: fit-content; height: fit-content;">
+                                <a href="vgm.html" target="mainFrame">
+                                    <img src="/graphics/webgoodies/misc/kirb.gif" style="width: 100px;">
+                                </a>
+                            </div>
+                            <div class="music-bubble-text">
+                                <p style="margin-bottom: 5px; font-weight: 600;" id="musicDialogue">"Poyo!"</p>
+                                <span onclick="playMainMusic()" style="color:#7531db; cursor: url(/graphics/sitestuff/star_cursor_click.png), pointer;" id="musicButton">Okay!</span>
+                            </div>
+                            <img src="/graphics/sitestuff/tinyspace/speech_bubble_music.gif" class="music-bubble">
+                        </div>
+                        <!-- music marquee -->
+                        <div style="overflow: hidden; height: 30px; display:flex; justify-content: center; align-items: center;"> <!-- now playing marquee -->
+                            <p class="marqueeMusic" style="margin: 1px 0 0 0;">Now playing: "The Island at Night" from the game "Tomodachi Collection"</p>
+                        </div>
+                        <!-- audio file -->
+                        <audio loop style="width: 140px; height: 34px; margin-bottom: 0px;" id="musicPlayer"> <!-- the play button is hidden. -->
+                            <source src="https://docs.google.com/uc?id=1Emd4frqB05x_bI9OjVE81OYrac1PFlma&export=download" type="audio/mpeg">
+                            <span>Your browser does not support the audio element.</span>
+                        </audio>
+                    </div>
+                </aside>
+
+                
+
+
+                <!-- --- MIDDLE COLUMN --- -->
+                
+                <main id="middleColumn" class="middle-column">
+                    <span id="helloWorld"></span> <!-- take into account the margin of the invisible span when calculating the height of the iframe! -->
+                    <iframe id="mainFrame" name="mainFrame" src="home.html" frameborder="0" scrolling="auto" style="width: 100%; height: calc(100% + 20px);"></iframe>
+                </main>
+
+                
+                
+
+                <!-- --- RIGHT COLUMN --- -->
+                <aside class="right-column">
+                    <!-- first box -->
+                    <div class="right-first-box" style="display: flex; gap: 15px; justify-content: center; align-items: center; height: 70px;">
+                        <img src="/graphics/webgoodies/pixels/waving_cat.gif" style="height: 35px; width: auto; image-rendering: pixelated;">
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 60px;">
+                            <script type="text/javascript" src="//counter.websiteout.net/js/7/5/0/1"></script>
+                            <p style="margin: -5px 0px 0px 0px; font-size: 10px;">Unique visitors!</p>
+                        </div>
+                    </div>
+
+                    <!-- second box -->
+                    <span style="height: 0; width: 0; position: relative; margin-left:100%; margin-top: -10px;">
+                        <img src="/graphics/webgoodies/pixels/type_type_type.gif" class="guestbook-buddy" style="image-rendering: pixelated; position: absolute; height: 50px; width: auto; top: -13px; left: -40px;">
+                        <div class="guestbook-text" style="color: #241C2D; font-size: 8px; text-align: center; z-index: 1; position: absolute; top: -11px; left: -95px; width: 50px;">Sign my <a href="http://starrs.123Guestbook.com/" target="_top" style="color: #8b3dff">guestbook</a>!</div>
+                        <img src="/graphics/sitestuff/tinyspace/speech_bubble_guestbook.png" class="guestbook-bubble" style="height: 40px; width: 60px; position: absolute; top: -15px; left: -100px;">
+                    </span>
+                    <div class="right-second-box" style="overflow: hidden;">
+                        <iframe src="https://www3.cbox.ws/box/?boxid=3518663&boxtag=voBcYQ" width="100%" height="219px" allowtransparency="yes" allow="autoplay" marginheight="0" marginwidth="0" scrolling="auto" frameborder="0"></iframe>
+                    </div>
+
+                    <!-- third box -->
+                    <div class="right-third-box">
+                        <!-- yesterweb widget start -->
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; font-size: 11px;">
+                            <div class="rainbow-border" style="text-align: center; padding: 8px; width: 100%; background-color: #241C2D;">
+                                <div style="text-decoration: wavy;">
+                                    Explore the  <a href="https://yesterweb.org/webring/" target="_top" class="webring-title rainbow-text">Yesterweb</a> Webring!
+                                </div>
+                                <div>
+                                    <a href="https://webring.yesterweb.org/noJS/index.php?d=prev&url=https://starrs.neocities.org/" target="_top">&#8592; Previous</a> //
+                                    <a href="https://webring.yesterweb.org/noJS/index.php?d=rand&url=https://starrs.neocities.org/" target="_top">Random</a> //
+                                    <a href="https://webring.yesterweb.org/noJS/index.php?d=next&url=https://starrs.neocities.org/" target="_top">Next &#8594;</a>
+                                </div>
+                            </div>                    
+                        </div>
+                        <!-- yesterweb widget end -->  
+                        <div style="display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); grid-template-rows: repeat(auto-fit, minmax(25px, 1fr)); justify-items: center;">
+                            <img src="/graphics/webgoodies/blinkies/artist.gif" style="image-rendering: pixelated; height: 25px;">
+                            <img src="/graphics/webgoodies/blinkies/alone_but_not_lonely.gif" style="image-rendering: pixelated; height: 25px;">
+                            <img src="/graphics/webgoodies/blinkies/go_stupid.gif" style="image-rendering: pixelated; height: 25px;">
+                            <img src="/graphics/webgoodies/blinkies/help_im_online.gif" style="image-rendering: pixelated; height: 25px;">
+                            <img src="/graphics/webgoodies/blinkies/let_your_true_colors_shine_through.gif" style="image-rendering: pixelated; height: 25px;">
+                            <img src="/graphics/webgoodies/blinkies/twinkle_twinkle_dark.gif" style="image-rendering: pixelated; height: 25px;">
+                        </div>
+                    </div>
+                </aside>
+                
+            </div>
+
+            <!-- content container END :( -->
+
+
+
+
+
+            <!-- footer START!!! -->
+            <footer>
+                <div class="footer box-content round-corners">
+                    <span style="margin: 0px 5px;">
+                        &#9734; hosted on neocities!
+                    </span>
+                    <span style="margin: 0px 5px;">
+                        &#9734; mobile-friendly (theoretically)
+                    </span>
+                    <span style="margin: 0px 5px;">
+                        &#9734; date created: 6/23/22
+                    </span>
+                    <span style="margin: 0px 5px;">
+                        &#9734; <a href="credits.html" onclick="iframeScroll('credits.html')" target="mainFrame">credits</a>
+                    </span>
+                </div>
+            </footer>
+            
+                            
+
+        </div>
+
+        </div>
+        </div>
+
+        <script src="/tinyspace/tinyspace_features.js"></script>
+        <script src="/tinyspace/tinyspace_music.js"></script>
+
+    </body>
+</html>

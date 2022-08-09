@@ -1,0 +1,669 @@
+/*
+    the css for the main index page (the one that visitors first stumble upon)
+    also the css for properties shared by all pages 
+*/
+
+
+/* --- MISC VARIABLES (START) --- */
+
+:root {
+    /* height of content container */
+    --content-container-height: 570px;
+    /* main box style (for quick access) */
+    --box-main-border-style: 5px double #5A388E;
+    --box-spacing: 10px;
+    /* box colors (for further tweaking) */
+    --box-bg-color: #241C2D;
+    --box-border-color: #5A388E;
+    /* for rounded boxes */
+    --box-border-radius: 15px;
+    /* global font settings */
+    --global-font: "Pangolin", Verdana;
+    --global-font-color: #E4CAED;
+    --global-font-size: 14px;
+}
+       
+/* --- MISC VARIABLES (END) --- */
+
+
+
+
+/* --- OTHER FEATURES (START) --- */
+
+/* status cafe */
+
+    #statuscafe {
+        padding: 5px 10px 10px 10px;
+    }
+
+    #statuscafe-username { /* going to add a "current status" label to the status cafe part for less confusion */
+    margin-bottom: 5px;
+    text-align: center;
+    color: #ccaaff;
+    }
+
+    #statuscafe-content { /* the content goes out of the box when on mobile. gotta fix that... */
+    margin: 5px 5px 5px 5px;
+    }
+
+
+/* --- OTHER FEATURES (END) --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* loading screen */
+
+    #preload {
+        position: fixed;
+        background-color: #F9F9F9;
+        z-index: 9999 !important;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+
+
+/* centering devices */
+
+    .actual-site {
+        display: table;
+        table-layout: fixed;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .actual-site-center {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+/* main container (contains all boxes, used for spacing) */
+
+    .main-container {
+        max-width: 1100px; /* width of content (how much space it takes up) */
+        margin: 10px auto; /* center the container in the webpage */
+    }
+
+
+
+
+
+/* --- HEADER CONTENT (START) --- */
+
+/* main container */
+
+    .header-container {
+        position: relative;
+        height: 155px;
+        margin-bottom: var(--box-spacing);
+    }
+
+/* marquee */
+
+    .opening-marquee {
+        border: 3px solid #8343e3;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        height: 75px;
+        max-width: 70%;
+    }
+
+    .opening-marquee::before {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        height: 75px;
+        width: 400px;
+        background: linear-gradient(to right, #9d60f8 5%, rgba(255, 255, 255, 0) 100%);
+        content: "";  
+    }
+
+/* cloud */
+
+    .status-cloud {
+        z-index: 2;
+    }
+
+    .status-cloud img {
+        width: auto;
+        height: 155px;
+        -webkit-filter: drop-shadow(10px 0 7px rgba(42, 0, 59, 0.5));
+        filter: drop-shadow(10px 0 7px rgba(42, 0, 59, 0.5));
+    }
+
+
+/* status text */
+
+    .status-positioning {
+        position: absolute;
+        bottom: 0;
+    }
+
+    #statuscafe {
+        z-index: 2;
+        padding: 0;
+        width: 210px;
+        height: 80px;
+        bottom: 15px;
+        left: 90px;
+        font-size: 12px;
+    }
+
+    #statuscafe a {
+        color: #c47dff;
+    }
+
+    #statuscafe-username {
+        margin-bottom: 5px;
+        text-align: center;
+        color: #ccaaff;
+    }
+
+    #statuscafe-content {
+        margin: 0;
+        color: #E4CAED;
+    }
+
+/* site title */
+
+    .website-title {
+        position: absolute;
+        top: 40px;
+        right: 0;
+    }
+
+    .website-title img {
+        width: 250px;
+    }
+
+
+/* --- HEADER CONTENT (END) */
+
+
+
+
+
+/* --- MARQUEE (START) --- */
+
+.graphics-row {
+    display: flex;
+    /* height depends on content. see html below */
+    overflow: hidden;
+    /* background-color: tomato; */ /* for testing purposes */
+}
+
+.graphics-row-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    top: auto;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.graphics-row-item li {
+    height: 100%;
+    width: auto;
+    image-rendering: pixelated;
+    display: flex;
+    flex-shrink: 1;
+    margin: auto 5px;
+    justify-content: center;
+    align-items: center;     
+}
+
+.graphics-row-item li::before { /* remove star bullets for this specific list. replace with icons */
+    content: " ";
+    margin-right: 0px;
+}
+
+/* right to left */
+@keyframes scroll {
+    0% {transform: translateX(100%);}
+    1% {transform: translateX(40%);}
+    100% {transform: translateX(-105%); animation-delay: 2s;}
+}
+
+.second-graphics img {
+    height: 60px; /* to set height of all stamps */
+    width: auto;
+    image-rendering: pixelated;   
+}
+
+.second-graphics-row-animation {
+    animation: scroll 35s linear infinite; /* adjust duration depending on how many graphics you added */
+}
+
+/* --- MARQUEE (END) --- */
+
+
+
+
+
+/* content container (contains left, middle, and right columns) */
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: fit-content; /* for when window is resized. don't worry about the columns; they have a fixed size! */
+    margin-bottom: 10px; /* to create space for footer */
+    gap: 10px;
+}
+
+
+
+
+
+/* --- LEFT COLUMN CONTENTS (START) --- */
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0; /* please... don't shrink with the page... */
+    width: 150px; /* yeah. never shrink. ever */
+    height: var(--content-container-height); 
+}
+
+/* first box - link navigation */
+
+    .link-navigation { /* main box */
+        background-color: var(--box-bg-color);
+        width: auto;
+        height: fit-content; /* change depending on content */
+        border: var(--box-main-border-style);
+    }
+
+    .link-navigation ul {
+        margin: 0 0 0 -10px; /* gotta give space for left */
+        list-style-type: none;
+    }
+
+    .link-navigation li {
+        margin: 2px 0px 2x 0px;
+    }
+
+    .link-navigation a {
+        color: unset;
+    }
+
+    .link-navigation a:hover {
+        color: transparent;
+    }
+
+    .link-navigation li::before { /* remove star bullets for this specific list. replace with icons */
+        content: " ";
+        margin-right: 0px;
+    }
+
+/* second box - music player */
+
+    .music-box { /* main box */
+        background-color: var(--box-bg-color);
+        border: var(--box-main-border-style);
+        height: 40px; /* affects music marquee. check html */
+        width: auto;
+    }
+
+    .music-bubble { /* speech bubble */
+        position: absolute; /* positioned relative to hidden div */
+        bottom: 27px;
+        left: 62px;
+        width: 110px;
+    }
+
+    .music-bubble-text { /* text inside speech bubble */
+        position: absolute; /* positioned relative to hidden div */
+        bottom: 58px;
+        left: 77px;
+        z-index: 1;
+        width: 80px;
+        font-size: 14px;
+        text-align: center;
+        color: #241C2D;
+    }
+
+    .music-guy { /* the div holding kirby */
+        position: absolute; /* positioned relative to hidden div */
+        bottom: -18px;
+        left: -18px;
+        z-index: 1;
+        height: auto;
+        transform: scaleX(-1) rotate(-5deg); /* he rotate */
+    }
+
+    .music-guy img:hover {
+        animation: oneBounce 0.8s ease;
+    }
+
+    @keyframes oneBounce {
+        0% {transform: translateY(0);}
+        25% {transform: translateY(-15px);}
+        50% {transform: translateY(0);}
+        100% {transform: translateY(0);}
+    }
+
+    .marqueeMusic { /* shows the name of the music currently playing */
+        font-size: 14px;
+        white-space: nowrap; /* keeps text from collapsing */
+        animation: smallScroll 15s linear infinite;
+    }
+
+    /* right to left */
+    @keyframes smallScroll {
+        0% {transform: translateX(100%);} /* outside screen */
+        1% {transform: translateX(75%);} /* going in */
+        100% {transform: translateX(-75%);} /* going out */
+    }
+
+/* --- LEFT COLUMN CONTENTS (END) --- */
+
+
+
+
+
+/* --- MIDDLE COLUMN CONTENTS (START) --- */
+
+.middle-column { /* holds the iframe */
+    border: var(--box-main-border-style);
+    background-color: var(--box-bg-color);
+    height: var(--content-container-height);
+    flex: 5;
+    min-width: 260px; /* breakpoint */
+    overflow: hidden; /* the iframe will take care of the scroll instead */
+}
+
+#helloWorld { /* the secret span that redirects screen */
+    display: block;
+    height: cal(var(--content-container-height)- 10px); /*same height as header*/
+    margin-top: -20px; /*same height as header*/
+    visibility: hidden;
+}
+
+/* --- MIDDLE COLUMN CONTENTS (END) --- */
+
+
+
+
+
+/* --- RIGHT COLUMN CONTENTS (START) --- */
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content; /* to accomodate the blinkies and stretch vertically when the window is small. */
+    /* be careful of how many blinkies you put!  or widgets you add! */
+    flex: 1;
+    gap: 10px;
+}
+
+/* first box on the right (not sure about it yet) */
+
+.right-first-box {
+    border: var(--box-main-border-style);
+    background-color: var(--box-bg-color);
+    height: 60px;
+}
+
+/* second box on the right (not sure about it yet) */
+
+.right-second-box {
+    border: var(--box-main-border-style);  
+    background-color: var(--box-bg-color);
+    height: 220px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.right-second-box iframe {
+    height: 100%;
+}
+
+.right-second-box p {
+    margin: 5px 0px;
+}
+
+/* third box on the right (not sure about it yet */
+
+.right-third-box {
+    height: calc(570px - 280px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0;
+    justify-content: flex-start;
+}
+
+/* --- RIGHT COLUMN CONTENTS (END) --- */
+
+
+
+
+
+/* another marquee is inserted here in html file */
+
+
+
+
+
+/* --- FOOTER CONTENTS (START) --- */
+
+.footer {
+    border: var(--box-main-border-style);
+    background-color: var(--box-bg-color);
+    display: flex; /* to center align text... */
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* --- FOOTER CONTENTS (END) --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- CSS FOR RESPONSIVENESS (START) --- */
+
+/* trying to fix how the site looks like when it's a small screen */
+/* taking insp from other people's codes */
+
+@media
+    only screen and (min-device-width: 320px)
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    /* general stuff */
+
+        html {
+            overflow-x: hidden; /* idk why there's space but here's a solution for now */ /* have to fix margins later */
+        }      
+    
+    /* containers */
+
+        .main-container {
+            max-width: 90%;
+            min-width: 300px;
+        }
+        
+        .content-container {
+            flex-wrap: wrap;
+            /* background-color: blue; */ /* for testing purposes */
+            height: fit-content;
+            padding: 0;
+        }
+
+    /* header */
+    
+        .opening-marquee {
+            display: none;
+        }
+
+        .website-title {
+            display: none;
+        }
+
+        .status-cloud {
+            /* stay in the middle of the screen!!! */
+            position: absolute;
+            left: 70%;
+            top: 70%;
+            transform: translate(-70%, -70%);
+        }
+
+        .status-cloud img {
+            transform: scale(0.95);
+        }
+
+        #statuscafe {
+            padding-bottom: 5px;
+        }
+
+    /* left column */
+
+        .left-column {
+            display: block;
+            width: 100%;
+            order: 1;
+            height: fit-content; /* adjustable */
+        }
+
+        .link-navigation, .right-first-box, .right-second-box {
+            height: fit-content;
+        }
+
+        .link-navigation {
+            /* margin-bottom: 100px; /* space for music guy */
+            margin: 0;
+        }
+
+        .music-box {
+            display: none;
+        }
+
+        .kirby-music {
+            top: -90px;
+            left: -20px;
+        }
+
+    /* middle column */
+
+        .middle-column {
+            display: block;
+            width: 100%;
+            min-width: 100%;
+            margin: 0px 0px;
+            order: 2;
+            height: 70vh;
+            flex: 1 0 0;
+        }
+
+    /* right column */
+
+        .right-column {
+            width: 100%;
+            display:block;
+            order: 3;
+            height: initial;
+        }
+
+        .right-first-box {
+            /* height already mentioned in html; retains it */
+            margin-bottom: -10px;
+        }
+
+        .right-second-box {
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .right-third-box {
+            height: fit-content;
+            align-items: center;
+        }
+
+    /* footer */
+
+        .footer {
+            flex-wrap: wrap;
+            height: fit-content;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer span {
+            display: block;
+        }
+       
+    .mainiframe { /* move later... for individual page */
+        width:auto;
+        height: fit-content;
+    }
+
+    /* flex containers */
+    .flex-container {
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* --- CSS FOR RESPONSIVENESS (END) --- */

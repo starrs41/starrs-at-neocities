@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>a tiny space in space</title>
+        <link rel="icon" type="image/x-icon" href="/+graphics/star_favicon.gif">
+        
+        <link rel="stylesheet" href="/globalfeatures.css">
+        <link rel="stylesheet" href="otherpages.css">
+
+        <base target="_blank">
+
+        <style>
+            /* for the updates and button area */
+            #newStuff {
+                gap: 30px;
+            }
+
+            /* for the deep space portal area */
+            #deepSpacePortal {
+                gap: 30px;
+            }
+            
+            /* for shaking the portal on hover */
+            #actualPortal:hover {
+                -webkit-filter: drop-shadow(0 0 25px rgba(198, 54, 255, 0.803));
+                filter: drop-shadow(0 0 25px rgba(198, 54, 255, 0.803));
+                animation: shakey 0.5s infinite;
+            }
+
+            #newStuff ul {
+                margin: 5px 0;
+            }
+
+            @keyframes shakey {
+                0% {transform: translate(0,0)}
+                20% {transform: translate(2px, 2px)}
+                40% {transform: translate(-2px, 2px)}
+                60% {transform: translate(2px, -2px)}
+                80% {transform: translate(-2px, -2px)}
+                100% {transform: translate(2px, 2px)}
+            }
+
+            @media
+                only screen and (max-width: 600px),
+                only screen and (min-device-width: 320px)
+                and (max-device-width: 660px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+
+                    #newStuff {
+                        gap: 15px;
+                    }
+
+                    #deepSpacePortal {
+                        gap: 15px;
+                        margin-bottom: 10px;
+                     }
+
+                }
+            
+        </style>
+    </head>
+    
+
+
+    <body>
+        <!-- format -->
+        <div class="main-div">
+            <!-- 1ST AREA - greetings! -->
+            <div>
+                <!-- hello world! :D -->
+                <div style="display: flex; justify-content: center;">
+                    <div class= "text-wave">
+                        <span style="--i:1; color:#db1748;">H</span>
+                        <span style="--i:2; color:#e8653d;">E</span>
+                        <span style="--i:3; color:#e3aa40;">L</span>
+                        <span style="--i:4; color:#24997C;">L</span>
+                        <span style="--i:5; color:#4794D9;">O</span>
+                        <span style="margin: 0px 5px;"> </span>
+                        <span style="--i:6; color:#463acf;">W</span>
+                        <span style="--i:7; color:#b0169c">O</span>
+                        <span style="--i:8; color:#db1748;">R</span>
+                        <span style="--i:9; color:#e8653d;">L</span>
+                        <span style="--i:10; color:#e3aa40;">D</span>
+                        <span style="--i:11;  color:#24997C;">!</span>
+                    </div>
+                </div>
+
+                <!-- welcome text -->
+                <div class="space-for-text flex-container"> <!-- container for greeting -->
+                    <div style="width: 250px; display: flex; justify-content: center;"> <!--  width is always 250px, make a class -->
+                        <img src="/+graphics/misc/dancing_blanca.gif" alt="dancing blanca" style="width: 120px; image-rendering: crisp-edges;">
+                    </div>
+                    <div style="width: 500px; text-align: justify;"> <!-- width is always 500px, make a class -->
+                        <p>
+                            Hello and welcome to my little home on the internet!!! You can call me Nick! :D
+                        </p>
+                        <p>
+                            There's not much to see here yet (aside from all the broken links), but I'm planning to make this site a place where I can
+                            collate all the stuff that means a lot to me! There'll also be some useful stuff lying around,
+                            so feel free to look!
+                        </p>
+                        <p>
+                            I hope you enjoy your stay here! This site will always be changing, so check back whenever! >:D
+                        </p>
+                    </div>
+                </div>
+
+                <!-- some buttons -->
+                <div class="flex-container" style="justify-content: center; margin-top: 20px; gap: 5px;"><!-- extra container for buttons -->
+                    <img src="/+graphics/buttons/decor/web_design_is_my_passion_neocities.gif">
+                    <img src="/+graphics/buttons/decor/i_like_computer.png">
+                    <img src="/+graphics/buttons/decor/i_dream_in_html.gif">
+                    <img src="/+graphics/buttons/decor/youre_telling_me.png">
+                    <img src="/+graphics/buttons/decor/forever_online.gif">
+                    <img src="/+graphics/buttons/decor/kris_where_tf_are_we.png">
+                    <img src="/+graphics/buttons/decor/powered_by_bob.gif">
+                </div>
+            </div>
+
+            <hr class="rainbow-divider">
+
+            <!-- 2ND AREA - updates and button! -->
+            <!-- must have height of 250px -->
+            <div id="newStuff" class="space-for-text flex-container needs-gap" style="justify-content: center; align-items: center;">
+                <!-- updates -->
+                <div class="box-needs-scrollbar box-content rainbow-border" style="padding: 20px; width: 300px; min-width: 200px; height: 250px; overflow-y: auto; box-sizing: border-box;">
+                    <div class="rainbow-header" style="margin-bottom: 10px;">News + Updates</div>
+                        <!-- add more here -->
+                        <h1 class="update-date">???</h1>
+                        <p>Hey! It's been a while, hasn't it? Here's what happened:</p>
+                            <ul class="rainbow-list">
+                                <li>fixed the code for the layout of the whole website (subtle, but it's made a lot of big changes)</li>
+                                <li>reworked the whole file hierarchy system (you can't see the effect, but it did make everything harder for me :"D)</li>
+                                <li>finally, the site makes better use of semantic elements TuT</li>
+                                <li>custom bullet colors! everything looks so colorful now!</li>
+                                <li>the art gallery has been revamped! check it out here!</li>
+                                <li>the oc wiki has been revamped! check it out here! (there's even a test page for pablo ^^;)</li>
+                                <li>the about page has been revamped! check it out here!</li>
+                                <li>the credits page has been added! check it out here!</li>
+                                <li>reworked the music script for the site! music can now play inside the iframe properly!</li>
+                                <li>here's an easter egg: each page now has a unique look when outside the iframe! (just thought it would be nice ^^;)</li>
+                                <li>additionally, links have been added at the bottom of the page to either scroll to the top or return to the iframe!</li>
+                            </ul>
+                        <hr class="dashed-divider">
+                        <div class="update-date">July 22, 2022</div>
+                        <p>a few changes, but good ones! >:3</p>
+                        <p>planning a lot of things for the next update... for now i just want to share the button already ToT</p>
+                        <ul style="margin: 5px 0;" class="rainbow-list">
+                            <li>like i just mentioned... the site finally has a button! check it out over at the right TwT</li>
+                            <li>switched the locations of the updatelog and chatbox</li>
+                            <li>modified the updatelog a little ^^</li>
+                            <li>a link to the guestbook has FINALLY been added!! <a href="https://starrs.123guestbook.com/" target="_top">leave a message</a> if you like! :D</li>
+                            <li>added a placeholder worm hole to deep space... who knows what's in there? O.O</li>
+                            <li>a custom cursor! hooray!! :D</li>
+                            <li>added a little kitty cat over at the visitor box!</li>
+                            <li>added some more color to the yesterweb widget :Dc</li>
+                        </ul>
+                        <hr class="dashed-divider">
+                        <div class="update-date">July 13, 2022</div>
+                        <p>again, mostly a bunch of invisible changes :P</p>
+                        <p>there are still a lot of changes coming though! i've got a lot of stuff i wanna do >:3c</p>
+                            <ul style="margin: 5px 0;" class="rainbow-list">
+                                <li>joined the yesterweb webring, so i added the widget! >:D</li>
+                                <li>added some collections in the graphics area!</li>
+                                <li>modified the appearance of some pages...</li>
+                                <li>cleaned up my css... it's more organized now. somewhat</li>
+                                <li>added js by <a href="https://forum.melonking.net/index.php?topic=115.0" target="_blank">melon</a> that fixes
+                                the iframe links on the site. huge shoutout to him! TvT</li>
+                            </ul>
+                        <hr class="dashed-divider">
+                        <div class="update-date">July 10, 2022</div>
+                        <p>it's crazy how much i was able to update the website in the span of 2 days...</p>
+                        <p>by the way, i added my first <a href="thoughts/blog/blog1.html" onclick="iframeScroll('thoughts/blog/blog1.html')">blog</a>!! come see >:3</p>
+                            <ul style="margin: 5px 0;" class="rainbow-list">
+                                <li>fixed the font sizes, margins, padding, and other properties to make it look more compact!</li>
+                                <li>reworked the header and removed the bottom marquee. i think having too many marquees lags the website...</li>
+                                <li>removed, added, and moved around some graphics!</li>
+                                <li>moved the update log here, to the right column.</li>
+                                <li>moved the status up where the header is</li>
+                                <li>finally added a website counter to the left column...</li>
+                                <li>added a bunch of new pages!!! still incomplete though. check the 
+                                    <a href="sitemap.html" onclick="iframeScroll('sitemap.html')">sitemap</a> for more details!</li>
+                                <li>made kirby slightly more accurate... i think.</li>
+                                <li>fixed the code for the iframe scroll. now the iframe is centered in the middle of the screen TvT</li>
+                                <li>changed the way links work. still unsatisfied with it though...</li>
+                                <li>tweaked the responsiveness of my site a little >:D</li>
+                            </ul>
+                        <hr class="dashed-divider">
+                        <div class="update-date">July 7, 2022</div>
+                        <p>this site went through a lot of (mostly invisible) changes, so here they are!!</p>
+                            <ul style="margin: 5px 0;" class="rainbow-list">
+                                    <li>
+                                        more buttons, blinkies, and stamps!! looks like there's more color to the site now! i'll be adding them
+                                        all in the collection soon enough :D
+                                    </li>
+                                    <li>
+                                        changed some fonts!
+                                    </li>
+                                    <li>
+                                        changed the links on the navigation menu and added some new (but unfinished) pages!
+                                    </li>
+                                    <li>
+                                        removed the art gallery for now. i'll be revamping it!
+                                    </li>
+                                    <li>
+                                        changed the divider!
+                                    </li>
+                                    <li>
+                                        finally cleaned up my code... so some problems with the boxes have been fixed T.T
+                                    </li>
+                                    <li>
+                                    cleaned up the right column. not done yet with the contents...!
+                                    </li>
+                                    <li>
+                                        overhauled the music player. though i might still fix its appearance on mobile...
+                                    </li>
+                                    <li>
+                                        new scrollbars!
+                                    </li>
+                                    <li>
+                                        added code to make the page scroll to the iframe when clicking on a link in the navigation menu.
+                                        works great for mobile!
+                                    </li>
+                            </ul>
+                        <hr class="dashed-divider">
+                        <div class="update-date">July 3, 2022</div>
+                        <p>art fight has gotten me confused as to what i should prioritize first... but anyway, i've made some important changes</p>
+                            <ul style="margin: 5px 0;" class="rainbow-list">
+                                <li>
+                                    changed the way the website works. it now relies on an iframe to show content. this makes it easier for
+                                        things such as the music to carry over between pages! (and it's also super easy to fix problems on each page now...!)
+                                        i'll check if this creates any problems though...
+                                </li>
+                                <li>
+                                    changed the music player's appearance in preparation for an overhaul. so for now, it's broken. don't mind that ^^;
+                                </li>
+                                <li>
+                                    changed the content of the boxes in the right column. mostly as a reminder for myself
+                                </li>
+                                <li>
+                                    updated the art gallery! i've overhauled its appearance and it now shows all the art that I've been meaning to add for a while. i also changed the first paragraph and
+                                    removed the dancing cat (sorry). not sure if the first part looks better without an image though...
+                                </li>
+                                <li>
+                                    moved the update log to the home page and re-added the status. not yet done with the website counter though, sorry
+                                </li>
+                                <li>
+                                    moved the chatbox and guestbook links down. not sure if that's a good idea since it's not immediately
+                                        noticeable, but i'll figure something out.
+                                </li>
+                                <li>
+                                    still in the process of overhauling the naming convention for the site's assets and putting everything in the right folders...
+                                </li>
+                                <li>
+                                    reduced the height of the main container so the important content can easily be readable in computer screens
+                                </li>
+                                <li>
+                                    fixed the footer contents
+                                </li>
+                            </ul>
+                </div>
+                <!-- deep space -->
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 300px; min-width: 200px; box-sizing: border-box; height: 250px;">
+                    <div style="text-align: center;">
+                        <p style="margin-top: 0;">Wanna link to my site? Here's my button! :D</p>
+                        <p style="font-size: smaller; color: #9c73d8;">(It's better to download the image than hotlink it from here, though!)</p>
+                        <img src="/+graphics/buttons/users/tiny_space.gif" style="margin: 10px;">
+                        <textarea readonly="readonly" style="display: block; width: 90%; height: 110px; margin: 0 auto; padding: 5px; border: 2px solid #5A388E; background-color: #E4CAED; color: #241C2D; resize: none;"><a href="https://starrs.neocities.org/"><img src="https://starrs.neocities.org/+graphics/buttons/users/tiny_space.gif"></a></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="rainbow-divider">
+
+            <!-- 3RD AREA - vortex to deep space -->
+            <!-- must have height of 150px -->
+            <div id="deepSpacePortal" class="space-for-text flex-container needs-gap" style="justify-content: center; align-items: center;">
+                <!-- text area -->
+                <div style="text-align: center; height: fit-content; width: 300px; min-width: 200px; height: 150px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; gap: 5px;">
+                    <div>
+                        <p style="margin: 0 0;">Still looking for more adventure?</p>
+                        <p style="margin: 5px 0;">Well, if you're up to it, you should visit...</p>
+                    </div>
+                    <div>
+                        <img src="/+graphics/deepspace/deep_space_title.GIF" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+                <!-- deep space... portal? worm hole?? -->
+                <div style="width: 300px; min-width: 200px; height: 150px; box-sizing: border-box; position: relative;">
+                    <div class="bouncy-object" style="position: absolute; top: 8px; left: 60px;">
+                        <img src="/+graphics/tiny_star.png" class="spinning-object" style="height: 15px; width: auto;">
+                    </div>
+                    <div class="bouncy-object" style="position: absolute; bottom: 55px; right: 35px; animation-duration: 2.5s;">
+                        <img src="/+graphics/tiny_star.png" class="spinning-object-alternate" style="height: 20px; width: auto;">
+                    </div>
+                    <div class="bouncy-object" style="position: absolute; bottom: 5px; left: 40px; animation-duration: 1.5s;">
+                        <img src="/+graphics/tiny_star.png" class="spinning-object" style="height: 18px; width: auto;">
+                    </div>
+                    <img src="/+graphics/tinyspace/get_in_the_portal.PNG" style="position: absolute; height: 70px; width: auto;   right: 25px; top: -10px;">      
+                    <img src="/+graphics/tinyspace/improved_vortex.gif" id="actualPortal" style="display: block; margin: auto auto;">
+                </div>
+            </div>
+
+            <div style="width: fit-content; margin: 20px auto auto auto; font-size: 65%;">
+                <a target="_self" onclick=window.scroll(0,0);>Back to top?</a> // 
+                <a href="/tinyspace/?e=/tinyspace/home.html" target="_top">Outside the iframe? </a>
+            </div>
+        </div>
+
+        <script src="/tinyspace_features.js"></script>
+
+    </body>
+
+</html>

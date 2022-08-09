@@ -123,4 +123,16 @@
             width: 130px;
         }
 
+    @media
+        /* 650px is the breakpoint of the description */
+        only screen and (max-width: 650px) {
+            .description img {
+                order: 1;
+            }
+
+            .description div {
+                order: 2;
+            }
+        }
+
 /* --- custom elements (END) --- */

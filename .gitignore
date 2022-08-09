@@ -2,3 +2,6 @@
 # also ignore all shortcuts
 *.txt
 *.lnk
+
+# ignore all oc wiki files for now
+*ocs/

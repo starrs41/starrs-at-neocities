@@ -1,0 +1,69 @@
+/*
+    customization for the oc pages!!
+*/
+
+:root {
+    --button-color: #5A388E;
+}
+
+table {
+    font-size: 80%;
+    max-width: fit-content;
+    column-gap: 20px;
+}
+
+tr, td {
+    padding: 5px 5px 5px 8px;
+    border-radius: 10px 0 0 10px;
+    width: 150px;
+}
+
+table .table-label {
+    text-align: center;
+    width: 80px;
+}
+
+.sub-navigation {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(120px, 1fr));
+    gap: 5px;
+    height: fit-content; width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-navigation div {
+    width: 122px;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 10px;
+    vertical-align: center;
+    text-align: center;
+}
+
+.sub-navigation div:hover {
+    background: var(--button-color);
+    transition: all 0.5s;
+}
+
+.sub-navigation a {
+    color: unset;
+}
+
+.sub-navigation a:hover {
+    background: none;
+}
+
+.sub-navigation a::after {
+    content: none;
+}
+
+hr {
+    margin: 15px 0;
+}
+
+#subMusicButton {
+    cursor: url(/+graphics/star_cursor_click.png), pointer;
+}

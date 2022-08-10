@@ -96,36 +96,8 @@ h2 {
     /* description for the different sections */
 
         .description {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 10px 10px 20px 10px;
             height: fit-content;
-            justify-content: center;
-        }
-
-        .description p {
-            margin: 5px 0;
-        }
-
-        .description p::before {
-            content: "\2605";
-            color: #a468ff;
-            margin-right: 5px;
-        }
-
-        .description div {
-            flex: 1;
-            padding: 10px 15px;
-            min-width: 150px;
-            height: 130px;
-            overflow: auto;
-            scrollbar-width: thin;
-        }
-
-        .description img {
-            height: 130px;
-            width: 130px;
+            margin: 10px 10px 25px 10px;
         }
 
     @media

@@ -408,7 +408,7 @@
     background-color: var(--box-bg-color);
     height: var(--content-container-height);
     flex: 5;
-    min-width: 260px; /* breakpoint */
+    min-width: 320px; /* breakpoint */ /* orig: 260px */
     overflow: hidden; /* the iframe will take care of the scroll instead */
 }
 
@@ -532,9 +532,9 @@
 /* taking insp from other people's codes */
 
 @media
-    only screen and (min-device-width: 320px)
-    and (max-device-width: 660px)
-    and (-webkit-min-device-pixel-ratio: 2) {
+    only screen and (min-width: 320px)
+    and (max-width: 500px) {
+
 
     /* general stuff */
 

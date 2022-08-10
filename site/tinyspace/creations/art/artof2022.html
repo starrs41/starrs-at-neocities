@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>a tiny space in space</title>
+        <link rel="icon" type="image/x-icon" href="+graphics/star_favicon.gif">
+        
+        <link rel="stylesheet" href="/globalfeatures.css">
+        <link rel="stylesheet" href="/tinyspace/otherpages.css">
+
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px 10px;
+                justify-items: center;
+
+            }
+
+            .grid-container div {
+                border-radius: 10px;
+                padding: 7px;
+                width: 150px;
+                height: 150px;
+                cursor: url(/+graphics/star_cursor_click.png), pointer;
+            }   
+
+            .grid-container div:hover {
+                transform: scale(1.05);
+                transition: all 0.5s;
+            }
+
+            .grid-container img {
+                width: 135px;
+                height: 135px;
+            }
+
+            .grid-container a {
+                position: relative;
+            }
+            
+            .grid-container img {
+                border-radius: 10px;
+            }
+
+            .grid-container p {
+                text-align: center;
+                font-size: 110%;
+                font-weight: bold;
+                font-stretch: expanded;
+                margin: 0;
+            }
+
+            #modal {
+                display: none;
+                align-items: center;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0,0,0,0.8);
+            }
+
+            #modal img {
+                display: block;
+                margin: 0 auto;
+                max-height: 90%;
+                max-width: 90%;
+                width: auto;
+                height: auto;
+            }
+
+            #modal div {
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                margin: auto;
+                padding-top: 25px; /* because of the span, the img isn't in the center */
+                height: 80%;
+                width: 80%;
+            }
+
+            #modal p {
+                text-align: center;
+                text-align: center;
+                margin: 5px auto;
+                width: 50%;
+            }
+
+            @media
+                only screen and (max-width: 600px),
+                only screen and (min-device-width: 320px)
+                and (max-device-width: 660px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+
+                    .gallery img {
+                        height: 100px;
+                        width: 100px;
+                    }
+                    
+                }
+        </style>
+    </head>
+    
+    <body>
+        <!-- modal (hidden) -->
+        <div id="modal" onclick="closeThisModal()">
+            <div id="lolli">
+                <img src="/+graphics/art/2022/full_eating_lollis.png">
+                <p>a doodle of bloo and miko eating lollipops! because i remember being hungry when i drew this ^^;</p>
+            </div>
+            <div id="pabloCrisis1">
+                <img src="/+graphics/art/2022/full_go_pablo_1.png">
+                <p>this is a doodle i put way too much time and effort in by accident. inspired by the "go for it, nakamura!" art meme :D</p>
+            </div>
+            <div id="pabloCrisis2">
+                <img src="/+graphics/art/2022/full_go_pablo_2.png">
+                <p>this one is inspired by the second volume of the "go for it, nakamura!" manga cover. i'm surprised it isn't as popular (yet)</p>
+            </div>
+            <div id="hiMiko">
+                <img src="/+graphics/art/2022/full_hi_miko.png">
+                <p>miko is awesome :D</p>
+            </div>
+            <div id="loveAndPeace">
+                <img src="/+graphics/art/2022/full_love_and_peace.png">
+                <p>one of the best looking miitopia moves for sure!!</p>
+            </div>
+            <div id="miitopiaAnniversary2022">
+                <img src="/+graphics/art/2022/full_miitopia_anniversary.png">
+                <p>art i made for the first anniversary of the miitopia switch version!</p>
+            </div>
+            <div id="moonlightDance">
+                <img src="/+graphics/art/2022/full_moonlight_dance.png">
+                <p>to be honest, i colored this old doodle i had because i was bored. but it turned out quite nice!</p>
+            </div>
+            <div id="tomodachiPicnic">
+                <img src="/+graphics/art/2022/full_tomodachi_picnic.png">
+                <p>would love to be able to visit the park from tomodachi life... TvT</p>
+            </div>
+        </div>
+
+        <div class="main-div">
+            <!-- going back? -->
+            <div id="backVortex" style="width: fit-content; margin: 0 auto 15px auto;">
+                <div style="width: fit-content; margin: auto;">
+                    <a href="/tinyspace/creations.html" target="_self"><img src="/+graphics/back.gif" style="width:60px; height: auto;"></a>
+                </div>
+            </div>
+
+            <!-- START-->
+            <div class="article-title">
+                Art of 2022
+            </div>
+            <div style="max-width: 650px; text-align: justify; margin: 10px auto 20px auto;">
+                <p>
+                    Most (if not all) of the artwork I did this year were made with Procreate! I'm way too attached to it now... TvT
+                </p>
+                <p>
+                    NOTE: Click on an image to view the full piece! They'll open up in the current window ^v^
+                </p>
+            </div>
+
+            <hr class="rainbow-divider">
+
+            <!-- actually gallery -->
+            <div class="grid-container">
+                <!-- add more here -->
+                <div class="rainbow-border-2">
+                    <img src="/+graphics/art/2022/thumbnail_eating_lollis.png" onclick='openModal("lolli")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/+graphics/art/2022/thumbnail_go_pablo_1.png" onclick='openModal("pabloCrisis1")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/+graphics/art/2022/thumbnail_go_pablo_2.png" onclick='openModal("pabloCrisis2")' title="these two thumbnails may look similar, but the full artworks are way different!!">
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/+graphics/art/2022/thumbnail_hi_miko.png" onclick='openModal("hiMiko")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/+graphics/art/2022/thumbnail_love_and_peace.png" onclick='openModal("loveAndPeace")'>
+                </div>
+                <div class="rainbow-border-2">
+                <img src="/+graphics/art/2022/thumbnail_miitopia_anniversary.png" onclick='openModal("miitopiaAnniversary2022")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/+graphics/art/2022/thumbnail_moonlight_dance.png" onclick='openModal("moonlightDance")'></a>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/+graphics/art/2022/thumbnail_tomodachi_picnic.png" onclick='openModal("tomodachiPicnic")'>
+                </div>
+            </div>
+
+            <div style="width: fit-content; margin: 20px auto auto auto; font-size: 65%;">
+                <a target="_self" onclick=window.scroll(0,0);>Back to top?</a> // 
+                <a href="/tinyspace/?e=/tinyspace/creations/art/artof2022.html" target="_top">Outside the iframe?</a>
+            </div>
+        </div>
+
+        <script src="/tinyspace_features.js"></script>
+
+    </body>
+</html>

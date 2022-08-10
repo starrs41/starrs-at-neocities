@@ -5,3 +5,5 @@
 
 # ignore all oc wiki files for now
 *ocs/
+
+*.vs/

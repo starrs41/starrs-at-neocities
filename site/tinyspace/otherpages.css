@@ -63,6 +63,11 @@
 
 /* --- custom elements (START) --- */
 
+h2 {
+    margin: 0px 0px 20px 0px;
+    font-size: 150%;
+}
+
     /* list but as a gallery. doesn't actually use ul, instead it's a collection of a tags */
 
         .grid-list {

@@ -65,5 +65,11 @@ hr {
 }
 
 #subMusicButton {
-    cursor: url(/+graphics/star_cursor_click.png), pointer;
+    cursor: url(/graphics/sitestuff/star_cursor_click.png), pointer;
+}
+
+button {
+    border: none;
+    background: none;
+    color: unset;
 }

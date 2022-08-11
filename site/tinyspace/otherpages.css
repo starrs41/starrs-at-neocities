@@ -90,7 +90,7 @@ h2 {
 
         .grid-list a:hover {
             color: transparent;
-            transform: scale(1.05);
+            transform: scale(0.98);
         }
 
     /* description for the different sections */

@@ -100,16 +100,123 @@ h2 {
             margin: 10px 10px 25px 10px;
         }
 
-    @media
-        /* 650px is the breakpoint of the description */
-        only screen and (max-width: 650px) {
-            .description img {
-                order: 1;
+        @media
+            /* 650px is the breakpoint of the description */
+            only screen and (max-width: 650px) {
+                .description img {
+                    order: 1;
+                }
+
+                .description div {
+                    order: 2;
+                }
             }
 
-            .description div {
-                order: 2;
+    /* grid art gallery (for the art pages) */
+        
+        .grid-art-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px 10px;
+            justify-items: center;
+
+        }
+
+        .grid-art-gallery div {
+            border-radius: 10px;
+            padding: 7px;
+            width: 150px;
+            height: 150px;
+            cursor: url(/graphics/sitestuff/star_cursor_click.png), pointer;
+        }   
+
+        .grid-art-gallery div:hover {
+            transform: scale(0.98);
+            opacity: 0.8;
+            transition: all 200ms;
+        }
+
+        .grid-art-gallery img {
+            width: 135px;
+            height: 135px;
+        }
+
+        .grid-art-gallery a {
+            position: relative;
+        }
+        
+        .grid-art-gallery img {
+            border-radius: 10px;
+        }
+
+        .grid-art-gallery p {
+            text-align: center;
+            font-size: 110%;
+            font-weight: bold;
+            font-stretch: expanded;
+            margin: 0;
+        }
+
+        @media
+            only screen and (max-width: 380px) {
+
+                .grid-art-gallery {
+                    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                    grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
+                }
+
+                .grid-art-gallery div {
+                    transform: scale(0.85);
+                }
+
+                .grid-art-gallery div:hover {
+                    transform: scale(0.83);
+                    opacity: 0.8;
+                    transition: all 200ms;
+                }
             }
+
+        /* plus the modal for showcasing the art */
+
+        #modal {
+            display: none;
+            align-items: center;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        #modal img {
+            display: block;
+            margin: 0 auto;
+            max-height: 90%;
+            max-width: 90%;
+            width: auto;
+            height: auto;
+        }
+
+        #modal div {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            margin: auto;
+            padding-top: 25px; /* because of the span, the img isn't in the center */
+            height: 80%;
+            width: 80%;
+        }
+
+        #modal p {
+            text-align: center;
+            text-align: center;
+            margin: 5px auto;
+            width: 50%;
         }
 
 /* --- custom elements (END) --- */

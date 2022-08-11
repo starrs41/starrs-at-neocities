@@ -12,102 +12,7 @@
         <link rel="stylesheet" href="/tinyspace/otherpages.css">
 
         <style>
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
-                gap: 15px 10px;
-                justify-items: center;
-
-            }
-
-            .grid-container div {
-                border-radius: 10px;
-                padding: 7px;
-                width: 150px;
-                height: 150px;
-                cursor: url(/graphics/sitestuff/star_cursor_click.png), pointer;
-            }   
-
-            .grid-container div:hover {
-                transform: scale(0.98);
-                opacity: 0.8;
-                transition: all 200ms;
-            }
-
-            .grid-container img {
-                width: 135px;
-                height: 135px;
-            }
-
-            .grid-container a {
-                position: relative;
-            }
             
-            .grid-container img {
-                border-radius: 10px;
-            }
-
-            .grid-container p {
-                text-align: center;
-                font-size: 110%;
-                font-weight: bold;
-                font-stretch: expanded;
-                margin: 0;
-            }
-
-            #modal {
-                display: none;
-                align-items: center;
-                position: fixed;
-                z-index: 1;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                overflow: auto;
-                background-color: rgba(0,0,0,0.8);
-            }
-
-            #modal img {
-                display: block;
-                margin: 0 auto;
-                max-height: 90%;
-                max-width: 90%;
-                width: auto;
-                height: auto;
-            }
-
-            #modal div {
-                display: none;
-                flex-direction: column;
-                justify-content: center;
-                gap: 15px;
-                margin: auto;
-                padding-top: 25px; /* because of the span, the img isn't in the center */
-                height: 80%;
-                width: 80%;
-            }
-
-            #modal p {
-                text-align: center;
-                text-align: center;
-                margin: 5px auto;
-                width: 50%;
-            }
-
-            @media
-                only screen and (max-width: 600px),
-                only screen and (min-device-width: 320px)
-                and (max-device-width: 660px)
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-                    .gallery img {
-                        height: 100px;
-                        width: 100px;
-                    }
-                    
-                }
         </style>
     </head>
     
@@ -172,7 +77,7 @@
             <hr class="rainbow-divider">
 
             <!-- actually gallery -->
-            <div class="grid-container">
+            <div class="grid-art-gallery">
                 <!-- add more here -->
                 <div class="rainbow-border-2">
                     <img src="/graphics/others/artwork/2022/thumbnail_eating_lollis.png" onclick='openModal("lolli")'>

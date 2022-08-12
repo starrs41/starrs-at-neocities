@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="/globalfeatures.css">
         <link rel="stylesheet" href="/tinyspace/otherpages.css">
 
+        <base target="_blank">
+
         <style>
             .gallery img {
                 height: 140px;
@@ -34,10 +36,83 @@
     </head>
     
     <body>
+
         <!-- modal (hidden)-->
-        <div>
-            <!-- later i'm lazy -->
+        <div id="modal" onclick="closeThisModal()">
+            <div id="fieldTime">
+                <img src="/graphics/others/artwork/2021/full_field_time.png">
+                <p>have you ever been to a sunny field? it's warm and bright and the breeze is calming. 10/10 would love to come back and visit again</p>
+            </div>
+            <div id="coveHill">
+                <img src="/graphics/others/artwork/2021/full_cove_hill.png">
+                <p>fields at night are lovely too. just like the game featured in this artwork ^^ (play <a href="https://gbpatch.itch.io/our-life">our life: beginnings and always</a>!)</p>
+            </div>
+            <div id="starTalk">
+                <img src="/graphics/others/artwork/2021/full_star_talk.png">
+                <p>star-themed squirrels. what's there to not love?</p>
+            </div>
+            <div id="holdHand">
+                <img src="/graphics/others/artwork/2021/full_hold_hand_gently.jpg">
+                <p><a>pablo</a> making the first move?! unheard of! and *gasp* pre-marital hand-holding?!?! /lh</p>
+            </div>
+            <div id="hugForYou">
+                <img src="/graphics/others/artwork/2021/full_a_hug_for_you.jpg">
+                <p><a>miko</a> may not show it at times, but he really does enjoy <a>bloo</a>'s hugs</p>
+            </div>
+            <div id="affectionTime">
+                <img src="/graphics/others/artwork/2021/full_affection_time.jpg">
+                <p>don't forget to hug your loved ones when you see them! (if you're comfortable with that, that is ^u^)</p>
+            </div>
+            <div id="sleepyHill">
+                <img src="/graphics/others/artwork/2021/full_sleepy_hill.png">
+                <p>honestly, this was just a random doodle (hence the bad crop) but i like it anyway ^^</p>
+            </div>
+            <div id="miitopiaMovie">
+                <img src="/graphics/others/artwork/2021/full_miitopia_movie.png">
+                <p>what if miitopia was a movie? wouldn't that be cool?</p>
+            </div>
+            <div id="fursonaComic">
+                <img src="/graphics/others/artwork/2021/full_fursona_comic.png">
+                <p>i don't know what is it about this comic but the last panel always cracks me up</p>
+            </div>
+            <div id="miiSquad">
+                <img src="/graphics/others/artwork/2021/full_mii_squad.png">
+                <p>shoutout to these five miis who helped me finish the tower of dread from miitopia</p>
+            </div>
+            <div id="fashionSense">
+                <img src="/graphics/others/artwork/2021/full_miko_fashion_sense.png">
+                <p>not really proud of this piece anymore, but anyway! i am once again begging for mixed popstar clothing in miitopia</p>
+            </div>
+            <div id="starsWelcome">
+                <img src="/graphics/others/artwork/2021/full_stars_welcome_him.png">
+                <p>oh to lie in a bed of dimly lit stars...</p>
+            </div>
+            <div id="fireflyHill">
+                <img src="/graphics/others/artwork/2021/full_firefly_hill.png">
+                <p>i've never seen fireflies in person but i imagine the experience would have been magical</p>
+            </div>
+            <div id="hangingOut">
+                <img src="/graphics/others/artwork/2021/full_hanging_out.png">
+                <p>they are probably watching one of those prank videos. probably...</p>
+            </div>
+            <div id="besideTheSea">
+                <img src="/graphics/others/artwork/2021/full_beside_the_sea.png">
+                <p>just two buddies hanging out near the sea!! :D</p>
+            </div>
+            <div id="dreamForever">
+                <img src="/graphics/others/artwork/2021/full_dream_forever.png">
+                <p>being in nature makes me feel a certain way. like you never wanna leave...</p>
+            </div>
+            <div id="corruptionIntense">
+                <img src="/graphics/others/artwork/2021/full_corruption_intensifies.png">
+                <p>uh oh. looks like <a>jay</a> isn't able to control their powers anymore...</p>
+            </div>
+            <div id="corruptionArc">
+                <img src="/graphics/others/artwork/2021/full_corruption_arc.png">
+                <p>yeah that's what happened basically. i'll touch on this in his character page soon :"></p>
+            </div>
         </div>
+
 
         <div class="main-div">
 
@@ -55,11 +130,11 @@
             <div style="max-width: 650px; text-align: justify; margin: 10px auto 20px auto;">
                 <p>
                     I experimented with a lot of different art programs this year. IIRC they were Paint Tool Sai 2, CSP, Blender, Medibang Paint, Colors3D, and Procreate.
-                    In the end, I got attached to Procreate (though to be honest, CSP has the most features overall). 
+                    In the end, I got attached to Procreate ^o^
                 </p>
                 <p>
-                    I really liked the life-like textures of the Procreate brushes, plus using Procreate meant that I could draw in secret without people sneaking up
-                    behind me to check my laptop screen ^_^ So, as you can see, I went all out ahaha.
+                    I really liked the life-like textures of the Procreate brushes, plus using Procreate meant that I could draw privately without people sneaking up
+                    behind me to check my laptop screen and bombard me with questions (this happens a lot) :"]
                 </p>
                 <p>
                     NOTE: Click on an image to view the full piece! They'll open up in the current window ^v^
@@ -69,7 +144,66 @@
             <hr class="rainbow-divider">
 
             <!-- actually gallery -->
-            <div class="gallery">
+            <div class="grid-art-gallery">
+                <!-- add more here -->
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_field_time.png" onclick='openModal("fieldTime")'></a>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_cove_hill.png" onclick='openModal("coveHill")'></a>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_star_talk.png" onclick='openModal("starTalk")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_hold_hand_gently.jpg" onclick='openModal("holdHand")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_a_hug_for_you.jpg" onclick='openModal("hugForYou")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_affection_time.jpg" onclick='openModal("affectionTime")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_sleepy_hill.png" onclick='openModal("sleepyHill")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_miitopia_movie.png" onclick='openModal("miitopiaMovie")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_fursona_comic.png" onclick='openModal("fursonaComic")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_mii_squad.png" onclick='openModal("miiSquad")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_miko_fashion_sense.png" onclick='openModal("fashionSense")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_stars_welcome_him.png" onclick='openModal("starsWelcome")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_firefly_hill.png" onclick='openModal("fireflyHill")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_hanging_out.png" onclick='openModal("hangingOut")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_beside_the_sea.png" onclick='openModal("besideTheSea")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_dream_forever.png" onclick='openModal("dreamForever")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_corruption_intensifies.png" onclick='openModal("corruptionIntense")'>
+                </div>
+                <div class="rainbow-border-2">
+                    <img src="/graphics/others/artwork/2021/thumbnail_corruption_arc.png" onclick='openModal("corruptionArc")'>
+                </div>
+            </div>
+
+            <!-- actually gallery -->
+            <div class="gallery" style="display:none;">
                 <!-- add more here -->
                 <a href="../../+graphics/+art/2021/full field_time.png" target="_blank"><img src="../../+graphics/+art/2021/thumbnail field_time.png"></a>
                 <a href="../../+graphics/+art/2021/full star_talk.png" target="_blank"><img src="../../+graphics/+art/2021/thumbnail star_talk.png"></a>

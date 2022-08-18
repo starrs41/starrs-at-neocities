@@ -6,4 +6,8 @@
 # ignore all oc wiki files for now
 *ocs/
 
+# ignore the automatically generated vs folder
 *.vs/
+
+# ignore desktop.ini
+desktop.ini

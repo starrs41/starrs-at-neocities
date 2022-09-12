@@ -314,8 +314,13 @@
     }
 
     .link-navigation ul {
-        margin: 0 0 0 -10px; /* gotta give space for left */
-        list-style-type: none;
+        margin-left: 10px; /* gotta give space for left */
+        list-style-image: url(/graphics/webgoodies/pixels/link_bullet.gif);
+        margin-bottom: 5px;
+    }
+
+    .link-navigation li::marker {
+        content: unset;
     }
 
     .link-navigation li {

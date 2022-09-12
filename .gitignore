@@ -11,3 +11,6 @@
 
 # ignore desktop.ini
 desktop.ini
+
+# ignore the custom py script i made for locally opening the website
+launch.py

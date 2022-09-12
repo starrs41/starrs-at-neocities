@@ -70,6 +70,11 @@
         margin: 0;
     }
 
+    b, i, strong, em {
+        font-weight: unset;
+        font-style: normal;
+    }
+
     ul {
         margin: 0;
     }
@@ -95,7 +100,18 @@
     }
 
     * {
+        /* past me, why did you do this. i'm so confused now. */
         box-sizing: border-box;
+    }
+
+    b, strong{
+        font-weight: 900;
+        color:#ff52d4;
+    }
+
+    i, em {
+        font-style: italic;
+        color: #8aceff;
     }
 
 /* --- setting up the formatting! (END) */
@@ -313,87 +329,173 @@
             background: #8c61cd;
         }
 
-    /* bullet points and ul */
+    /* bullet points and ul/ol */
 
-        ul li::before {
-            content: "\2605";
-            margin-right: 10px;
+        ul li::marker {
+            content: "\2605  ";
+            font-size: 1em;
         }
 
-        ul {
-            list-style-type: none;
-            list-style-position: inside;
-            padding-left: 10px;
+        ul, ol {
+            padding-left: 15px;
+        }
+
+        ul li, ol li {
+            padding-left: 5px;
         }
 
         li {
             margin-bottom: 3px;
         }
 
+        ol li::marker {
+            font-weight: 700;
+        }
+    
+
         /* manual bullet colors (because some lists won't cooperate) */
 
-            .li-1::before {
+            .li-1::marker {
                 color: #db1748;
             }
 
-            .li-2::before {
+            .li-2::marker {
                 color: #e8653d;
             }
 
-            .li-3::before {
+            .li-3::marker {
                 color: #e3aa40;
             }
 
-            .li-4::before {
+            .li-4::marker {
                 color: #24997C;
             }
 
-            .li-5::before {
+            .li-5::marker {
                 color: #4794D9;
             }
 
-            .li-6::before {
+            .li-6::marker {
                 color: #463acf;
             }
 
-            .li-7::before {
+            .li-7::marker {
                 color: #b0169c;
             }
 
         /* automated bullet colors */
 
-            .rainbow-list li:nth-child(7n + 1)::before {
+            .rainbow-list li:nth-child(7n + 1)::marker {
                 color: #db1748;
             }
 
-            .rainbow-list li:nth-child(7n + 2)::before {
+            .rainbow-list li:nth-child(7n + 2)::marker {
                 color: #e8653d;
             }
 
-            .rainbow-list li:nth-child(7n + 3)::before {
+            .rainbow-list li:nth-child(7n + 3)::marker {
                 color: #e3aa40;
             }
 
-            .rainbow-list li:nth-child(7n + 4)::before {
+            .rainbow-list li:nth-child(7n + 4)::marker {
                 color: #24997C;
             }
 
-            .rainbow-list li:nth-child(7n + 5)::before {
+            .rainbow-list li:nth-child(7n + 5)::marker {
                 color: #4794D9;
             }
 
-            .rainbow-list li:nth-child(7n + 6)::before {
+            .rainbow-list li:nth-child(7n + 6)::marker {
                 color: #463acf;
             }
 
-            .rainbow-list li:nth-child(7n + 7)::before {
+            .rainbow-list li:nth-child(7n + 7)::marker {
                 color: #b0169c;
             }
+
+        /* automated list because well. having them all be rainbows is fine actually */
+
+        li:nth-child(7n + 1)::marker {
+            color: #db1748;
+        }
+
+        li:nth-child(7n + 2)::marker {
+            color: #e8653d;
+        }
+
+        li:nth-child(7n + 3)::marker {
+            color: #e3aa40;
+        }
+
+        li:nth-child(7n + 4)::marker {
+            color: #24997C;
+        }
+
+        li:nth-child(7n + 5)::marker {
+            color: #4794D9;
+        }
+
+        li:nth-child(7n + 6)::marker {
+            color: #463acf;
+        }
+
+        li:nth-child(7n + 7)::marker {
+            color: #b0169c;
+        }
 
     /* cursor */
 
         html {
             cursor: url(/graphics/sitestuff/star_cursor.png), default;
+        }
+
+    /* code blocks */
+
+        pre {
+            height: fit-content;
+        }
+
+        pre code {
+            display: block;
+            overflow: auto;
+            /* reusing the rainbow-border code */
+            border: 2px solid transparent;
+            border-image: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1) 1;
+            padding: 5px 15px;
+            background: #12091b;
+            scrollbar-width: thin;
+        }
+
+    /* blockquotes */
+
+        blockquote {
+            text-align: justify;
+            padding: 2px 10px;
+            color: #ccaaff;
+            border-left: 2px solid transparent;
+            border-image: linear-gradient(to bottom, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1) 1;
+        }
+
+        blockquote p, blockquote figcaption {
+            margin: 10px;
+        }
+
+        blockquote p::before {
+            content: "\201C";
+            font-weight: bolder;
+        }
+
+        blockquote p::after {
+            content: "\201E";
+            font-weight: bolder;
+        }
+
+        blockquote figcaption {
+            text-align: right;
+        }
+
+        blockquote figcaption::before {
+            content: "\2014  ";
         }
     
 /* --- CUSTOM GLOBAL ELEMENTS (END) --- */

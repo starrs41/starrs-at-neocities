@@ -4,10 +4,7 @@
     the source for the code: https://melonking.net/scripts/frame-link.js
 */
 
-/*
-    only required for the main area of tiny space. put in <head> tag!
-*/
-
+// only required for the main area of tiny space. put in <head> tag!
 
 // load this section first before any other functions. required for iframe to work properly
 

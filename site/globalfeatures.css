@@ -87,6 +87,10 @@
 /* --- setting up the formatting! (START) --- */
 
     body {
+        overflow-x: hidden;
+    }
+
+    body {
         /* global font settings for document */
         font-family: var(--global-font);
         font-size: var(--global-font-size);
@@ -171,9 +175,17 @@
         border-radius: 5px;
     }
 
-    .update-date {
+    .update-date { /* reused code from blog-heading */
+        padding: 2px;
+        border-radius: 15px 15px 0 0;
+        margin: 10px auto;
+        font-weight: bold;
         text-align: center;
-        text-decoration: underline;
+        width: fit-content;
+        box-sizing: border-box;
+        color: #F8E4FF;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1) 1;
     }
 
     .box-needs-scrollbar {
@@ -604,7 +616,7 @@
             margin-bottom: 20px;
         }
 
-        .rainbow-header {
+        .rainbow-header { /* wait. this should be named rainbow-heading */
             padding: 2px;
             font-weight: bold;
             text-align: center;

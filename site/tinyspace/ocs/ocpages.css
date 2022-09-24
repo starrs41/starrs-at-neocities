@@ -73,3 +73,21 @@ button {
     background: none;
     color: unset;
 }
+
+.marquee-div {
+    height: 30px;
+    min-width: 50px;
+    width: 200px;
+    flex: 1;
+}
+
+@media
+    only screen and (max-width: 480px) {
+        .marquee-div {
+            width: 100% !important;
+        }
+
+        .song-container {
+            width: 100% !important;
+        }
+    }

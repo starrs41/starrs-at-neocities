@@ -3,6 +3,9 @@
 *.txt
 *.lnk
 
+# ...except colors.txt because i need that
+!colors.txt
+
 # ignore all oc wiki files for now
 *ocs/
 

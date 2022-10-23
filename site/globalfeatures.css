@@ -570,10 +570,12 @@
             justify-items: center;
         }
 
+        /*
         .grid-gallery img:hover {
             transform: scale(1.05);
             transition: all 0.5s;
         }
+        */
 
     /* text wave, used for link pages */
 

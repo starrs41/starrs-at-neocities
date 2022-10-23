@@ -32,11 +32,6 @@
                 content: none;
             }
 
-            .grid-container img:hover {
-                transform: scale(1.05);
-                transition: all 0.5s;
-            }
-
             .gallery {
                 justify-content: center;
                 align-content: flex-start;
@@ -45,9 +40,27 @@
             .gallery img {
                 width: 150px;
                 height: auto;
+                image-rendering: crisp-edges;
             }
 
-            /* oh wow grid is so much better than flexbox when it comes to things like these */
+            a > img:hover {
+                transform: scale(0.98);
+                opacity: 0.7;
+                transition: all 0.5s;
+            }
+
+            .other-blinkies {
+                display: flex;
+                margin: 30px 0;
+                padding: 0 10px;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .other-blinkies img {
+                flex: auto;
+                image-rendering: crisp-edges;
+            }
         </style>
     </head>
     
@@ -69,11 +82,8 @@
                 <!-- opening statement-->
                 <div style="max-width: 650px; text-align: justify; margin: 10px auto 20px auto;">
                     <p>
-                        I tried my best to link the blinkie's original creator. If there's none linked, I probably don't remember or can't find its creator at all.
-                    </p>
-                    <p>
-                        I recommend visting the links the blinkies are from. You'll find a lot more interesting blinkies there! (If the link is 
-                        from Internet Archive, be careful looking through the other links there though. Not to scare you, but some could be infected. T_T)
+                        Welcome to the blinkie collection! Some blinkies here have their creators' websites linked
+                        (which you can visit by clicking on the blinkie itself). I really recommend visiting them! :D
                     </p>
                     <p>
                         More sites where you can find (or make your own) blinkies:
@@ -84,7 +94,10 @@
                         <li class="li-3"><a href="https://blinki.es/">blinki.es</a></li>
                         <li class="li-4"><a href="https://www.deviantart.com/coffee-branches/gallery/79129377/b-l-i-n-k-i-e-s">Coffee-Branches on DeviantArt</a></li>
                     </ul>
-                    <p>Also, did you know there were a few blinkie webrings back then? Here are some I found while websurfing >:D</p>
+                    <p>
+                        Also, did you know there were a few blinkie webrings back then? Here are some I found while websurfing ^^
+                        (Note that some websites may contain dangerous malware, while some aren't archived. Proceed with caution!)
+                    </p>
                     <ul>
                         <li class="li-1"><a href="https://web.archive.org/web/20091111185139/http://www.ringsurf.com/ring/blinkies/">I Love Blinkies on RingSurf</a></li>
                         <li class="li-2"><a href="https://web.archive.org/web/20091111210231/http://www.ringsurf.com/ring/blinkieaddicts/">Blinkie Addicts on RingSurf</a></li>
@@ -134,7 +147,6 @@
                     <img src="/graphics/webgoodies/blinkies//let_your_true_colors_shine_through.gif">
                     <img src="/graphics/webgoodies/blinkies/lost_my_marbles.gif">
                     <img src="/graphics/webgoodies/blinkies/my_god_im_so_lazy.gif">
-                    <img src="/graphics/webgoodies/blinkies/never_judge_a_book_by_its_movie.gif">
                     <img src="/graphics/webgoodies/blinkies/nintendo_ds_lover.gif">
                     <img src="/graphics/webgoodies/blinkies/nocturnal.gif">
                     <img src="/graphics/webgoodies/blinkies/over_the_rainbow.gif">
@@ -182,19 +194,62 @@
                     <img src="/graphics/webgoodies/blinkies/i_love_my_ipod.gif">
                     <img src="/graphics/webgoodies/blinkies/i_love_my_online_friends.gif">
                     <img src="/graphics/webgoodies/blinkies/best_online_buddies.gif">
-                    <img src="/graphics/webgoodies/blinkies/a_true_friend.gif">
                     <img src="/graphics/webgoodies/blinkies/mai_favorite_color_is_rainbow.gif">
                     <img src="/graphics/webgoodies/blinkies/star_gazer.gif">
                     <img src="/graphics/webgoodies/blinkies/be_original_be_yourself.gif">
+                    <img src="/graphics/webgoodies/blinkies/are_we_alone.gif">
+                    <img src="/graphics/webgoodies/blinkies/april_fools_broken_blinkie.gif">
+                    <img src="/graphics/webgoodies/blinkies/bat_in_the_moon.gif">
+                    <img src="/graphics/webgoodies/blinkies/beep_bop.gif">
+                    <img src="/graphics/webgoodies/blinkies/blinkies_rule.gif">
+                    <img src="/graphics/webgoodies/blinkies/cool_shades_emoji.gif">
+                    <img src="/graphics/webgoodies/blinkies/bookworm2.gif">
+                    <img src="/graphics/webgoodies/blinkies/dont_worry_be_happy.gif">
+                    <img src="/graphics/webgoodies/blinkies/forget_milk_got_lasagna.gif">
+                    <img src="/graphics/webgoodies/blinkies/dont_like_it.gif">
+                    <img src="/graphics/webgoodies/blinkies/every_life_should_have_nine_cats.gif">
+                    <img src="/graphics/webgoodies/blinkies/feeling_froggy.gif">
+                    <img src="/graphics/webgoodies/blinkies/get_blinkied.gif">
+                    <img src="/graphics/webgoodies/blinkies/gotta_go_fast.gif">
+                    <img src="/graphics/webgoodies/blinkies/lets_ddr.gif">
+                    <img src="/graphics/webgoodies/blinkies/the_truth_is_out_there_black.gif">
+                    <img src="/graphics/webgoodies/blinkies/what_color_sky.gif">
+                    <img src="/graphics/webgoodies/blinkies/ice_cream_makes_it_all_better.gif">
+                    <img src="/graphics/webgoodies/blinkies/i_love_my_dog.gif">
+                    <img src="/graphics/webgoodies/blinkies/blinkie_madness.gif">
+                    <img src="/graphics/webgoodies/blinkies/do_i_bug_you.gif">
+                    <img src="/graphics/webgoodies/blinkies/have_a_great_summer.gif">
+                    <img src="/graphics/webgoodies/blinkies/i_like_madness.gif">
+                    <img src="/graphics/webgoodies/blinkies/i_block_ads.gif">
+                    <img src="/graphics/webgoodies/blinkies/cats_know_the_sunny_spots.gif">
+                    <img src="/graphics/webgoodies/blinkies/give_away_a_smile.gif">
+                    <img src="/graphics/webgoodies/blinkies/friends_in_all_colors.gif">
+                    <img src="/graphics/webgoodies/blinkies/have_a_day.gif">
+                    <img src="/graphics/webgoodies/blinkies/i_heart_blinkies.gif">
+                    <img src="/graphics/webgoodies/blinkies/h2o_drinker.gif">
+                    <img src="/graphics/webgoodies/blinkies/i_miss_winter.gif">
+                    <img src="/graphics/webgoodies/blinkies/i_love_the_music.gif">
+                    <img src="/graphics/webgoodies/blinkies/i_need_some_sleep.gif">
+                    <img src="/graphics/webgoodies/blinkies/lazy_days_of_summer.gif">
+                    <img src="/graphics/webgoodies/blinkies/its_your_turn_to_shine.gif">
+                    <img src="/graphics/webgoodies/blinkies/night_night.gif">
+                    <img src="/graphics/webgoodies/blinkies/nyan_cat.gif">
+                    <img src="/graphics/webgoodies/blinkies/oh_mah_gerd_rainbows.gif">
+                    <img src="/graphics/webgoodies/blinkies/perish.gif">
+                    <img src="/graphics/webgoodies/blinkies/this_snail_is_gay.gif">
+                    <img src="/graphics/webgoodies/blinkies/aquarium_junkie.gif">
+                    <img src="/graphics/webgoodies/blinkies/be_kind_rewind.gif">
+                    <img src="/graphics/webgoodies/blinkies/every_life_should_have_nine_cats.gif">
                     
                 </div>
 
-                <div style="display: flex; margin: 30px 0; flex-wrap: wrap;">
+                <div class="other-blinkies">
                     <img src="/graphics/webgoodies/blinkies/home_is_where.gif">
+                    <img src="/graphics/webgoodies/blinkies/iheartmyputer.gif">
+                    <img src="/graphics/webgoodies/blinkies/mayallyourdreamscometrue.gif">
+                    
                 </div>
             </div>
-
-            <p style="margin: 20px 0;">By the way, someone on Geocities referred to their collection as "blinkie linkies" and now it's stuck in my head. So I hope you enjoyed these blinkies linkies! :]</p>
 
             <div style="width: fit-content; margin: 20px auto auto auto; font-size: 65%;">
                 <a target="_self" onclick=window.scroll(0,0);>Back to top?</a> // 

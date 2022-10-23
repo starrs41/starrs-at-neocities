@@ -221,9 +221,8 @@ h2 {
     /* blog elements. basically just some minor tweaks... oof */
 
         .blog-heading { /* yes it just uses the exact same appearance as the rainbow-header. sorry i'm lazy :P */
-            padding: 5px;
+            padding: 5px 2px 2px 2px;
             border-radius: 15px 15px 0 0;
-            margin: 10px auto;
             font-weight: bold;
             text-align: center;
             width: fit-content;
@@ -233,14 +232,6 @@ h2 {
             margin-bottom: 15px;
             border-bottom: 2px solid transparent;
             border-image: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1) 1;
-        }
-
-        .blog-heading::before, .blog-heading::after {
-            font-family: "FA-Solid";
-            font-weight: 700;
-            font-size: 0.8em;
-            content: "\f005";
-            margin: 0 8px;
         }
 
         @media

@@ -231,18 +231,8 @@ h2 {
             margin-top: 45px;
             margin-bottom: 15px;
             border-bottom: 2px solid transparent;
-            border-image: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1) 1;
+            border-image: linear-gradient(to right, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1) 1;
         }
-
-        @media
-        only screen and (max-width: 380px) {
-
-            .blog-heading::before, .blog-heading::after {
-                content: none;
-            }
-            
-        }
-
 
         /* similar structure as the modal */
 
@@ -277,5 +267,37 @@ h2 {
             }
             
         }
+
+        /* grid for when i'm sharing resources */
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: repeat(auto-fill, 1fr);
+            padding: 0 10px;
+            gap: 25px;
+            justify-items: center;
+        }
+
+        .resources-grid > dt {
+            display: flex;
+            justify-items: center;
+        }
+
+        .resources-grid img {
+            max-width: 90%;
+            height: auto;
+            margin: auto;
+        }
+
+        @media
+                only screen and (max-width: 380px) {
+
+                .resources-grid {
+                    grid-template-columns: 1fr;
+                    justify-items: center;
+                }
+                
+            }
 
 /* --- custom elements (END) --- */

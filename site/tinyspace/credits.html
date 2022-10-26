@@ -56,6 +56,30 @@
                 font-weight: bold;
                 font-size: 18px;
             }
+
+            .resources-grid {
+                display: grid;
+                grid-template-columns: 200px 1fr;
+                grid-template-rows: repeat(auto-fill, 1fr);
+                padding: 0 10px;
+                gap: 25px;
+                justify-items: center;
+            }
+
+            .resources-grid > dt {
+                display: flex;
+                justify-items: center;
+            }
+
+            .resources-grid img {
+                max-width: 90%;
+                height: auto;
+                margin: auto;
+            }
+
+            dd {
+                margin: 0;
+            }
             
             @media
                 only screen and (max-width: 380px) {
@@ -66,6 +90,11 @@
 
                 .with-img {
                     padding: 7px;
+                }
+
+                .resources-grid {
+                    grid-template-columns: 1fr;
+                    justify-items: center;
                 }
             
         }
@@ -91,12 +120,11 @@
                 </div>
 
                 <!-- opening statement -->
-                <div style="display: flex;">
-                    <div style="text-align:justify;">
-                        <p style="margin-bottom: 0;">
-                            Here are some of the stuff I used to make the website! Others not listed here can be found in the <a href="/tinyspace/resources.html" target="_self">resources</a> page.
-                            Everything else used on the website that are not listed anywhere were made by me! (Like the header cloud, for example.)
-                    </div>
+                <div style="text-align: justify;">
+                    <p style="margin-bottom: 0;">
+                        Here are some of the stuff I used to make the website! Others not listed here can be found in the <a href="/tinyspace/resources.html" target="_self">resources</a> page.
+                        Everything else used on the website that are not listed anywhere were made by me! (Like the header cloud, for example.)
+                    </p>
                 </div>
             </div>
 
@@ -107,100 +135,76 @@
                 <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><!-- label/button -->
                     <div class="rainbow-header" style="margin: 0px 0px 20px 0px; font-size: 150%;">Graphics</div>
                 </div>
-                <table>
-                    <tr>
-                        <th><span class="table-header">Item</span></th>
-                        <th><span class="table-header">Source</span></th>
-                    </tr>
-                    <tr>
-                        <!-- 1st bg image -->
-                        <td class="with-img">
-                            <img src="/graphics/sitestuff/space_bg_1.gif" title="a tiled background of space with a purple hue">
-                        </td>
-                        <td><p>
-                            the background image used for <b>tiny space</b>. taken from <a href="https://sadgrl.online/webmastery/downloads/tiledbgs.html" target="_blank">sadness' collection of
-                            tiled backgrounds</a>. <i>animation slightly modified by me.</i>
-                        </p></td>
-                    </tr>
-                    <tr>
-                        <!-- 2nd bg image -->
-                        <td class="with-img">
-                            <img src="/graphics/sitestuff/space_bg_2.gif" title="a tiled background of space with a purple hue">
-                        </td>
-                        <td><p>
-                            the background image used for <b>deep space</b>, the <b>guestbook</b>, and pages in tiny space that are <b>out of the iframe</b>. 
-                            taken from this <a href="https://www.tumblr.com/blog/view/heartsnmagic/684235243546427392?source=share" target="_blank">tumblr post</a> 
-                            posted by <a href="https://heartsnmagic.tumblr.com" target="_blank">@heartsnmagic</a>. <i>size, animation, and appearance slightly modified by me.</i>
-                        </p></td>
-                    </tr>
-                    <tr>
-                        <!-- 3rd bg image -->
-                        <td class="with-img">
-                            <img src="/graphics/sitestuff/space_bg_3.gif" title="a tiled background of space with a purple hue">
-                        </td>
-                        <td><p>
-                            the background image used during <b>space travel</b>. taken from <a href="https://sadgrl.online/webmastery/downloads/tiledbgs.html" target="_blank">sadness' collection of
-                            tiled backgrounds</a>.
-                        </p></td>
-                    </tr>
-                    <tr>
-                        <!-- cursor -->
-                        <td class="width-img">
-                            <div style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: space-around; align-items: center;">
-                                <img src="/graphics/sitestuff/star_cursor.png" style="width: initial; height:auto;">
-                                <img src="/graphics/sitestuff/star_cursor_click.png" style="width: initial; height:auto;">
-                            </div>
-                        </td>
-                        <td><p>
-                            the <b>cursor</b> used for the website. taken from <a href="https://dokodemo.neocities.org/materials/cursors.html">dokodemo's collection of cursors</a>. <i>appearance slightly modified by me.</i>
-                        </p></td>
-                    </tr>
-                    <tr>
-                        <!-- divider -->
-                        <td class="with-img">
-                            <img src="/graphics/sitestuff/tinyspace/rainbow_stars_divider.gif">
-                        </td>
-                        <td><p>
-                            the <b>divider</b> commonly seen around tiny space. found through <a href="https://gifcities.org/?q=star">gifcities</a> from this <a href="https://web.archive.org/web/20091027081800/http://hk.geocities.com/meelin292002/miriam.htm">geocities website archive</a>. <i>appearance slightly modified by me.</i>
-                        </p></td>
-                    </tr>
-                    <tr>
-                        <!-- favicon -->
-                        <td class="with-img">
-                            <img src="/graphics/sitestuff/star_favicon.gif" style="width: initial; height: auto;">
-                        </td>
-                        <td><p>
-                            the <b>favicon</b> used for the site. found through <a href="https://gifcities.org/?q=star">gifcities</a> from this <a href="https://web.archive.org/web/20090805232950/http://geocities.com/amiel_ga_roldan/paintings1.html">geocities website archive</a>.
-                        </p></td>
-                    </tr>
-                    <tr>
-                        <!-- new icon -->
-                        <td class="with-img">
-                            <img src="/graphics/sitestuff/tinyspace/new.gif" style="width: initial; height: auto;">
-                        </td>
-                        <td><p>
-                            the <b>"new" icon</b> seen on the home page of tiny space. found through <a href="https://gifcities.org/?q=new">gifcities</a> from this <a href="https://web.archive.org/web/20090806114908/http://geocities.com/binaryan/russell.htm">geocities website archive</a>.
-                        </p></td>
-                    </tr>
-                    <tr>
-                        <!-- back button -->
-                        <td class="with-img">
-                            <img src="/graphics/sitestuff/back.gif" style="width: initial; height: auto;">
-                        </td>
-                        <td><p>
-                            the <b>back button</b> seen in certain pages around tiny space. found through <a href="https://gifcities.org/?q=back">gifcities</a> from this <a href="https://web.archive.org/web/20090730100317/http://geocities.com/Athens/Parthenon/8565/Film/inherit.html">geocities website archive</a>. <i>appearance slightly modified by me.</i>
-                        </p></td>
-                    </tr>
-                    <tr>
-                        <!-- vortex -->
-                        <td class="with-img">
-                            <img src="/graphics/sitestuff/tinyspace/vortex.gif" style="width: initial; height: auto;">
-                        </td>
-                        <td><p>
-                            the <b>vortex</b> to deep space that can be found at the home page for tiny space. found through <a href="https://gifcities.org/?q=vortex">gifcities</a> from this <a href="https://web.archive.org/web/20090829024808/http://geocities.com/operaoptions/pastsfo.html">geocities website archive</a>. <i>appearance slightly modified by me.</i>
-                        </p></td>
-                    </tr>
-                </table>
+
+                <dl class="resources-grid">
+                    <!-- bg 1 -->
+                    <dt>
+                        <img src="/graphics/sitestuff/space_bg_1.gif" title="a tiled background of space with a purple hue">
+                    </dt>
+                    <dd>
+                        the background image used for <b>tiny space</b>. taken from <a href="https://sadgrl.online/webmastery/downloads/tiledbgs.html" target="_blank">sadness' collection of
+                        tiled backgrounds</a>. <i>animation slightly modified by me.</i>
+                    </dd>
+                    <!-- bg 2 -->
+                    <dt>
+                        <img src="/graphics/sitestuff/space_bg_2.gif" title="a tiled background of space with a purple hue">
+                    </dt>
+                    <dd>
+                        the background image used during <b>space travel</b>. taken from <a href="https://sadgrl.online/webmastery/downloads/tiledbgs.html" target="_blank">sadness' collection of
+                        tiled backgrounds</a>.
+                    </dd>
+                    <!-- bg 3 -->
+                    <dt>
+                        <img src="/graphics/sitestuff/space_bg_3.gif" title="a tiled background of space with a purple hue">
+                    </dt>
+                    <dd>
+                        the background image used during <b>space travel</b>. taken from <a href="https://sadgrl.online/webmastery/downloads/tiledbgs.html" target="_blank">sadness' collection of
+                        tiled backgrounds</a>.
+                    </dd>
+                    <!-- cursor -->
+                    <dt style="display: flex; flex-wrap: wrap; gap: 5px; justify-content: space-around; align-items: center;">
+                        <img src="/graphics/sitestuff/star_cursor.png" style="width: initial; height:auto;">
+                        <img src="/graphics/sitestuff/star_cursor_click.png" style="width: initial; height:auto;">
+                    </dt>
+                    <dd>
+                        the <b>cursor</b> used for the website. taken from <a href="https://dokodemo.neocities.org/materials/cursors.html">dokodemo's collection of cursors</a>. <i>appearance slightly modified by me.</i>
+                    </dd>
+                    <!-- divider -->
+                    <dt>
+                        <img src="/graphics/sitestuff/tinyspace/rainbow_stars_divider.gif">
+                    </dt>
+                    <dd>
+                        the <b>divider</b> commonly seen around tiny space. found through <a href="https://gifcities.org/?q=star">gifcities</a> from this <a href="https://web.archive.org/web/20091027081800/http://hk.geocities.com/meelin292002/miriam.htm">geocities website archive</a>. <i>appearance slightly modified by me.</i>
+                    </dd>
+                    <!-- favicon -->
+                    <dt>
+                        <img src="/graphics/sitestuff/star_favicon.gif" style="width: initial; height: auto;">
+                    </dt>
+                    <dd>
+                        the <b>favicon</b> used for the site. found through <a href="https://gifcities.org/?q=star">gifcities</a> from this <a href="https://web.archive.org/web/20090805232950/http://geocities.com/amiel_ga_roldan/paintings1.html">geocities website archive</a>.
+                    </dd>
+                    <!-- "new" icon -->
+                    <dt>
+                        <img src="/graphics/sitestuff/tinyspace/new.gif" style="width: initial; height: auto;">
+                    </dt>
+                    <dd>
+                        the <b>"new" icon</b> seen on the home page of tiny space. found through <a href="https://gifcities.org/?q=new">gifcities</a> from this <a href="https://web.archive.org/web/20090806114908/http://geocities.com/binaryan/russell.htm">geocities website archive</a>.
+                    </dd>
+                    <!-- back button -->
+                    <dt>
+                        <img src="/graphics/sitestuff/back.gif" style="width: initial; height: auto;">
+                    </dt>
+                    <dd>
+                        the <b>back button</b> seen in certain pages around tiny space. found through <a href="https://gifcities.org/?q=back">gifcities</a> from this <a href="https://web.archive.org/web/20090730100317/http://geocities.com/Athens/Parthenon/8565/Film/inherit.html">geocities website archive</a>. <i>appearance slightly modified by me.</i>
+                    </dd>
+                    <!-- vortex -->
+                    <dt>
+                        <img src="/graphics/sitestuff/tinyspace/vortex.gif" style="width: initial; height: auto;">
+                    </dt>
+                    <dd>
+                        the <b>vortex</b> to deep space that can be found at the home page for tiny space. found through <a href="https://gifcities.org/?q=vortex">gifcities</a> from this <a href="https://web.archive.org/web/20090829024808/http://geocities.com/operaoptions/pastsfo.html">geocities website archive</a>. <i>appearance slightly modified by me.</i>
+                    </dd>
+                </dl>
             </div>
             
             <hr class="dashed-divider">
@@ -210,24 +214,19 @@
                 <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><!-- label/button -->
                     <div class="rainbow-header" style="margin: 0px 0px 10px 0px; font-size: 150%;">Code</div>
                 </div>
-                <p style="margin: 10px 0 15px 0; text-align: center;">
+                <p style="margin: 10px 0 15px 0; text-align: justify;">
                     The code I took inpiration from to run some of the features on this website! If something you want to know about isn't here, <a href="mailto:starrsexplorestheweb@gmail.com">email</a> me! It's probably 
                     just messy code I put together :")
                 </p>
-                <table>
-                    <tr>
-                        <th><span class="table-header">Item</span></th>
-                        <th><span class="table-header">Source</span></th>
-                    </tr>
-                    <tr>
-                        <td><p>
-                            <a href="https://melonking.net/scripts/frame-link.js">iframe links</a>
-                        </p></td>
-                        <td><p>
-                            made by <a href="https://forum.melonland.net/index.php?action=profile;u=1">melooon</a> and taken from this <a href="https://forum.melonking.net/index.php?topic=115.0">melonland forum post</a>
-                        </p></td>
-                    </tr>
-                </table>
+
+                <dl class="resources-grid">
+                    <dt>
+                        <a href="https://melonking.net/scripts/frame-link.js">iframe links</a>
+                    </dt>
+                    <dd>
+                        made by <a href="https://forum.melonland.net/index.php?action=profile;u=1">melooon</a> and taken from this <a href="https://forum.melonking.net/index.php?topic=115.0">melonland forum post</a>
+                    </dd>
+                </dl>
             </div>
 
             <div style="width: fit-content; margin: 20px auto auto auto; font-size: 65%;">

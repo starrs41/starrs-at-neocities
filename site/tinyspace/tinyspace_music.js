@@ -16,6 +16,8 @@ var musicButton;
 var subMusicButton;
 
 // FOR THE MUSIC PLAYER INSIDE THE IFRAME
+// well apparently i don't need this anymore :skull:
+// still leaving this here though
 
 function subIsPlaying () {
     subMusic = document.getElementById("subMusicPlayer");
@@ -62,7 +64,7 @@ function playSubMusic () {
 
 // FOR THE MUSIC PLAYER OUTSIDE THE IFRAME
 
-function mainIsPlaying () {
+function mainIsPlaying () { // why did i name it like this. returns true if music is playing, otherwise returns false
     mainMusic = document.getElementById("musicPlayer");
     return(!mainMusic.paused);
 }
@@ -107,7 +109,3 @@ function playMainMusic () {
         }
     }
 }
-
-
-
-/* sorry nested functions are probably bad but couldn't think of a simpler way to do it T_T */

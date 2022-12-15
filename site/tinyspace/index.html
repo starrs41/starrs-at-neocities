@@ -24,6 +24,82 @@
                 background-attachment: fixed;
                 background-color:#0e0d10;
             }
+
+            /* widgets */
+
+            /* yesterweb webring */
+            .yw-widget-mini {
+                border: 2px solid #E4CAED;
+                background-image: url(/graphics/sitestuff/space_bg_3.gif);
+                height: 70px !important;
+                margin: 0 !important;
+                padding: 10px !important;
+                width: 200px;
+            }
+
+            .yw-widget-mini .yw-content {
+                height: fit-content;
+                margin: 0 !important;
+            }
+
+            .yw-widget-mini .yw-title {
+                color: transparent !important;
+                background-image: linear-gradient(to right, rgb(255, 54, 104), rgb(255, 132, 95), rgb(255, 210, 126),rgb(93, 255, 185), rgb(105, 185, 255), rgb(109, 96, 255), rgb(218, 85, 255));
+                background-clip: text;
+                font-size: 12px !important;
+            }
+
+            .yw-widget-mini .yw-link {
+                color: #a468ff !important;
+                font-size: 10px !important;
+            }
+
+            /* retro gaming webring */
+            :root {
+                /* background! */
+                --w9p1h3-background-image: url("/graphics/sitestuff/tinyspace/retro_gaming.jpg") !important;
+                --w9p1h3-background-size:cover !important;
+                --w9p1h3-background-color: #bc31d1 !important;
+                --w9p1h3-background-size: cover !important;
+                --w9p1h3-border: 2px solid #E4CAED !important;
+                --w9p1h3-border-radius: 2px !important;
+                
+                /* sizing */
+                --w9p1h3-width:200px !important;
+                --w9p1h3-height:80px !important;
+                --w9p1h3-padding:8px !important;
+                
+
+                /* title! */
+                --w9p1h3-title-font:'Arial' !important;
+                --w9p1h3-title-color:#ff52d4 !important;
+                --w9p1h3-title-size:30px !important;
+                --w9p1h3-title-align:center !important;
+                --w9p1h3-title-margin: 0 !important;
+                
+                /* line height & letter spacing */
+                --w9p1h3-title-height:1em !important;
+                --w9p1h3-title-spacing:0.5px !important;
+                --w9p1h3-title-weight:bold !important;
+
+
+                /* text! */
+                --w9p1h3-text-family:sans-serif !important;
+                --w9p1h3-text-color:#E4CAED !important;
+                --w9p1h3-text-size:12px !important;
+                --w9p1h3-text-align:center !important;
+                --w9p1h3-text-spacing:0 !important;
+                --w9p1h3-text-height:1em !important;
+                --w9p1h3-text-margin: 5px 0 !important;
+
+                /* links! */
+                --w9p1h3-link-family:sans-serif !important;
+                --w9p1h3-link-color:#8aceff !important;
+                --w9p1h3-link-decoration:none !important;
+                --w9p1h3-link-weight:bold !important;
+                --w9p1h3-link-size:10px !important;
+            }
+           
         </style>
 
         <!-- needs to be at head because of iframe script -->
@@ -198,10 +274,12 @@
                     </div>
 
                     <!-- third box -->
-                    <div class="right-third-box">
+                    <div class="right-third-box box-content main-box-style">
+                        <h3 class="rainbow-header">Webrings</h3>
+                        <p style="margin:2px; text-align:center;">*collects webrings like pokemon cards*</p>
                         <!-- yesterweb widget start -->
-                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; font-size: 11px;">
-                            <div class="rainbow-border" style="text-align: center; padding: 8px; width: 100%; background-color: #241C2D;">
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; font-size: 11px; display: none;">
+                            <div class="rainbow-border" style="text-align: center; padding: 8px; width: 100%; background-color: #241C2D; background: url('/graphics/sitestuff/space_bg_3.gif');">
                                 <div style="text-decoration: wavy;">
                                     Explore the  <a href="https://yesterweb.org/webring/" target="_top" class="webring-title rainbow-text">Yesterweb</a> Webring!
                                 </div>
@@ -212,7 +290,16 @@
                                 </div>
                             </div>                    
                         </div>
-                        <!-- yesterweb widget end -->  
+                        <!-- yesterweb widget end -->
+
+                        <!-- yesterweb webring -->
+                        <div class="yw-widget-mini" data-yw-url="https://starrs.neocities.org/"></div>
+                        <script src="https://yesterweb.org/js/widget.js"></script>
+                        
+                        <!-- retro gaming webring -->
+                        <script src="https://nippoverse.xyz/retroring/webring.js"></script><ring-063 site="https://starrs.neocities.org/"></ring-063>
+
+                        <!-- 
                         <div style="display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); grid-template-rows: repeat(auto-fit, minmax(25px, 1fr)); justify-items: center;">
                             <img src="/graphics/webgoodies/blinkies/artist.gif" style="image-rendering: pixelated; height: 25px;">
                             <img src="/graphics/webgoodies/blinkies/alone_but_not_lonely.gif" style="image-rendering: pixelated; height: 25px;">
@@ -221,6 +308,7 @@
                             <img src="/graphics/webgoodies/blinkies/let_your_true_colors_shine_through.gif" style="image-rendering: pixelated; height: 25px;">
                             <img src="/graphics/webgoodies/blinkies/twinkle_twinkle_dark.gif" style="image-rendering: pixelated; height: 25px;">
                         </div>
+                        -->
                     </div>
                 </aside>
                 
@@ -229,7 +317,15 @@
             <!-- content container END :( -->
 
 
-
+            <!-- blinkies!!! -->
+            <div class="footer-graphics">
+                <img src="/graphics/webgoodies/blinkies/artist.gif">
+                <img src="/graphics/webgoodies/blinkies/alone_but_not_lonely.gif">
+                <img src="/graphics/webgoodies/blinkies/go_stupid.gif">
+                <img src="/graphics/webgoodies/blinkies/help_im_online.gif">
+                <img src="/graphics/webgoodies/blinkies/let_your_true_colors_shine_through.gif">
+                <img src="/graphics/webgoodies/blinkies/twinkle_twinkle_dark.gif">
+            </div>
 
 
             <!-- footer START!!! -->

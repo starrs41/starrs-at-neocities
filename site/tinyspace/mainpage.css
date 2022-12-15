@@ -1,10 +1,12 @@
+
 /*
-    the css for the main index page (the one that visitors first stumble upon)
-    also the css for properties shared by all pages 
+    the css for the main index page of tiny space
+    (the one that visitors first stumble upon)
 */
 
 
-/* --- MISC VARIABLES (START) --- */
+
+/* --- MISC VARIABLES --- */
 
 :root {
     /* height of content container */
@@ -22,64 +24,37 @@
     --global-font-color: #E4CAED;
     --global-font-size: 14px;
 }
-       
-/* --- MISC VARIABLES (END) --- */
+
+
+
+/* --- OTHER FEATURES --- */
+
+    /* status cafe */
+
+        #statuscafe {
+            padding: 5px 10px 10px 10px;
+        }
+
+        #statuscafe-username {
+            margin-bottom: 5px;
+            text-align: center;
+            color: #ccaaff;
+        }
+
+        #statuscafe-username a:hover {
+            color: transparent;
+        }
+
+        #statuscafe-content {
+        margin: 5px 5px 5px 5px;
+        }
 
 
 
 
-/* --- OTHER FEATURES (START) --- */
-
-/* status cafe */
-
-    #statuscafe {
-        padding: 5px 10px 10px 10px;
-    }
-
-    #statuscafe-username { /* going to add a "current status" label to the status cafe part for less confusion */
-        margin-bottom: 5px;
-        text-align: center;
-        color: #ccaaff;
-    }
-
-    #statuscafe-username a:hover {
-        color: transparent;
-    }
-
-    #statuscafe-content { /* the content goes out of the box when on mobile. gotta fix that... */
-    margin: 5px 5px 5px 5px;
-    }
-
-
-/* --- OTHER FEATURES (END) --- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* loading screen */
+/* LOADING SCREEN
+   (ok this one is gone now, and
+   not sure if it'll come back) */
 
     #preload {
         position: fixed;
@@ -94,7 +69,7 @@
 
 
 
-/* centering devices */
+/* css that centers the site box */
 
     .actual-site {
         display: table;
@@ -111,7 +86,11 @@
         vertical-align: middle;
     }
 
-/* main container (contains all boxes, used for spacing) */
+
+
+/* MAIN CONTAINER
+   (contains all boxes,
+   used for spacing) */
 
     .main-container {
         max-width: 1100px; /* width of content (how much space it takes up) */
@@ -122,111 +101,106 @@
 
 
 
-/* --- HEADER CONTENT (START) --- */
+/* --- HEADER CONTENT --- */
 
-/* main container */
+    /* header container */
 
-    .header-container {
-        position: relative;
-        height: 155px;
-        margin-bottom: var(--box-spacing);
-    }
+        .header-container {
+            position: relative;
+            height: 155px;
+            margin-bottom: var(--box-spacing);
+        }
 
-/* marquee */
+    /* marquee */
 
-    .opening-marquee {
-        border: 3px solid #8343e3;
-        position: absolute;
-        z-index: -1;
-        right: 0;
-        bottom: 0;
-        height: 75px;
-        max-width: 70%;
-    }
+        .opening-marquee {
+            border: 3px solid #8343e3;
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            height: 75px;
+            max-width: 70%;
+        }
 
-    .opening-marquee::before {
-        position: absolute;
-        z-index: 2;
-        left: 0;
-        top: 0;
-        height: 75px;
-        width: 400px;
-        background: linear-gradient(to right, #9d60f8 5%, rgba(255, 255, 255, 0) 100%);
-        content: "";  
-    }
+        .opening-marquee::before {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            height: 75px;
+            width: 400px;
+            background: linear-gradient(to right, #9d60f8 5%, rgba(255, 255, 255, 0) 100%);
+            content: "";  
+        }
 
-/* cloud */
+    /* cloud */
 
-    .status-cloud {
-        z-index: 2;
-    }
+        .status-cloud {
+            z-index: 2;
+        }
 
-    .status-cloud img {
-        width: auto;
-        height: 155px;
-        -webkit-filter: drop-shadow(10px 0 7px rgba(42, 0, 59, 0.5));
-        filter: drop-shadow(10px 0 7px rgba(42, 0, 59, 0.5));
-    }
-
-
-/* status text */
-
-    .status-positioning {
-        position: absolute;
-        bottom: 0;
-    }
-
-    #statuscafe {
-        z-index: 2;
-        padding: 0;
-        width: 210px;
-        height: 80px;
-        bottom: 15px;
-        left: 90px;
-        font-size: 12px;
-    }
-
-    #statuscafe a {
-        color: #c47dff;
-    }
-
-    #statuscafe-username {
-        margin-bottom: 5px;
-        text-align: center;
-        color: #ccaaff;
-    }
-
-    #statuscafe-content {
-        margin: 0;
-        color: #E4CAED;
-    }
-
-/* site title */
-
-    .website-title {
-        position: absolute;
-        top: 40px;
-        right: 0;
-    }
-
-    .website-title img {
-        width: 250px;
-    }
+        .status-cloud img {
+            width: auto;
+            height: 155px;
+            -webkit-filter: drop-shadow(10px 0 7px rgba(42, 0, 59, 0.5));
+            filter: drop-shadow(10px 0 7px rgba(42, 0, 59, 0.5));
+        }
 
 
-/* --- HEADER CONTENT (END) */
+    /* status text */
+
+        .status-positioning {
+            position: absolute;
+            bottom: 0;
+        }
+
+        #statuscafe {
+            z-index: 2;
+            padding: 0;
+            width: 210px;
+            height: 80px;
+            bottom: 15px;
+            left: 90px;
+            font-size: 12px;
+        }
+
+        #statuscafe a {
+            color: #c47dff;
+        }
+
+        #statuscafe-username {
+            margin-bottom: 5px;
+            text-align: center;
+            color: #ccaaff;
+        }
+
+        #statuscafe-content {
+            margin: 0;
+            color: #E4CAED;
+        }
+
+    /* site title */
+
+        .website-title {
+            position: absolute;
+            top: 40px;
+            right: 0;
+        }
+
+        .website-title img {
+            width: 250px;
+        }
 
 
 
-
-
-/* --- MARQUEE (START) --- */
+/* --- MARQUEE --- */
 
 .graphics-row {
+    /* height depends on content.
+       see html below */
     display: flex;
-    /* height depends on content. see html below */
     overflow: hidden;
-    /* background-color: tomato; */ /* for testing purposes */
 }
 
 .graphics-row-item {
@@ -434,15 +408,15 @@
 
 .right-column {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: flex-start;
-    height: fit-content; /* to accomodate the blinkies and stretch vertically when the window is small. */
-    /* be careful of how many blinkies you put!  or widgets you add! */
-    flex: 1;
     gap: 10px;
+    height: fit-content; /* to accomodate content and stretch vertically when the window is small. */
+    min-width: 200px; /* looks better this way */
 }
 
-/* first box on the right (not sure about it yet) */
+/* first box on the right */
 
 .right-first-box {
     border: var(--box-main-border-style);
@@ -450,7 +424,7 @@
     height: 60px;
 }
 
-/* second box on the right (not sure about it yet) */
+/* second box on the right */
 
 .right-second-box {
     border: var(--box-main-border-style);  
@@ -471,12 +445,16 @@
 /* third box on the right (not sure about it yet */
 
 .right-third-box {
-    height: calc(570px - 280px);
+    height: calc(570px - 310px);
     display: flex;
     flex-direction: column;
     gap: 10px;
-    flex: 0;
     justify-content: flex-start;
+    background: #241C2D;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    align-items: center;
 }
 
 /* --- RIGHT COLUMN CONTENTS (END) --- */
@@ -485,9 +463,33 @@
 
 
 
-/* another marquee is inserted here in html file */
+/* for the row before the footer,
+    will contain graphics */
 
+.footer-graphics {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    justify-items: center;
+    margin-bottom: var(--box-spacing);
+    /*
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: var(--box-spacing);
+    */
+}
 
+.footer-graphics img {
+    image-rendering: pixelated;
+    width: 175px;
+    height: auto;
+}
 
 
 

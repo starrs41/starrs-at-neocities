@@ -6,9 +6,6 @@
 # ...except colors.txt because i need that
 !colors.txt
 
-# ignore all oc wiki files for now
-*ocs/
-
 # ignore the automatically generated vs folder
 *.vs/
 
@@ -17,3 +14,16 @@ desktop.ini
 
 # ignore the custom py script i made for locally opening the website
 launch.py
+
+
+# as of 12/15/22
+
+# ignore all oc wiki pages for now
+*ocs/
+
+# and the oc icons...
+pablo_icon.jpg
+pablo_icon2.png
+
+# and the vgm page (unfinished)
+vgm.html

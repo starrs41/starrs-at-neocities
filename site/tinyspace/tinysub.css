@@ -1,0 +1,87 @@
+/*
+    for the pages that open up when you click
+    on all the extra links
+*/
+
+
+
+/* --- setting up the format! (START) --- */
+
+    body {
+        background: url(/graphics/assets/bg-space-2.gif);
+        background-color: #0f0d11;
+        background-attachment: fixed;
+    }
+
+    .l-main-box {
+        border: 3px dotted #5A388E;
+        border-radius: 15px;
+        margin: 20px auto 20px auto;
+        padding: 20px;
+        max-width: 690px; /* OG: 680px */
+        text-align: justify;
+        background-color: #241C2D;
+    }
+
+    @media
+        only screen and (max-width: 800px) {
+            /* when on a small screen, this is what you do: */
+            body {
+                background: #241C2D;
+            }
+
+            .l-main-box {
+                margin: 20px auto 0 auto;
+                padding: 20px 20px 10px 20px;
+                border: none;
+            }
+        }
+
+        
+
+/* --- setting up the format! (END) --- */
+
+
+
+
+/* --- old --- */
+  /*  body {
+        background-image: none;
+        background-color: #241C2D;
+        text-align: justify;
+        margin: 20px auto 10px auto;
+        padding: 15px;
+        max-width: 650px;
+    } */
+/* --- old --- */
+
+
+/* --- other misc stuff --- */
+
+.o-description {
+    height: fit-content;
+    margin: 10px 10px 25px 10px;
+}
+
+@media
+    /* 650px is the breakpoint of the description */
+    only screen and (max-width: 650px) {
+        .description img {
+            order: 1;
+        }
+
+        .description div {
+            order: 2;
+        }
+    }
+
+.o-rainbow-heading {
+    margin: 0px 0px 20px 0px;
+    font-size: 150%;
+}
+
+
+
+
+
+

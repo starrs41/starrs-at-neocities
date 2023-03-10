@@ -1,235 +1,234 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>a tiny space in space</title>
-        <link rel="icon" type="image/x-icon" href="graphics/star_favicon.gif">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>a tiny space in space</title>
+    <link rel="icon" type="image/x-icon" href="/graphics/assets/favicon-star.gif">
+    
+    <link rel="stylesheet" href="tinyfeatures.css">
+    <link rel="stylesheet" href="tinysub.css">
+
+    <style>
+        .o-character-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px 10px;
+            justify-items: center;
+        }
+
+        .o-character-gallery div {
+            border-radius: 15px;
+            padding: 7px;
+        }   
+
+        .o-character-gallery div:hover {
+            transform: scale(0.98);
+            opacity: 0.8;
+            transition: all 200ms;
+        }
+
+        .o-character-gallery img, a {
+            width: 135px;
+            height: 135px;
+        }
         
-        <link rel="stylesheet" href="/globalfeatures.css">
-        <link rel="stylesheet" href="otherpages.css">
+        .o-character-gallery img {
+            border-radius: 10px;
+        }
 
-        <base target="_top">
+        .o-character-gallery p {
+            text-align: center;
+            font-size: 110%;
+            font-weight: bold;
+            font-stretch: expanded;
+            margin: 0;
+        }
 
-        <style>
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
-                gap: 15px 10px;
-                justify-items: center;
 
-            }
+        @media
+            only screen and (max-width: 380px) {
 
-            .grid-container div {
-                border-radius: 10px;
-                padding: 7px;
-            }   
-
-            .grid-container div:hover {
-                transform: scale(0.98);
-                opacity: 0.8;
-                transition: all 200ms;
-            }
-
-            .grid-container img, a {
-                width: 135px;
-                height: 135px;
-            }
-            
-            .grid-container img {
-                border-radius: 10px;
-            }
-
-            .grid-container p {
-                text-align: center;
-                font-size: 110%;
-                font-weight: bold;
-                font-stretch: expanded;
-                margin: 0;
-            }
-
-            .rainbow-header {
-                font-size: 150%;
-            }
-
-            /* the underline looks kinda ugly only the links */
-
-            .grid-container a::after {
-                content: none;
-            }
-
-            @media
-                only screen and (max-width: 380px) {
-
-                    .grid-container {
-                        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-                        grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
-                    }
-
-                    .grid-container div {
-                        transform: scale(0.85);
-                    }
-
-                    .grid-container div:hover {
-                        transform: scale(0.83);
-                        opacity: 0.8;
-                        transition: all 200ms;
-                    }
+                .o-character-gallery {
+                    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
                 }
-        </style>
-    </head>
+
+                .o-character-gallery div {
+                    transform: scale(0.85);
+                }
+
+                .o-character-gallery div:hover {
+                    transform: scale(0.83);
+                    opacity: 0.8;
+                    transition: all 200ms;
+                }
+            }
+    </style>
+</head>
     
 
-
-    <body>
-        <div class="main-div">
-            <!-- START -->
-            <div>
-                <!-- rainbow title -->
-                <div style="display: flex; justify-content: center; padding-bottom:-5px;">
-                    <h1 class= "text-wave" alt="Characters">
-                        <span style="--i:1; color:#db1748;">C</span>
-                        <span style="--i:2; color:#e8653d;">H</span>
-                        <span style="--i:3; color:#e3aa40;">A</span>
-                        <span style="--i:4; color:#24997C;">R</span>
-                        <span style="--i:5; color:#4794D9;">A</span>
-                        <span style="--i:6; color:#463acf;">C</span>
-                        <span style="--i:7; color:#b0169c">T</span>
-                        <span style="--i:8; color:#db1748;">E</span>
-                        <span style="--i:9; color:#e8653d;">R</span>
-                        <span style="--i:10; color:#e3aa40;">S</span>
-                    </h1>
-                </div>
-                <!-- opening statement -->
-                <div style="display: flex; justify-content: center;">
-                    <div style="text-align: center;">
-                        <p>
-                            Here's an (incomplete) list of my characters! This is mostly for me to keep track of them, so... ^^;
-                        </p>
-                        <p>
-                            (Information coming soon!)
-                        </p>
-                    </div>
-                </div>
+<body>
+    <!-- main box -->
+    <div class="l-main-box">
+        <!-- starting area -->
+        <div>
+            <!-- heading -->
+            <div class="o-bouncy-heading">
+                <h1 class="o-bouncy-heading__text" title="Characters">
+                    <span style="--i:1; color:#db1748;">C</span>
+                    <span style="--i:2; color:#e8653d;">H</span>
+                    <span style="--i:3; color:#e3aa40;">A</span>
+                    <span style="--i:4; color:#24997C;">R</span>
+                    <span style="--i:5; color:#4794D9;">A</span>
+                    <span style="--i:6; color:#463acf;">C</span>
+                    <span style="--i:7; color:#b0169c">T</span>
+                    <span style="--i:8; color:#db1748;">E</span>
+                    <span style="--i:9; color:#e8653d;">R</span>
+                    <span style="--i:10; color:#e3aa40;">S</span>
+                </h1>
             </div>
 
-            <hr class="rainbow-divider" style="margin-top: 10px;">
-
-            <!-- MIIVERSE -->
-            <div>
-                <h2 class="rainbow-header">Miiverse</h2>
-                <div class="grid-container">
-                    <!-- pablo -->
-                    <div class="rainbow-border-2" title="this guy is the ultimate scrunkly">
-                        <a href="/tinyspace/ocs/mii/pablo.html">
-                            <img src="/graphics/others/characters/pablo/pablo_thumbnail.jpg">
-                        </a>
-                        <p>Pablo</p>
-                    </div>
-                    <!-- bloo -->
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/bloo/bloo_thumbnail.jpg">
-                        </a>
-                        <p>Bloo</p>
-                    </div>
-                    <!-- miko -->
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/miko/miko_thumbnail.jpg">
-                        </a>
-                        <p>Miko</p>
-                    </div>
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/placeholder.png">
-                        </a>
-                        <p>Shigeo</p>
-                    </div>
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/placeholder.png">
-                        </a>
-                        <p>Akio</p>
-                    </div>
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/placeholder.png">
-                        </a>
-                        <p>Alan</p>
-                    </div>
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/placeholder.png">
-                        </a>
-                        <p>Mia</p>
-                    </div>
+            <!-- message -->
+            <div class="o-text-spacing o-flex">
+                <!-- text -->
+                <div style="text-align: center;">
+                    <p>
+                        Here's an (incomplete) list of my characters! This is mostly for me to keep track of them, so... ^^;
+                    </p>
+                    <p>
+                        (Information coming soon!)
+                    </p>
                 </div>
-            </div>
-
-            <hr class="dashed-divider">
-
-            <!-- JAY AND ROBIN -->
-            <div>
-                <h2 class="rainbow-header">Gooped Up</h2>
-                <div class="grid-container">
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/placeholder.png">
-                        </a>
-                        <p>Jay</p>
-                    </div>
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/placeholder.png">
-                        </a>
-                        <p>Robin</p>
-                    </div>
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/placeholder.png">
-                        </a>
-                        <p>Wren</p>
-                    </div>
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/placeholder.png">
-                        </a>
-                        <p>Maya</p>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="dashed-divider">
-
-            <!-- the wild west -->
-            <div>
-                <h2 class="rainbow-header">The Wild West</h2>
-                <div class="grid-container">
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/placeholder.png">
-                        </a>
-                        <p>Pip</p>
-                    </div>
-                    <div class="rainbow-border-2">
-                        <a href="javascript:void(0)">
-                            <img src="/graphics/others/characters/placeholder.png">
-                        </a>
-                        <p>Spork</p>
-                    </div>
-                </div>
-            </div>
-
-            <div style="width: fit-content; margin: 20px auto auto auto; font-size: 65%;">
-                <a target="_self" onclick=window.scroll(0,0);>Back to top?</a> // 
-                <a href="/tinyspace/?e=/tinyspace/ocs.html" target="_top">Outside the iframe?</a>
             </div>
         </div>
 
-        <script src="/tinyspace/tinyspace_features.js"></script>
+        <hr class="o-rainbow-divider" style="margin-top: 10px;">
 
-    </body>
+        <!-- MIIS -->
+        <div>
+            <h2 class="o-rainbow-heading">Miis</h2>
+            <div class="o-character-gallery">
+                <!-- pablo -->
+                <div title="this guy is the ultimate scrunkly" class="o-rainbow-border--round">
+                    <a href="/tinyspace/ocs/mii/pablo-tl.html">
+                        <img src="/graphics/misc/characters/pablo/icon-tl.png">
+                    </a>
+                    <p>Pablo</p>
+                </div>
+                <!-- bloo -->
+                <div title="the literal embodiment of &#60;:3" class="o-rainbow-border--round">
+                    <a href="/tinyspace/ocs/mii/bloo-tl.html">
+                        <img src="/graphics/misc/characters/bloo/icon-tl.png">
+                    </a>
+                    <p>Bloo</p>
+                </div>
+                <!-- miko -->
+                <div class="o-rainbow-border--round">
+                    <a href="/tinyspace/ocs/mii/miko-tl.html">
+                        <img src="/graphics/misc/characters/miko/icon-tl.png">
+                    </a>
+                    <p>Miko</p>
+                </div>
+                <div class="o-rainbow-border--round">
+                    <a href="javascript:void(0)">
+                        <img src="/graphics/misc/characters/placeholder.png">
+                    </a>
+                    <p>Shigeo</p>
+                </div>
+                <div class="o-rainbow-border--round">
+                    <a href="javascript:void(0)">
+                        <img src="/graphics/misc/characters/placeholder.png">
+                    </a>
+                    <p>Akio</p>
+                </div>
+                <div class="o-rainbow-border--round">
+                    <a href="javascript:void(0)">
+                        <img src="/graphics/misc/characters/placeholder.png">
+                    </a>
+                    <p>Alan</p>
+                </div>
+                <div class="o-rainbow-border--round">
+                    <a href="javascript:void(0)">
+                        <img src="/graphics/misc/characters/placeholder.png">
+                    </a>
+                    <p>Mia</p>
+                </div>
+            </div>
+        </div>
+        <!-------------->
+
+        <hr class="o-dashed-divider">
+
+        <!-- JAY AND ROBIN -->
+        <div>
+            <h2 class="o-rainbow-heading">Gooped Up</h2>
+            <div class="o-character-gallery">
+                <div class="o-rainbow-border--round">
+                    <a href="javascript:void(0)">
+                        <img src="/graphics/misc/characters/placeholder.png">
+                    </a>
+                    <p>Jay</p>
+                </div>
+                <div class="o-rainbow-border--round">
+                    <a href="javascript:void(0)">
+                        <img src="/graphics/misc/characters/placeholder.png">
+                    </a>
+                    <p>Robin</p>
+                </div>
+                <div class="o-rainbow-border--round">
+                    <a href="javascript:void(0)">
+                        <img src="/graphics/misc/characters/placeholder.png">
+                    </a>
+                    <p>Wren</p>
+                </div>
+                <div class="o-rainbow-border--round">
+                    <a href="javascript:void(0)">
+                        <img src="/graphics/misc/characters/placeholder.png">
+                    </a>
+                    <p>Maya</p>
+                </div>
+            </div>
+        </div>
+        <!------------------->
+
+        <hr class="o-dashed-divider">
+
+        <!-- the wild west -->
+        <div>
+            <h2 class="o-rainbow-heading">The Wild West</h2>
+            <div class="o-character-gallery">
+                <div class="o-rainbow-border--round">
+                    <a href="javascript:void(0)">
+                        <img src="/graphics/misc/characters/placeholder.png">
+                    </a>
+                    <p>Pip</p>
+                </div>
+                <div class="o-rainbow-border--round">
+                    <a href="javascript:void(0)">
+                        <img src="/graphics/misc/characters/placeholder.png">
+                    </a>
+                    <p>Spork</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- back footer -->
+        <div style="width: fit-content; margin: 20px auto auto auto; font-size: 65%;">
+            <a target="_self" onclick=scrollToTop();>Back to top?</a> // 
+            <a href="/tinyspace/?e=/tinyspace/ocs.html" target="_top">Outside the iframe?</a>
+        </div>
+        <!----------------->
+    </div>
+
+    <!-- scripts -->
+    <script src="/tinyspace/tinyfeatures.js"></script>
+    <script src="/tinyspace/iframeResizer.contentWindow.min.js"></script>
+</body>
+
+
 </html>

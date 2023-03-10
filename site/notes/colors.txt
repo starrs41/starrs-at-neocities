@@ -1,0 +1,51 @@
+colors used on my website:
+    #E4CAED - global font color (white)
+    #a468ff - link color (saturated purple)
+    #ccaaff - secondary link color (very light purple)
+    #241C2D - box bg color / alternate font color (dark purple)
+    #5A388E - border and label color (dull purple)
+    #F8E4FF - headings (bright white color)
+    
+    #582b99 - SLIGHTLY brighter label color
+    #a160ff - complimentary color to the one above ^
+
+    #ff52d4 - strong and bold html elements
+    #8aceff - italic and emphasis html elements
+
+    #12091b - black (used for code blocks)
+
+rainbow colors:
+    #db1748 - red
+    #e8653d - orange
+    #e3aa40 - yellow
+        #d8981f - alternate yellow (more visible w/ white text)
+    #24997C - green
+    #4794D9 - blue
+    #463acf - indigo
+    #b0169c - violet
+
+rainbow colors but rgba:
+    rgba(219, 23, 72, 1) - red
+    rgba(232, 101, 61, 1) - orange
+    rgba(227, 170, 64, 1) - yellow
+    rgba(36, 153, 124, 1) - green
+    rgba(71, 148, 217, 1) - blue
+    rgba(70, 58, 207, 1) - indigo
+    rgba(176, 22, 156, 1) - violet
+
+
+
+
+
+
+FADE IN RAINBOW COLORS!!! (pastel)
+linear-gradient(to right, rgba(255,0,0,0), rgba(219, 23, 72, 0.5), rgba(232, 101, 61, 0.8), rgba(227, 170, 64, 0.9), rgba(36, 153, 124, 0.9),rgba(71, 148, 217, 0.9),  rgba(70, 58, 207, 0.8), rgba(176, 22, 156, 0.5), rgba(255,0,0,0))
+
+FADE IN RAINBOW COLORS!!! (bright)
+linear-gradient(to right, rgba(255,0,0,0), rgba(181, 0, 45, 0.5), rgba(226, 53, 0, 0.8), rgba(226, 148, 3, 0.9), rgba(2, 150, 86, 0.9), rgba(11, 113, 202, 0.9), rgba(23, 7, 192, 0.8), rgba(146, 1, 126, 0.5), rgba(255,0,0,0))
+
+normal rainbow colors!! (dull)
+linear-gradient(to right, #d84167, #da7455, #dcaf33, #2bb876, #3292e5, #493dd4, #a42bb6)
+
+normal rainbow colors!! (bright)
+linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1)

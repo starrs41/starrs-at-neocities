@@ -1,0 +1,801 @@
+/*
+    for all features that can be found around tiny space
+    (i lied some of these aren't used globally, just on
+    speficic pages, but i included them here anyway ^^;)
+    (it's easier to find them that way, plus it's
+    easier if i change my mind and want to use something
+    somewhere else :P)
+*/
+
+
+
+/* --- WEBSITE FONTS --- */
+
+@font-face { /* font for important text */
+    font-family: "Moon";
+    src: url(/fonts/Moon.ttf) format("truetype");
+}
+
+@font-face { /* font for usual text */
+    font-family: "Pangolin";
+    src: url(/fonts/Pangolin.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "FA-Solid";
+    src: url(/fonts/FA-Solid.ttf) format("truetype");
+}
+
+
+
+/* --- ROOT VARIABLES --- */
+
+:root {
+    /* main box style (for quick access) */
+    --box-border: 5px double #5A388E;
+    --box-padding: 10px;
+    --box-gap: 10px;
+    
+    /* rounded boxes */
+    --box-border-radius: 15px;
+
+    /* box colors */
+    --box-bg-color: #241C2D;
+    --box-border-color: #5A388E;
+    
+    /* other colors */
+    --pastel-rainbow: linear-gradient(to right, rgb(255, 54, 104), rgb(255, 132, 95), rgb(255, 210, 126),rgb(93, 255, 185), rgb(105, 185, 255), rgb(109, 96, 255), rgb(218, 85, 255));
+    --dull-rainbow: linear-gradient(to right, #d84167, #da7455, #dcaf33, #2bb876, #3292e5, #493dd4, #a42bb6);
+    --bright-rainbow: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1);
+    --pastel-fade-rainbow: linear-gradient(to right, rgba(255,0,0,0), rgba(219, 23, 72, 0.5), rgba(232, 101, 61, 0.8), rgba(227, 170, 64, 0.9), rgba(36, 153, 124, 0.9),rgba(71, 148, 217, 0.9),  rgba(70, 58, 207, 0.8), rgba(176, 22, 156, 0.5), rgba(255,0,0,0));
+    --bright-fade-rainbow: linear-gradient(to right, rgba(255,0,0,0), rgba(181, 0, 45, 0.5), rgba(226, 53, 0, 0.8), rgba(226, 148, 3, 0.9), rgba(2, 150, 86, 0.9), rgba(11, 113, 202, 0.9), rgba(23, 7, 192, 0.8), rgba(146, 1, 126, 0.5), rgba(255,0,0,0));
+    --link-color: #a468ff;
+    --link-color-alt: #ccaaff;
+    --heading-color: #F8E4FF;
+
+    /* global font settings */
+    --global-font: "Pangolin", "Calibri";
+    --global-font-color: #E4CAED;
+    --global-font-color-alt: #F8E4FF;
+    --global-font-color-opp: #241C2D;
+    --global-font-size: 14px;
+
+    /* for galleries and list */
+    --gallery-column:
+    --gallery-row:
+    --list-column:
+    --list-row:
+}
+
+
+
+/* --- FORMATTING RESET --- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: unset;
+    font-size: initial;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+b, i, strong, em {
+    font-weight: unset;
+    font-style: normal;
+}
+
+
+
+/* --- MODIFIED HTML ELEMENTS --- */
+
+/* prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+/* set up the default font */
+body {
+    font-family: var(--global-font);
+    font-size: var(--global-font-size);
+    color: var(--global-font-color);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 5px 0;
+}
+
+b, strong{
+    font-weight: 900;
+    color:#ff52d4;
+}
+
+i, em {
+    font-style: italic;
+    color: #8aceff;
+}
+
+a {
+    /* position: relative;*/
+    color: var(--link-color);
+    text-decoration: none;
+    cursor: url(/graphics/assets/cursor-star.png), default; /* for some reason, cursor reverts when on link */
+}
+
+a:hover {
+    color: transparent;
+    background-image: var(--pastel-rainbow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 300ms;
+    cursor: url(/graphics/assets/cursor-star-clicked.png), default;
+}
+
+button:hover {
+    cursor: url(/graphics/assets/cursor-star-clicked.png), default;
+}
+
+hr {
+    margin: 25px 0px;
+}
+
+/* modified cursor and scrollbar */
+html {
+    /* cursor */
+    cursor: url(/graphics/assets/cursor-star.png), default;
+    /* scrollbar for firefox */
+    scroll-behavior: smooth;
+    scrollbar-color: /* scroll handle */ #8c61cd /* scroll bg */ #5A388E;
+    scrollbar-width: thin;
+}
+
+/* scrollbar for other browsers (no need to make a class. targets all scrollbars, for some reason) */
+/* scrollbar handle size */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* scroll handle color */
+::-webkit-scrollbar-thumb {
+    background: #8c61cd;
+    cursor: url(/graphics/assets/cursor-star.png), default;
+}
+
+/* scroll handle color on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8c61cd;
+    cursor: url(/graphics/assets/cursor-star-clicked.png), default;
+}
+
+/* scroll bg color */
+::-webkit-scrollbar-track {
+    background: #5A388E;
+}
+
+/* bullet points and lists */
+/* bullet points for unordered lists (star) */
+ul li::marker {
+    content: "\2605  ";
+    font-size: 1em;
+}
+
+/* bullet points for ordered lists (bold numbers) */
+ol li::marker {
+    font-weight: 700;
+}
+
+/* padding for lists */
+ul, ol {
+    padding-left: 15px;
+}
+
+/* padding for list items */
+ul li, ol li {
+    padding-left: 5px;
+}
+
+/* margin for list items */
+li {
+    margin-bottom: 3px;
+}
+
+/* bullet point colors (rainbow) */
+li:nth-child(7n + 1)::marker {
+    color: #db1748;
+}
+
+li:nth-child(7n + 2)::marker {
+    color: #e8653d;
+}
+
+li:nth-child(7n + 3)::marker {
+    color: #e3aa40;
+}
+
+li:nth-child(7n + 4)::marker {
+    color: #24997C;
+}
+
+li:nth-child(7n + 5)::marker {
+    color: #4794D9;
+}
+
+li:nth-child(7n + 6)::marker {
+    color: #463acf;
+}
+
+li:nth-child(7n + 7)::marker {
+    color: #b0169c;
+}
+
+/* pre-formatted blocks */
+pre {
+    height: fit-content;
+}
+
+/* code blocks */
+pre code {
+    display: block;
+    overflow: auto;
+    /* reusing the rainbow-border code */
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1) 1;
+    padding: 5px 15px;
+    background: #12091b;
+}
+
+/* blockquotes */
+
+blockquote {
+    text-align: justify;
+    padding: 2px 10px;
+    color: #ccaaff;
+    border-left: 2px solid transparent;
+    border-image: linear-gradient(to bottom, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1) 1;
+}
+
+.o-quote-text, .o-quote-author {
+    margin: 10px;
+}
+
+.o-quote-text::before {
+    content: "\201C";
+    font-weight: bolder;
+}
+
+.o-quote-text::after {
+    content: "\201E";
+    font-weight: bolder;
+}
+
+.o-quote-author {
+    text-align: right;
+}
+
+.o-quote-author::before {
+    content: "\2014  ";
+}
+
+
+
+
+/* --- MODIFIERS --- */
+/* modifies the appearance of something */
+
+/* for flex containers. will help with mobile friendliness! */
+/* note: does not handle flex containers in index */
+
+.o-flex {
+    display: flex;
+}
+
+@media
+    only screen and (max-width: 600px),
+    only screen and (min-device-width: 320px)
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        .o-flex {
+            flex-wrap: wrap;
+            height: fit-content;
+        }
+
+    }
+
+/* spacing for the paragraphs seen around tiny space */
+
+.o-text-spacing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--box-gap);
+}
+
+/* misc animations */
+
+/* shaking objects */
+
+.o-shakey-anim {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {transform: translate(0,0)}
+    20% {transform: translate(1px, 1px)}
+    40% {transform: translate(-1px, 1px)}
+    60% {transform: translate(1px, -1px)}
+    80% {transform: translate(-1px, -1px)}
+    100% {transform: translate(1px, 1px)}
+}
+
+/* bouncing objects */
+
+.o-bouncy-anim--multi {
+    animation: bounce 2s infinite alternate;
+}
+
+.o-bouncy-anim--once {
+    animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-10px);}
+}
+
+/* spinning objects */
+
+.o-spinny-anim--clock {
+    animation: spin 5s infinite linear
+}
+
+.o-spinny-anim--counterclock {
+    animation: spin 5s infinite linear;
+    animation-direction: reverse;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+
+
+/* --- NEW ELEMENTS ---- */
+/* completely new elements, reused in places around the site */
+
+/* borders */
+
+/* rainbow borders */
+/* alt has border-radius, orig is not */
+
+.o-rainbow-border--sharp {
+    /* adjustable */
+    --rs-border-thickness: 2px;
+    /* base */
+    border: var(--rs-border-thickness) solid transparent !important;
+    border-image: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1) 1 !important;
+}
+
+.o-rainbow-border--round {
+    border: none !important;
+    position: relative !important;
+}
+
+.o-rainbow-border--round::before {
+    /* adjustable */
+    --rr-border-thickness: 2px;
+    --rr-border-radius: var(--box-border-radius);
+    /* base */
+    border-radius: var(--rr-border-radius);
+    padding: var(--rr-border-thickness); /* this is the border */ 
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1); 
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+}
+
+/* rainbow text */
+
+.o-rainbow-text {
+    color: transparent !important;
+    background-image: linear-gradient(to right, rgb(255, 54, 104), rgb(255, 132, 95), rgb(255, 210, 126),rgb(93, 255, 185), rgb(105, 185, 255), rgb(109, 96, 255), rgb(218, 85, 255)) !important;
+    background-clip: text !important;
+}
+
+/* dividers */
+/* not using the name technique here because */
+/* o-divider--rainbow just sounds bad */
+
+.o-rainbow-divider {
+    background: url("/graphics/assets/divider-rainbow.gif") repeat-x top right;
+    background-size: contain;
+    display: block;
+    height: 10px;
+    border: none;
+    position: relative;
+}
+
+.o-rainbow-divider::before, .o-rainbow-divider:after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+.o-rainbow-divider::before {
+    left: 0;
+    right: 50%;
+    margin-right: 10px;
+}
+
+.o-rainbow-divider:after {
+    right: 0;
+    left: 50%;
+    margin-left: 10px;
+}
+
+.o-dashed-divider {
+    border-width: 1.5px;
+    border-color: #5A388E;
+    border-style: dashed;
+}
+
+
+/* labels, headings, and headers */
+
+/* label for the link nav box, webring box, etc. */
+
+.o-box-label {
+    padding: 8px 20px;
+    margin: 0px auto -5px auto; /* center the label and leave space after */
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    border: #5A388E;
+    background-color: #5A388E;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* bouncy heading */
+/* mostly used as h1 */
+/* the one that appears at the top of a page */
+
+.o-bouncy-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.o-bouncy-heading__text {
+    padding: 5px;
+}
+
+.o-bouncy-heading__text span {
+    margin: 0 0.5px;
+    font-family: "Moon";
+    font-size: 250%;
+    position: relative;
+    display: inline-block;
+    animation: bouncy-heading 2s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes bouncy-heading {
+    0%,40%,100% {
+            transform: translateY(0)
+        }
+    20% {
+            transform: translateY(-8px)
+        }
+}
+
+@media
+    only screen and (max-width: 600px),
+    only screen and (min-device-width: 320px)
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        .o-bouncy-heading__text span {
+            font-size: 7vw;
+            margin: 0 -1px;
+        }
+
+    }
+
+/* rainbow heading */
+/* mostly used as h2 */
+
+.o-rainbow-heading {
+    padding: 2px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to right,
+        rgba(255,0,0,0), rgba(219, 23, 72, 0.5),
+        rgba(232, 101, 61, 0.8), rgba(227, 170, 64, 0.9),
+        rgba(36, 153, 124, 0.9),rgba(71, 148, 217, 0.9),
+        rgba(70, 58, 207, 0.8), rgba(176, 22, 156, 0.5),
+        rgba(255,0,0,0));
+    color: #F8E4FF;
+}
+
+/* marquee for general use */
+/* this is not the one used on the index page */
+
+.o-marquee {
+    position: relative;
+    overflow: hidden;
+}
+
+.o-marquee p {
+    position: absolute;
+    width: 200%; /* default. adjust this according to length of text */
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+    transform: translateX(100%);
+    --marquee-time: 10s; /* default time */
+    animation: marquee var(--marquee-time) linear infinite; /* increase time depending on length of marquee */
+}
+
+@keyframes marquee {
+    0% {transform: translateX(60%);} /* outside screen */
+    100% {transform: translateX(-100%);} /* going out */
+}
+
+/* last updated label */
+/* used on some subpages. particularly: the vgm, resources, and neighbors pages */
+
+.o-last-update {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #ccaaff;
+}
+
+/* back header */
+/* used on subpages, for going back to previous page */
+
+.o-back-header {
+    width: fit-content;
+    margin: 0 auto 10px auto;
+}
+
+.o-back-header div {
+    width: fit-content; margin: auto;
+}
+
+.o-back-header img {
+    width: 60px;
+    height: auto;
+}
+
+/* back footer */
+/* used on subpages, for going back to top or into iframe */
+
+.o-back-footer {
+    width: fit-content;
+    margin: 20px auto auto auto;
+    font-size: 65%;
+}
+
+/* blog elements */
+
+.o-blog-title {
+    text-transform: uppercase;
+    font-family: "Moon";
+    text-align: center;
+    color: #F8E4FF;
+    background:linear-gradient(to right, #b5002d, #e23500, #e29403, #029656, #0b71ca, #1707c0, #92017e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 5px transparent;
+    letter-spacing: 1px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.o-blog-heading {
+    padding: 5px 2px 2px 2px;
+    border-radius: 15px 15px 0 0;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    box-sizing: border-box;
+    color: #F8E4FF;
+    margin-top: 45px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1) 1;
+}
+
+.o-blog-date {
+    margin-bottom: 25px;
+    font-size: 90%;
+    color: #ccaaff;
+    text-align: center;
+}
+
+.o-blog-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: 20px 0;
+    gap: 8px;
+}
+
+.o-blog-image img {
+    /* specify width inline!!! */
+    width: auto;
+    height: auto;
+}
+
+.o-blog-image p {
+    text-align: center;
+    margin: 5px auto;
+    width: 50%;
+    font-size: 12px; /* 14px is the global font size */
+    color: #ccaaff;
+}
+
+@media
+    only screen and (max-width: 600px),
+    only screen and (min-device-width: 320px)
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        .o-blog-title {
+            font-size: 6vw;
+        }
+
+    }
+
+
+/* gallery elements (all grid now) */
+
+/* art gallery */
+/* has built-in rainbow borders, and is set at 150x150px */
+
+.o-art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px 10px;
+    justify-items: center;
+    
+}
+
+.o-art-gallery div {
+    border-radius: 10px;
+    padding: 7px;
+    width: 150px;
+    height: 150px;
+    cursor: url(/graphics/sitestuff/star_cursor_click.png), pointer;
+}
+
+.o-art-gallery div:hover {
+    transform: scale(0.98);
+    opacity: 0.8;
+    transition: all 200ms;
+}
+
+.o-art-gallery img {
+    width: 135px;
+    height: 135px;
+    border-radius: 10px;
+}
+
+.o-art-gallery p {
+    text-align: center;
+    font-size: 110%;
+    font-weight: bold;
+    font-stretch: expanded;
+    margin: 0;
+}
+
+@media
+    only screen and (max-width: 380px) {
+
+        .o-art-gallery {
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
+        }
+
+        .o-art-gallery div {
+            transform: scale(0.85);
+        }
+
+        .o-art-gallery div:hover {
+            transform: scale(0.83);
+            opacity: 0.8;
+            transition: all 200ms;
+        }
+
+    }
+
+/* grid list elements */
+
+.o-grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(20px, 1fr));
+    gap: 10px;
+    padding: 0 10px;
+    justify-items: center;
+}
+
+.o-grid-list a {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    color: unset;
+    padding: 5px 10px;
+    border-radius: 15px;
+
+}
+
+.o-grid-list a:hover {
+    transform: scale(0.98);
+    opacity: 0.8;
+    color: #a468ff;
+    transition: all 200ms;
+}
+
+/* info table (well not really a table... sort of?) */
+
+.o-info-table {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    padding: 0 10px;
+    gap: 25px;
+    justify-items: center;
+}
+
+.o-info-table > dt {
+    display: flex;
+    justify-items: center;
+}
+
+.o-info-table > dd {
+    margin: 0;
+}
+
+.o-info-table img {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+@media
+    only screen and (max-width: 380px) {
+
+    .o-info-table {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+}

@@ -1,0 +1,894 @@
+
+/*
+    the css for the main index page of tiny space
+    (the one that visitors first stumble upon)
+*/
+
+
+
+/* --- ROOT VARIABLES --- */
+
+:root {
+    /* height of content container */
+    --content-container-height: 570px;
+
+    /* main box style (for quick access) */
+    --box-border: 5px double #5A388E;
+    --box-padding: 10px;
+    --box-gap: 10px;
+    
+    /* rounded boxes */
+    --box-border-radius: 15px;
+
+    /* box colors */
+    --box-bg-color: #241C2D;
+    --box-border-color: #5A388E;
+    
+    /* other colors */
+    --pastel-rainbow: linear-gradient(to right, rgb(255, 54, 104), rgb(255, 132, 95), rgb(255, 210, 126),rgb(93, 255, 185), rgb(105, 185, 255), rgb(109, 96, 255), rgb(218, 85, 255));
+    --dull-rainbow: linear-gradient(to right, #d84167, #da7455, #dcaf33, #2bb876, #3292e5, #493dd4, #a42bb6);
+    --bright-rainbow: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1);
+    --pastel-fade-rainbow: linear-gradient(to right, rgba(255,0,0,0), rgba(219, 23, 72, 0.5), rgba(232, 101, 61, 0.8), rgba(227, 170, 64, 0.9), rgba(36, 153, 124, 0.9),rgba(71, 148, 217, 0.9),  rgba(70, 58, 207, 0.8), rgba(176, 22, 156, 0.5), rgba(255,0,0,0));
+    --bright-fade-rainbow: linear-gradient(to right, rgba(255,0,0,0), rgba(181, 0, 45, 0.5), rgba(226, 53, 0, 0.8), rgba(226, 148, 3, 0.9), rgba(2, 150, 86, 0.9), rgba(11, 113, 202, 0.9), rgba(23, 7, 192, 0.8), rgba(146, 1, 126, 0.5), rgba(255,0,0,0));
+    --link-color: #a468ff;
+    --link-color-alt: #ccaaff;
+    --heading-color: #F8E4FF;
+
+    /* global font settings */
+    --global-font: "Pangolin", "Calibri";
+    --global-font-color: #E4CAED;
+    --global-font-color-alt: #F8E4FF;
+    --global-font-color-opp: #241C2D;
+    --global-font-size: 14px;
+}
+
+
+
+/* --- BACKGROUND --- */
+
+body {
+    background-image: url(/graphics/assets/bg-space-1.gif);
+    background-attachment: fixed;
+    background-color:#0e0d10;
+}
+
+
+
+/* --- WEB WIDGETS --- */
+
+#statuscafe {
+    padding: 5px 10px 10px 10px;
+}
+
+#statuscafe-username {
+    margin-bottom: 5px;
+    text-align: center;
+    color: #ccaaff;
+}
+
+#statuscafe-username a:hover {
+    color: transparent;
+}
+
+#statuscafe-content {
+    margin: 5px 5px 5px 5px;
+}
+
+
+/* --- WEBRINGS --- */
+
+/* yesterweb webring */
+.yw-widget-mini {
+    border: 2px solid #E4CAED;
+    background-image: url(/graphics/assets/bg-space-3.gif);
+    height: 70px !important;
+    margin: 0 !important;
+    padding: 10px !important;
+    width: 200px;
+}
+
+.yw-widget-mini .yw-content {
+    height: fit-content;
+    margin: 0 !important;
+}
+
+.yw-widget-mini .yw-title {
+    color: transparent !important;
+    background-image: linear-gradient(to right, rgb(255, 54, 104), rgb(255, 132, 95), rgb(255, 210, 126),rgb(93, 255, 185), rgb(105, 185, 255), rgb(109, 96, 255), rgb(218, 85, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+
+.yw-widget-mini .yw-link {
+    color: #a468ff !important;
+    font-size: 10px !important;
+}
+
+/* retro gaming webring */
+:root {
+    /* background! */
+    --w9p1h3-background-image: url("/graphics/assets/bg-retroring.jpg") !important;
+    --w9p1h3-background-size:cover !important;
+    --w9p1h3-background-color: #bc31d1 !important;
+    --w9p1h3-background-size: cover !important;
+    --w9p1h3-border: 2px solid #E4CAED !important;
+    --w9p1h3-border-radius: 2px !important;
+    
+    /* sizing */
+    --w9p1h3-width:200px !important;
+    --w9p1h3-height:80px !important;
+    --w9p1h3-padding:8px !important;
+    
+
+    /* title! */
+    --w9p1h3-title-font:'Arial' !important;
+    --w9p1h3-title-color:#ff52d4 !important;
+    --w9p1h3-title-size:30px !important;
+    --w9p1h3-title-align:center !important;
+    --w9p1h3-title-margin: 0 !important;
+    
+    /* line height & letter spacing */
+    --w9p1h3-title-height:1em !important;
+    --w9p1h3-title-spacing:0.5px !important;
+    --w9p1h3-title-weight:bold !important;
+
+
+    /* text! */
+    --w9p1h3-text-family:sans-serif !important;
+    --w9p1h3-text-color:#E4CAED !important;
+    --w9p1h3-text-size:12px !important;
+    --w9p1h3-text-align:center !important;
+    --w9p1h3-text-spacing:0 !important;
+    --w9p1h3-text-height:1em !important;
+    --w9p1h3-text-margin: 5px 0 !important;
+
+    /* links! */
+    --w9p1h3-link-family:sans-serif !important;
+    --w9p1h3-link-color:#8aceff !important;
+    --w9p1h3-link-decoration:none !important;
+    --w9p1h3-link-weight:bold !important;
+    --w9p1h3-link-size:10px !important;
+}
+
+
+
+/* --- LAYOUT --- */
+
+/* css that centers the site box */
+
+.l-site {
+    display: table;
+    table-layout: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.l-site__center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+/* --- MAIN CONTAINER --- */
+/* contains all the boxes of the site, mainly for spacing */
+
+.l-main-container {
+    max-width: 1100px; /* width of content (how much space it takes up) */
+    margin: 10px auto; /* center the container in the webpage */
+}
+
+
+
+
+
+/* --- HEADER CONTAINER --- */
+/* the upper portion of the site. contains status cloud, stamps, and site name */
+
+.m-header {
+    position: relative;
+    height: 155px;
+    margin-bottom: var(--box-gap);
+}
+
+/* status */
+
+/* cloud */
+
+.c-status {
+    z-index: 2;
+}
+
+.c-status img {
+    width: auto;
+    height: 155px;
+    filter: drop-shadow(10px 0 7px rgba(42, 0, 59, 0.5));
+    -webkit-filter: drop-shadow(10px 0 7px rgba(42, 0, 59, 0.5));
+}
+
+/* text (note: cannot change id names) */
+
+/* positioning */
+.u-status-positioning {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+#statuscafe {
+    z-index: 2;
+    padding: 0;
+    width: 210px;
+    height: 80px;
+    bottom: 15px;
+    left: 90px;
+    font-size: 12px;
+}
+
+#statuscafe a {
+    color: #c47dff;
+}
+
+#statuscafe-username {
+    margin-bottom: 5px;
+    text-align: center;
+    color: #ccaaff;
+}
+
+#statuscafe-content {
+    margin: 0;
+    text-align: center;
+    color: #E4CAED;
+}
+
+/* website title */
+
+.c-site-title {
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.c-site-title img {
+    width: 250px;
+}
+
+/* marquee */
+
+.c-stamp-container {
+    border: 3px solid #8343e3;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    height: 75px;
+    max-width: 70%;
+    display: flex;
+    overflow: hidden;
+    border-radius: var(--box-border-radius);
+}
+
+.c-stamp-container::before {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    height: 75px;
+    width: 400px;
+    background: linear-gradient(to right, #9d60f8 5%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+}
+
+/* right to left animation */
+
+@keyframes scroll {
+    0% {transform: translateX(100%);}
+    1% {transform: translateX(40%);}
+    100% {transform: translateX(-105%); animation-delay: 2s;}
+}
+
+.c-stamp-container__marquee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    top: auto;
+    height: auto;
+    image-rendering: pixelated;
+    animation: scroll 35s linear infinite;
+}
+
+.c-stamp-container__marquee li {
+    height: 100%;
+    width: auto;
+    image-rendering: pixelated;
+    display: flex;
+    flex-shrink: 1;
+    margin: auto 5px;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;     
+}
+
+.c-stamp-container__marquee img {
+    height: 60px; /* stamp height */
+    width: auto;
+    image-rendering: pixelated; 
+}
+
+.c-stamp-container__marquee li::before { /* remove star bullets for this specific list. replace with icons */
+    content: " ";
+    margin-right: 0px;
+}
+
+/* --- MARQUEE (END) --- */
+
+
+
+
+
+/* content container (contains left, middle, and right columns) */
+
+.l-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: fit-content; /* for when window is resized. don't worry about the columns, they have a fixed size! */
+    margin-bottom: var(--box-gap); /* to create space for bottom stuff */
+    gap: var(--box-gap);
+}
+
+
+
+
+
+/* --- LEFT COLUMN CONTENTS (START) --- */
+
+.m-left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0; /* please... don't shrink with the page... */
+    width: 150px; /* yeah. never shrink. ever */
+    height: var(--content-container-height); 
+}
+
+/* first box - link navigation */
+
+    .c-link-nav { /* main box */
+        padding: var(--box-padding);
+        border: var(--box-border);
+        background-color: var(--box-bg-color);
+        width: auto;
+        height: fit-content; /* change height depending on content. don't worry about kirby! */
+    }
+
+    .c-link-nav ul {
+        margin-left: -10px;
+        margin-bottom: 5px;
+    }
+
+    .c-link-nav li::marker { /* remove defualt bullets */
+        content: none;
+    }
+
+    .c-link-nav li::before { /* remove star bullets, replace with icons */
+        content: url(/graphics/goodies/pixels/twinkle.gif);
+        margin-right: 0px;
+    }
+
+    .c-link-nav a {
+        position: absolute;
+        margin: auto 0 auto 5px;
+        color: unset; /* don't use the default link color */
+    }
+
+/* second box - music player */
+
+    .c-music { /* main box, holding the title marquee */
+        background-color: var(--box-bg-color);
+        border: var(--box-border);
+        height: 40px; /* affects music marquee. check html */
+        width: auto;
+    }
+
+    /* area where you get to interact with the music guy! */
+
+    .u-music-positioning {
+        width: 0px;
+        height: 0px;
+        position: relative;
+    }
+
+    .c-music__guy { /* the div holding kirby */
+        position: absolute; /* positioned relative to "hello" div */
+        bottom: -18px;
+        left: -18px;
+        z-index: 1;
+        transform: scaleX(-1) rotate(-5deg); /* he rotate */
+        /* height: auto; */
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .c-music__guy img {
+        width: 100px;
+    }
+
+    .c-music__guy img:hover {
+        animation: oneBounce 0.8s ease;
+    }
+
+    @keyframes oneBounce {
+        0% {transform: translateY(0);}
+        25% {transform: translateY(-15px);}
+        50% {transform: translateY(0);}
+        100% {transform: translateY(0);}
+    }
+
+    .c-music__text { /* text inside speech bubble */
+        position: absolute; /* positioned relative to hidden div */
+        bottom: 58px;
+        left: 77px;
+        z-index: 1;
+        width: 80px;
+        font-size: 14px;
+        text-align: center;
+        color: #241C2D;
+    }
+
+    .c-music__text > p {
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .c-music__text > button {
+        color:#7531db;
+        cursor: url(/graphics/sitestuff/star_cursor_click.png), pointer;
+    }
+
+    .c-music__bubble { /* speech bubble */
+        position: absolute; /* positioned relative to hidden div */
+        bottom: 27px;
+        left: 62px;
+        width: 110px;
+    }
+
+    /* music marquee */
+
+    .c-music__title-container {
+        overflow: hidden;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-music__marquee { /* shows the name of the music currently playing */
+        font-size: 14px;
+        white-space: nowrap; /* keeps text from collapsing */
+        animation: smallScroll 15s linear infinite;
+        margin: 1px 0 0 0;
+    }
+
+    /*
+    .c-music-player__audio {
+        width: 140px;
+        height: 34px;
+        margin-bottom: 0px;
+    }
+    */
+
+    /* right to left */
+    @keyframes smallScroll {
+        0% {transform: translateX(100%);} /* outside screen */
+        1% {transform: translateX(75%);} /* going in */
+        100% {transform: translateX(-75%);} /* going out */
+    }
+
+/* --- LEFT COLUMN CONTENTS (END) --- */
+
+
+
+
+
+/* --- MIDDLE COLUMN CONTENTS (START) --- */
+
+.m-middle-column { /* holds the iframe */
+    border: var(--box-border);
+    background-color: var(--box-bg-color);
+    height: var(--content-container-height);
+    flex: 5;
+    min-width: 320px; /* breakpoint */ /* orig: 260px */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+#u-screen-redirect { /* the secret span that redirects screen */
+    display: block;
+    height: cal(var(--content-container-height) - 10px); /*same height as header*/
+    margin-top: -20px; /*same height as header*/
+    visibility: hidden;
+}
+
+.c-main-frame {
+    width: 100%;
+    height: calc(100% + 20px);
+}
+
+.u-middle-no-js { /* if no javascript, removes scrolling on the middle column */
+    overflow-y: hidden !important;
+}
+
+
+
+/* --- MIDDLE COLUMN CONTENTS (END) --- */
+
+
+
+
+
+/* --- RIGHT COLUMN CONTENTS (START) --- */
+
+.m-right-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    height: fit-content; /* to accomodate content and stretch vertically when the window is small. */
+    min-width: 200px; /* looks better this way */
+}
+
+/* site visitor counter */
+
+.c-counter {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border: var(--box-border);
+    background-color: var(--box-bg-color);
+}
+
+.c-counter__image { /* waving cat */
+    height: 35px;
+    width: auto;
+    image-rendering: pixelated;
+}
+
+.c-counter__visitors { /* the actual number of visitors */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.c-counter p { /* text that says "Unique visitors!" */
+    margin: -5px 0px 0px 0px !important;
+    font-size: 10px !important;
+}
+
+/* site's tiny chat box and link to guestbook */
+
+/* guestbook... has lots of manual positioning */
+
+.c-guestbook { /* position dependent on chat box, careful! */
+    height: 0;
+    width: 0;
+    position: relative;
+    margin-left:100%;
+    margin-top: -10px;
+}
+
+.c-guestbook__buddy {
+    image-rendering: pixelated;
+    position: absolute;
+    height: 50px;
+    width: auto;
+    top: -13px;
+    left: -40px;
+}
+
+.c-guestbook__text {
+    color: #241C2D;
+    font-size: 8px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: -11px;
+    left: -95px;
+    width: 50px;
+}
+
+.c-guestbook__bubble {
+    height: 40px;
+    width: 60px;
+    position: absolute;
+    top: -15px;
+    left: -100px;
+}
+
+/* the chat box, courtesy of cbox */
+
+.c-chatbox {
+    height: 220px;
+    border: var(--box-border);  
+    background-color: var(--box-bg-color);
+    overflow: hidden;
+    scrollbar-width: thin;
+}
+
+.c-chatbox iframe {
+    height: 100%;
+}
+
+.c-chatbox p {
+    margin: 5px 0px;
+}
+
+/* box containing the webrings!! */
+
+.c-webrings {
+    height: calc(570px - 310px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    background: #241C2D;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    align-items: center;
+    background-color:#241C2D;
+    padding: var(--box-padding);
+    border: var(--box-border);
+}
+
+/* --- RIGHT COLUMN CONTENTS (END) --- */
+
+
+
+
+
+/* for the row before the footer,
+    will contain graphics */
+
+.c-collection {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    justify-items: center;
+    margin-bottom: var(--box-gap);
+    /*
+    (OLD ONE)
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: var(--box-spacing);
+    */
+}
+
+.c-collection img {
+    image-rendering: pixelated;
+    width: 175px;
+    height: auto;
+}
+
+
+
+/* --- FOOTER CONTENTS (START) --- */
+
+.c-footer {
+    
+    border: var(--box-border);
+    background-color: var(--box-bg-color);
+    display: flex; /* to center align text... */
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    font-size: 12px;
+    padding: var(--box-padding);
+    text-align: center;
+    border-radius: var(--box-border-radius);
+}
+
+.c-footer span {
+    margin: 0px 5px;
+}
+
+/* --- FOOTER CONTENTS (END) --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- CSS FOR RESPONSIVENESS (START) --- */
+
+/* trying to fix how the site looks like when it's a small screen */
+/* taking insp from other people's codes */
+
+@media
+    only screen and (min-width: 320px)
+    and (max-width: 500px) {
+
+
+    /* general stuff */
+
+        html {
+            overflow-x: hidden; /* idk why there's space but here's a solution for now */ /* have to fix margins later */
+        }      
+    
+    /* containers */
+
+        .l-main-container {
+            max-width: 80%;
+            min-width: 300px;
+        }
+        
+        .l-content-container {
+            flex-wrap: wrap;
+            /* background-color: blue; */ /* for testing purposes */
+            height: fit-content;
+            padding: 0;
+        }
+
+    /* header */
+    
+        .c-stamp-container {
+            display: none;
+        }
+
+        .c-site-title {
+            display: none;
+        }
+
+        .c-status {
+            /* stay in the middle of the screen!!! */
+            position: absolute;
+            left: 70%;
+            top: 70%;
+            transform: translate(-70%, -70%);
+        }
+
+        .c-status img {
+            transform: scale(0.95);
+        }
+
+        #statuscafe {
+            padding-bottom: 5px;
+        }
+
+    /* left column */
+
+        .m-left-column {
+            display: block;
+            width: 100%;
+            order: 1;
+            height: fit-content; /* adjustable */
+        }
+
+        .c-link-nav, .c-counter, .c-chatbox {
+            height: fit-content; /* no worries about guestbook, adjusts to chatbox */
+        }
+
+        .c-link-nav {
+            /* margin-bottom: 100px; /* space for music guy */
+            margin: 0;
+        }
+
+        .c-music {
+            display: none;
+        }
+
+        .kirby-music {
+            top: -90px;
+            left: -20px;
+        }
+
+    /* middle column */
+
+        .m-middle-column {
+            display: block;
+            width: 100%;
+            min-width: 100%;
+            margin: 0px 0px;
+            order: 2;
+            /* height: 70vh;*/
+            height: fit-content;
+            flex: 1 0 0;
+        }
+
+        .c-main-frame {
+            height: 50px;
+            min-height: 100%;
+        }
+
+        .u-middle-no-js { /* if no javascript, removes scrolling on the middle column */
+            height: 70vh !important;
+        }
+
+    /* right column */
+
+        .m-right-column {
+            width: 100%;
+            display:block;
+            order: 3;
+            height: initial;
+        }
+
+        .c-counter {
+            /* height already mentioned in html; retains it */
+            margin-bottom: -10px;
+        }
+
+        .c-chatbox {
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        .c-webrings {
+            height: fit-content;
+            align-items: center;
+        }
+
+    /* footer */
+
+        .c-footer {
+            flex-wrap: wrap;
+            height: fit-content;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .c-footer span {
+            display: block;
+        }
+       
+    .mainiframe { /* move later... for individual page */
+        width: auto;
+        height: fit-content;
+    }
+
+    /* flex containers */
+    .flex-container {
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* --- CSS FOR RESPONSIVENESS (END) --- */

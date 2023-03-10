@@ -1,166 +1,168 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>a tiny space in space</title>
-        <link rel="icon" type="image/x-icon" href="/graphics/sitestuff/star_favicon.gif">
-        
-        <link rel="stylesheet" href="/globalfeatures.css">
-        <link rel="stylesheet" href="otherpages.css">
 
-        <style>
-            ul li { /* compatible with border-radius and the like */
-                overflow: auto;
-                position: relative;
-                padding: 25px 35px 25px 25px;
-            }
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            li::before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                border-radius: 15px; 
-                pointer-events: none;
-                padding: 2px; /* this is the border */ 
-                background: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1); 
-                mask: 
-                    linear-gradient(#fff 0 0) content-box, 
-                    linear-gradient(#fff 0 0);
-                mask-composite: exclude; 
-            }
-
-            .grid-blog-list {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
-                gap: 10px;
-            }
-
-            .grid-blog-list p {
-                margin: 3px 0 0 0;
-                text-align: left;
-            }
-
-            .grid-blog-list a {
-                text-align: left;
-            }
-
-            .grid-blog-list a::before {
-                content: url(/graphics/webgoodies/pixels/link_bullet.gif);
-                font-size: 20%;
-                margin-right: 10px;
-                vertical-align: bottom;
-            }
-        </style>
-    </head>
+    <title>a tiny space in space</title>
+    <link rel="icon" type="image/x-icon" href="/graphics/assets/favicon-star.gif">
     
+    <link rel="stylesheet" href="tinyfeatures.css">
+    <link rel="stylesheet" href="tinysub.css">
+
+    <style>
+        ul li { /* compatible with border-radius and the like */
+            overflow: auto;
+            padding: 25px 35px 25px 25px;
+        }
+
+        .o-blog-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            padding-left: 0;
+        }
+
+        .o-blog-list li {
+            border-radius: 15px;
+        }
+
+        .o-blog-list p {
+            margin: 3px 0 0 0;
+            text-align: left;
+        }
+
+        .o-blog-list a {
+            text-align: left;
+        }
+
+        .o-blog-list a::before {
+            content: url(/graphics/goodies/pixels/twinkle.gif);
+            font-size: 20%;
+            margin-right: 5px;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
 
 
-    <body>
-        <div class="main-div">
-            <!-- START -->
-            <div>
-
-                <!-- rainbow title -->
-                <div style="display: flex; justify-content: center; padding-bottom:-5px;">
-                    <h1 class= "text-wave" alt="Thoughts">
-                        <span style="--i:1; color:#db1748;">T</span>
-                        <span style="--i:2; color:#e8653d;">H</span>
-                        <span style="--i:3; color:#e3aa40;">O</span>
-                        <span style="--i:4; color:#24997C;">U</span>
-                        <span style="--i:5; color:#4794D9;">G</span>
-                        <span style="--i:6; color:#463acf;">H</span>
-                        <span style="--i:7; color:#b0169c">T</span>
-                        <span style="--i:8; color:#db1748;">S</span>
-                    </h1>
-                </div>
-
-                <!-- opening statement -->
-                <div style="display: flex;">
-                    <div style="text-align:justify;">
-                        <p style="margin-bottom: 0;">
-                            Welcome! This is where I post my thoughts on various things, which is sorted into blog pages. The length of my writing will probably vary a lot... ^^;
-                        </p>
-                    </div>
-                </div>
-
+<body>
+    <!-- main box -->
+    <div class="l-main-box">
+        <!-- starting area -->
+        <div>
+            <!-- heading -->
+            <div class="o-bouncy-heading">
+                <h1 class= "o-bouncy-heading__text" alt="Thoughts">
+                    <span style="--i:1; color:#db1748;">T</span>
+                    <span style="--i:2; color:#e8653d;">H</span>
+                    <span style="--i:3; color:#e3aa40;">O</span>
+                    <span style="--i:4; color:#24997C;">U</span>
+                    <span style="--i:5; color:#4794D9;">G</span>
+                    <span style="--i:6; color:#463acf;">H</span>
+                    <span style="--i:7; color:#b0169c">T</span>
+                    <span style="--i:8; color:#db1748;">S</span>
+                </h1>
             </div>
 
-            <hr class="rainbow-divider">
-
-            <!-- JOURNAL -->
-            <section>
-                <!-- header -->
-                <h2 class="rainbow-header">Journal</h2>
-                <!-- description -->
-                <div class="description">
-                    <p>
-                        Here's my journal, where I write about various things that happened to me. Some may be long and profound, while others 
-                        may be short and casual. Look at the descriptions and you'll know which one's which! (Note: Date format is M/D/YY)
+            <!-- message -->
+            <div style="display: flex;">
+                <div style="text-align:justify;">
+                    <p style="margin-bottom: 0;">
+                        Welcome! This is where I post my thoughts on various things, which is sorted into blog pages. The length of my writing will probably vary a lot... ^^;
                     </p>
                 </div>
-                <!-- list -->
-                <ul class="grid-blog-list">
-                    <li><a href="/tinyspace/thoughts/blog/functionality_or_aesthetic.html">Functionality or Aesthetic?</a>
-                        <p>[7/10/22] &#8902; I talk a little about how I made the website.</p>
-                    </li>
-                    <li><a href="/tinyspace/thoughts/blog/test_blog.html">Test Blog</a>
-                        <p>[8/9/22] &#8902; Tried out some blog features for my site! ^^</p>
-                    </li>
-                    <li><a href="/tinyspace/thoughts/blog/struggles_of_web_dev.html">The Struggles of Web Development</a>
-                        <p>[12/15/22] &#8902; Rambling about how disorganized my site is :P</p>
-                    </li>
-                </ul>
-            </section>
-
-            <hr class="dashed-divider">
-
-            <!-- GAMELOG -->
-            <section>
-                <!-- header -->
-                <h2 class="rainbow-header">Gamelog</h2>
-                <!-- description -->
-                <div class="description">
-                    <p>
-                        I play a lot of different games, so I'm going to log them here and write about them when I can!
-                    </p>
-                </div>
-                <!-- list -->
-                <ul>
-                    <li>Check back soon!</li>
-                </ul>
-            </section>
-            
-            <hr class="dashed-divider">
-
-            <!-- GUIDES -->
-            <section>
-                <!-- header -->
-                <h2 class="rainbow-header">Guides</h2>
-                <!-- description -->
-                <div class="description">
-                    <p>
-                        If I find anything useful, I'll try to write them down here to let other people know about it. ^^
-                    </p>
-                    <p>
-                        (Other than the guides listed here, you could also check the resources page for more useful stuff!)
-                    </p>
-                </div>
-                <!-- list -->
-                <ul>
-                    <li>Check back soon!</li>
-                </ul>
-            </section>
-
-            <div style="width: fit-content; margin: 20px auto auto auto; font-size: 65%;">
-                <a target="_self" onclick=window.scroll(0,0);>Back to top?</a> // 
-                <a href="/tinyspace/?e=/tinyspace/thoughts.html" target="_top">Outside the iframe? </a>
             </div>
         </div>
+        <!-------------------->
 
-        <script src="/tinyspace/tinyspace_features.js"></script>
+        <hr class="o-rainbow-divider">
 
-    </body>
+        <!-- JOURNAL -->
+        <section>
+            <!-- heading -->
+            <h2 class="o-rainbow-heading">Journal</h2>
+            <!-- description -->
+            <div class="o-description">
+                <p>
+                    Here's my journal, where I write about various things that happened to me. Some may be long and profound, while others 
+                    may be short and casual. Look at the descriptions and you'll know which one's which! (Note: Date format is M/D/YY)
+                </p>
+            </div>
+            <!-- list -->
+            <ul class="o-blog-list">
+                <li class="o-rainbow-border--round">
+                    <a href="/tinyspace/thoughts/blog/1-functionality-or-aesthetic.html">Functionality or Aesthetic?</a>
+                    <p>[7/10/22] &#8902; I talk a little about how I made the website.</p>
+                </li>
+                <li class="o-rainbow-border--round">
+                    <a href="/tinyspace/thoughts/blog/2-test-blog.html">Test Blog</a>
+                    <p>[8/9/22] &#8902; Tried out some blog features for my site! ^^</p>
+                </li>
+                <li class="o-rainbow-border--round">
+                    <a href="/tinyspace/thoughts/blog/3-struggles-of-web-dev.html">The Struggles of Web Development</a>
+                    <p>[12/15/22] &#8902; Rambling about how disorganized my site is :P</p>
+                </li>
+            </ul>
+        </section>
+        <!------------->
+
+        <hr class="o-dashed-divider">
+
+        <!-- GAMELOG -->
+        <section>
+            <!-- heading -->
+            <h2 class="o-rainbow-heading">Gamelog</h2>
+            <!-- description -->
+            <div class="o-description">
+                <p>
+                    I play a lot of different games, so I'm going to log them here and write about them when I can!
+                </p>
+            </div>
+            <!-- list -->
+            <ul>
+                <li class="o-rainbow-border--round">Check back soon!</li>
+            </ul>
+        </section>
+        <!------------->
+        
+        <hr class="o-dashed-divider">
+
+        <!-- GUIDES -->
+        <section>
+            <!-- heading -->
+            <h2 class="o-rainbow-heading">Guides</h2>
+            <!-- description -->
+            <div class="o-description">
+                <p>
+                    If I find anything useful, I'll try to write them down here to let other people know about it. ^^
+                </p>
+                <p>
+                    (Other than the guides listed here, you could also check the resources page for more useful stuff!)
+                </p>
+            </div>
+            <!-- list -->
+            <ul>
+                <li class="o-rainbow-border--round">Check back soon!</li>
+            </ul>
+        </section>
+        <!------------>
+
+        <!-- back footer -->
+        <div class="o-back-footer">
+            <a target="_self" onclick=scrollToTop();>Back to top?</a> // 
+            <a href="/tinyspace/?e=/tinyspace/thoughts.html" target="_top">Outside the iframe? </a>
+        </div>
+        <!----------------->
+    </div>
+
+    <!-- scripts -->
+    <script src="/tinyspace/tinyfeatures.js"></script>
+    <script src="/tinyspace/iframeResizer.contentWindow.min.js"></script>
+</body>
+
+
 </html>

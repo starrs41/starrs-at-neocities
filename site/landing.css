@@ -1,0 +1,161 @@
+/*
+    the css for the landing pages (now approaching etc...)
+*/
+
+/*
+    NOTE: all important designs are over at the "mainpage.css"
+    this one is for setting up the landing pages
+*/
+
+
+
+/* --- ESSENTIALS (START) --- */
+
+body {
+    background-image: url(/graphics/assets/bg-space-3.gif);
+    background-color: #181819;
+    font-size: 15px;
+    padding: 20px;
+    max-width: 80%;
+}
+
+/* --- ESSENTIALS (END) --- */
+
+
+
+/* layout */
+
+.l-landing-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 500px;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+/* other objects */
+
+/* heading */
+
+.o-landing-heading {
+    text-transform: initial;
+    margin-top: 0;
+    padding: 10px;
+    line-height: 1.2;
+    font-size: 180%;
+    margin-bottom: 10px;
+}
+
+/* logo */
+
+.o-landing-logo {
+    width: 200px;
+    height: fit-content;
+    position: relative;
+}
+
+.o-landing-logo__center {
+    width: 100%;
+    height: auto;
+}
+
+.o-landing-logo__left {
+    position: absolute;
+    top: 25px;
+    left: -40px;
+}
+
+.o-landing-logo__right {
+    position: absolute;
+    bottom: 20px;
+    right: -50px;
+}
+
+/* marquee */
+
+.o-landing-marquee {
+    overflow: hidden;
+    height: fit-content;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.o-landing-marquee__rocket {
+    width: fit-content;
+    height: fit-content;
+    animation: scroll 15s linear infinite;
+}
+
+.o-landing-marquee__rocket:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {transform: translateX(-150%);}
+    1% {transform: translateX(-120%);}
+    100% {transform: translateX(800%); animation-delay: 2s;}
+}
+
+.o-landing-rocket {
+    display: block;
+    width: 100px;
+    margin-top: 8px;
+    animation: bounce 2s infinite alternate;
+}
+
+.o-landing-rocket:hover {
+    -webkit-filter: drop-shadow(0 0 8px rgba(198, 54, 255, 0.8));
+    filter: drop-shadow(0 0 8px rgba(198, 54, 255, 0.8));
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-10px);}
+}
+
+
+
+
+/* remove animation for smaller screens later */
+
+@media
+    only screen and (max-width: 800px) {
+        .l-landing-box {
+            margin: auto 10px;
+        }
+    }
+
+@media
+    only screen and (max-width: 600px),
+    only screen and (min-device-width: 320px)
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        .o-landing-marquee__rocket {
+            animation: none;
+            margin: 0 auto;
+        }
+
+        .l-landing-box {
+            max-height: 600px;
+            margin: auto 10px;
+        }
+
+        p {
+            font-size: 13px;
+            padding: 0 10px;
+        }
+
+    }

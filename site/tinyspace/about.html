@@ -1,157 +1,118 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>a tiny space in space</title>
-        <link rel="icon" type="image/x-icon" href="/graphics/sitestuff/star_favicon.gif">
-        
-        <link rel="stylesheet" href="/globalfeatures.css">
-        <link rel="stylesheet" href="otherpages.css">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <base target="_blank">
+    <title>a tiny space in space</title>
+    <link rel="icon" type="image/x-icon" href="/graphics/assets/favicon-star.gif">
+    
+    <link rel="stylesheet" href="tinyfeatures.css">
+    <link rel="stylesheet" href="tinysub.css">
 
-        <style>
-            .container {  
-                display: grid;
-                grid-template-columns: 1fr 0.5fr;
-                gap: 20px;
-                grid-auto-flow: row;
-                grid-template-areas:
-                    "desc-1 picture";
-                min-height: 280px;
-                margin: 10px 0 10px 0;
-            }
+    <base target="_blank">
 
-            .container p {
-                text-align: justify;
-            }
-
-            .desc-1 { 
-                grid-area: desc-1; 
-            }
-
-            .picture { 
-                grid-area: picture;
-            }
-
-            .main-picture-container {
-                background: none;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-                padding: 10px;
-                gap: 10px;
-                height: 100%;
-            }
-
-            @media
-                only screen and (max-width: 600px),
-                only screen and (min-device-width: 320px)
-                and (max-device-width: 660px)
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-
-                    .container {
-                        grid-template-columns: 1fr;
-                        grid-template-rows: 0.5fr 0.5fr 0.5fr;
-                        grid-template-areas:
-                            "picture"
-                            "desc-1";
-                        gap: 0;
-                        height: fit-content;
-                    }
-
-                    .picture {
-                        margin-bottom: 20px;
-                    }
-
-                    .main-picture-container {
-                        width: 80%;
-                    }
-
-                }
-        </style>
-
-    </head>
+    <style>
+        .c-introduction {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: fit-content;
+            min-width: 200px;
+            text-align: justify;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
     
 
-
-    <body>
-        <div class="main-div">
-            <!-- rainbow title -->
-            <div style="display: flex; justify-content: center; margin-bottom: 10px;">
-                <div class= "text-wave">
-                    <span style="--i:1; color:#db1748;">A</span>
-                    <span style="--i:2; color:#e8653d;">B</span>
-                    <span style="--i:3; color:#e3aa40;">O</span>
-                    <span style="--i:4; color:#24997C;">U</span>
-                    <span style="--i:5; color:#4794D9;">T</span>
-                    <span style="margin: 0px 5px;"> </span>
-                    <span style="--i:6; color:#463acf;">M</span>
-                    <span style="--i:7; color:#b0169c">E</span>
-                </div>
-            </div>
-
-            <!-- introduction -->
-            <div style="display: flex; flex-wrap: wrap; gap: 20px; height: fit-content; min-width: 200px; text-align: justify; justify-content: space-evenly;">
-                <div style="flex: 1; min-width: 150px;">
-                    <p style="margin-top: 0;">
-                        Hi there! My name's Nick. I'm the <a href="https://justinjackson.ca/webmaster/" target="_blank">webmaster</a> running this website.
-                        I made this website because I wanted to have 
-                        a little personal space of my own online (hence the site's name). I'm a little tired of how corporate 
-                        and impersonal social media and the internet as a whole can be nowadays...
-                    <p>
-                        It's been really fun learning about web development and making this website from the ground up!!
-                        Having a place where I can freely share the things I love is amazing! ^v^ I was inspired by a lot of unique <a href="https://neocities.org/browse" target="_blank">Neocities</a>
-                        websites as well as the <a href="http://theoldnet.com/" target="_blank">old web</a>, <a href="https://indieweb.org/" target="_blank">indie web</a>, and <a href="https://smallweb.page/" target="_blank">small web</a>. (I definitely recommend researching about them!)
-                    </p>
-                    <p style="margin-bottom: 0;">
-                        Anyway, that's all from me. I hope you enjoy your stay here! :D
-                    </p>
-                </div>
-
-                <div style="width: fit-content; height: fit-content; min-width: 200px;">
-                    <div style="width: fit-content; height: fit-content;">
-                        <img src="/graphics/sitestuff/tinyspace/just_sitting_here.jpg" style="width: 200px; height: auto;" class="rainbow-border" title="can't really find a better image that describes me as well as this picture :'D">
-                        <div style="background-image: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1); padding: 3px; display: flex; flex-wrap: wrap; justify-content: center; width: 200px;">
-                            <img src="/graphics/webgoodies/identity/aroace.png" style="width: 48%; margin-right: 2px;">
-                            <img src="/graphics/webgoodies/identity/space_theythem.png" style="width: 48%;">
-                            <img src="/graphics/webgoodies/userboxes/space_is_scary_but_cool.png" style="width: 95%; margin-top: 2px;">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <hr class="rainbow-divider">
-
-            <section style="display: flex; gap:20px; justify-content: space-around; flex-wrap: wrap;">
-                <div class="rainbow-border" style="flex: 1; min-width: 200px; padding: 10px;">
-                    <h4 class="rainbow-header" style="margin-bottom: 10px;">My Interests</h4>
-                    <ul class="rainbow-list" style="text-align: left;">
-                        <li>technology</li>
-                        <li>programming :D</li>
-                        <li>gaming (esp retro/indie)</li>
-                        <li>art</li>
-                    </ul>
-                </div>
-                <div style="min-width: 200px; flex: 2;">
-                    <p>Have something you wanna talk about? Send me a message at <a href="mailto:starrsexplorestheweb@gmail.com">starrsexplorestheweb@gmail.com</a>! ^^</p>
-                    <p>You can also find me on Tumblr under the username <a href="https://starryhill.tumblr.com/">@starryhill</a>!</p>
-                    <p>(I also have a Discord, but that's something I don't just give out to strangers. Sorry!)</p>
-                </div>
-            </section>
-
-            <div style="width: fit-content; margin: 20px auto auto auto; font-size: 65%;">
-                <a target="_self" onclick=window.scroll(0,0);>Back to top?</a> // 
-                <a href="/tinyspace/?e=/tinyspace/about.html" target="_top">Outside the iframe?</a>
+<body>
+    <!-- main box -->
+    <div class="l-main-box">
+        <!-- main heading -->
+        <div class="o-bouncy-heading">
+            <div class= "o-bouncy-heading__text" alt="About Me">
+                <span style="--i:1; color:#db1748;">A</span>
+                <span style="--i:2; color:#e8653d;">B</span>
+                <span style="--i:3; color:#e3aa40;">O</span>
+                <span style="--i:4; color:#24997C;">U</span>
+                <span style="--i:5; color:#4794D9;">T</span>
+                <span style="margin: 0px 5px;"> </span>
+                <span style="--i:6; color:#463acf;">M</span>
+                <span style="--i:7; color:#b0169c">E</span>
             </div>
         </div>
-        
-        <script src="/tinyspace/tinyspace_features.js"></script>
+        <!------------------>
 
-    </body>
+        <!-- introduction -->
+        <div class="c-introduction">
+            <div style="flex: 1; min-width: 250px;">
+                <p style="margin-top: 0;">
+                    Hi there! My name's Nick. I'm the <a href="https://justinjackson.ca/webmaster/" target="_blank">webmaster</a> running this website.
+                    I made this website because I wanted to have 
+                    a little personal space of my own online (hence the site's name). I'm a little tired of how corporate 
+                    and impersonal social media and the internet as a whole can be nowadays...
+                <p>
+                    It's been really fun learning about web development and making this website from the ground up!!
+                    Having a place where I can freely share the things I love is amazing! ^v^ I was inspired by a lot of unique <a href="https://neocities.org/browse" target="_blank">Neocities</a>
+                    websites as well as the <a href="http://theoldnet.com/" target="_blank">old web</a>, <a href="https://indieweb.org/" target="_blank">indie web</a>, and <a href="https://smallweb.page/" target="_blank">small web</a>. (I definitely recommend researching about them!)
+                </p>
+                <p style="margin-bottom: 0;">
+                    Anyway, that's all from me. I hope you enjoy your stay here! :D
+                </p>
+            </div>
+
+            <!-- graphics that are Me -->
+            <div style="width: fit-content; height: fit-content; min-width: 200px;">
+                <div style="width: fit-content; height: fit-content;">
+                    <img class="o-rainbow-border--sharp" src="/graphics/misc/photos/sitting-here.jpg" style="width: 200px; height: auto;" title="can't really find a better image that describes me as well as this picture :'D">
+                    <div style="background-image: linear-gradient(135deg, #ff2259, #ff602f, #ffc62a, #06c76d, #319fff, #5043e4, #bc31d1); padding: 3px; display: flex; flex-wrap: wrap; justify-content: center; width: 200px;">
+                        <img src="/graphics/goodies/identity/aroace.png" style="width: 48%; margin-right: 2px;">
+                        <img src="/graphics/goodies/identity/space-theythem.png" style="width: 48%;">
+                        <img src="/graphics/goodies/userboxes/terrified-enamored-space.png" style="width: 95%; margin-top: 2px;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!------------------>
+
+        <hr class="o-rainbow-divider">
+
+        <!-- interests and where to find me -->
+        <section style="display: flex; gap:20px; justify-content: space-around; flex-wrap: wrap;">
+            <!-- interests -->
+            <div class="o-rainbow-border--sharp" style="flex: 1; min-width: 200px; padding: 10px;">
+                <h4 class="o-rainbow-heading" style="font-size: 16px; margin-bottom: 10px;">My Interests</h4>
+                <ul style="text-align: left;">
+                    <li>technology</li>
+                    <li>programming :D</li>
+                    <li>gaming (esp retro/indie)</li>
+                    <li>art</li>
+                </ul>
+            </div>
+            <!-- where to find me -->
+            <div style="min-width: 200px; flex: 2;">
+                <p>Have something you wanna talk about? Send me a message at <a href="mailto:starrsexplorestheweb@gmail.com">starrsexplorestheweb@gmail.com</a>! ^^</p>
+                <p>You can also find me on Tumblr under the username <a href="https://starryhill.tumblr.com/">@starryhill</a>!</p>
+                <p>(I also have a Discord, but that's something I don't just give out to strangers. Sorry!)</p>
+            </div>
+        </section>
+        <!------------------------------------>
+
+        <!-- back footer -->
+        <div class="o-back-footer">
+            <a target="_self" onclick=scrollToTop();>Back to top?</a> // 
+            <a href="/tinyspace/?e=/tinyspace/about.html" target="_top">Outside the iframe?</a>
+        </div>
+        <!----------------->
+    </div>
+    
+    <!-- scripts -->
+    <script src="/tinyspace/tinyfeatures.js"></script>
+    <script src="/tinyspace/iframeResizer.contentWindow.min.js"></script>
+</body>
+
+
 </html>

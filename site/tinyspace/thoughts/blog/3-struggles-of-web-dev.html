@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>a tiny space in space</title>
+        <link rel="icon" type="image/x-icon" href="/graphics/assets/favicon-star.gif">
+        
+        <link rel="stylesheet" href="/tinyspace/tinyfeatures.css">
+        <link rel="stylesheet" href="/tinyspace/tinysub.css">
+
+        <base target="_blank">
+    </head>
+    
+
+
+    <body>
+        <!-- main box -->
+        <div class="l-main-box">
+            <!-- back header -->
+            <div class="o-back-header">
+                <div>
+                    <a href="/tinyspace/thoughts.html" target="_self"><img src="/graphics/assets/feature-back.gif" style="width:60px; height: auto;"></a>
+                </div>
+            </div>
+            <!----------------->
+
+            <!-- header -->
+            <div>
+                <h1 class="o-blog-title">
+                    The Struggles of Web Development
+                </h1>
+                <p class="o-blog-date">
+                    December 15, 2022
+                </p>
+            </div>
+            <!------------>
+
+            <!-- body text-->
+            <div style="text-align: justify;">
+                <p>
+                    So, since coming back to my code and making big changes to it after months of not really working on it
+                    (due to studies), it has come to my attention how disorganized it is :P
+                </p>
+                <p>
+                    Well, given that I was still pretty new to web development, it's actually not that bad. But since
+                    I've taken coding classes at college, I've come to notice how weird everything is structured
+                    in my site's code :")
+                </p>
+                <p>
+                    They really weren't lying when they said that naming things in coding was one of
+                    the most difficult things to do in computer science. There was a quote I kept seeing
+                    a lot, while researching about naming conventions and all that.
+                </p>
+                <blockquote>
+                    <p>
+                        There are only two hard problems in Computer Science: cache invalidation and naming things
+                    </p>
+                    <figcaption>Phil Karlton</figcaption>
+                </blockquote>
+                <p>
+                    I don't know what cache invalidation is, but given that it's on the same level as naming things,
+                    I don't think I want to know about it just yet.
+                </p>
+                <p>
+                    Anyway, one thing I noticed is that my CSS class names are pretty vague. If you don't know what
+                    that is, it's the '.red-border' in the code below.
+                </p>
+                <pre>
+                <code>
+.red-border {
+    border: 2px solid red;
+}
+                </code>
+                </pre>
+                <p>
+                    The name doesn't really tell me where it's being used in the HTML file, and it can be a pain
+                    to look for all instances of them. By modifying one class, you're also unknowingly modifying
+                    a lot of HTML elements (which can be really hard to debug).
+                </p>
+                <p>
+                    Also, there are times when the names don't tell me what the class does. Like, without looking
+                    at the CSS file (so looking at the HTML file instead), I wouldn't know if 'red-border' adds a
+                    single red border to an element, or if it creates a box with a background and a red border.
+                </p>
+                <p>
+                    I think I'm going to try the BEM naming convention and CSS namespaces. It feels kinda weird using
+                    something so professional (and complicated) for my personal site, but I think it would really help,
+                    given how big it's gotten and how disorganized it is ^^; Also, might fix my file hierarchy again
+                    (there are so many nested files aaa) and replace the underscores in my file names to dashes ^^
+                </p>
+                <p>
+                    I'm honestly not sure if I'll be able to finish this and add that new feature I've been wanting
+                    to add for so long before the holidays end. But yep, there's a lot of stuff I wanna do before I am
+                    once again swamped with college work :"]
+                </p>
+                <p>
+                    Honestly, learning computer science in college has been really fun! Even though I suck at the
+                    math classes (I failed in precalculus so I'll still need to catch up ;-;). It's been making me
+                    want to do some more coding projects, honestly. But alas... there is too little time T_T
+                </p>
+                <p>
+                    So for now, I'll be fixing up my site and reading some fun articles. Maybe even playing some video
+                    games and enjoying the holiday season >:]
+                </p>
+                <p>
+                    If any of you need help with coding, or just wanna chat, don't hesitate to email me! :D
+                </p>
+                <p>
+                    Good bye and happy holidays!! ^^
+                </p>
+            </div>
+            <!-------------->
+
+            <!-- back footer -->
+            <div class="o-back-footer">
+                <a target="_self" onclick=scrollToTop();>Back to top?</a> // 
+                <a href="/tinyspace/?e=/tinyspace/thoughts/blog/struggles_of_web_dev.html" target="_top">Outside the iframe?</a>
+            </div>
+            <!----------------->
+        </div>
+
+        <!-- scripts -->
+        <script src="/tinyspace_features.js"></script>
+        <script src="/tinyspace/iframeResizer.contentWindow.min.js"></script>
+    </body>
+</html>

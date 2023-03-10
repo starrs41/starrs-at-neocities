@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>approaching tiny space...</title>
+        <link rel="icon" type="image/x-icon" href="/graphics/sitestuff/star_favicon.gif">
+
+        <link rel="stylesheet" href="globalfeatures.css">
+        <link rel="stylesheet" href="landingpages.css">
+
+        <style>
+
+            body {
+               /*  background-image: url(+graphics/pretty_space.gif);
+                background-size: 400px; */
+                background-color: #181819;
+                font-size: 15px;
+                max-width: 80%;
+            }
+
+            .main-div {
+                max-height: 500px;
+                max-width: 800px;
+                margin: auto;
+                padding: 10px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .rocket-div {
+                overflow: hidden;
+                height: fit-content;
+                width: 100%;
+                margin: 0 0 15px 0;
+            }
+
+            .rocket-marquee {
+                width: fit-content;
+                height: fit-content;
+                animation: scroll 15s linear infinite;
+            }
+
+            .rocket-marquee:hover {
+                animation-play-state: paused;
+            }
+
+            #rocket:hover {
+                -webkit-filter: drop-shadow(0 0 8px rgba(198, 54, 255, 0.8));
+                filter: drop-shadow(0 0 8px rgba(198, 54, 255, 0.8));
+            }
+
+            @keyframes scroll {
+                0% {transform: translateX(-150%);}
+                1% {transform: translateX(-120%);}
+                100% {transform: translateX(800%); animation-delay: 2s;}
+            }
+
+            .rocket-bounce {
+                animation: bounce 2s infinite alternate;
+            }
+
+            @keyframes bounce {
+                0% {transform: translateY(0);}
+                100% {transform: translateY(-10px);}
+            }
+
+            /* remove animation for smaller screens later */
+
+            @media
+                only screen and (max-width: 800px) {
+                    .main-div {
+                        margin: auto 10px;
+                    }
+                }
+
+            @media
+                only screen and (max-width: 600px),
+                only screen and (min-device-width: 320px)
+                and (max-device-width: 660px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+
+                    .rocket-marquee {
+                        animation: none;
+                        margin: 0 auto;
+                    }
+
+                    .main-div {
+                        max-height: 600px;
+                        margin: auto 10px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        padding: 0 10px;
+                    }
+
+                }
+
+            
+        </style>
+
+    </head>
+
+    <!-- gonna put a flexbox here later for mobile users :/ -->
+
+    <!-- change the objects floating around the logo depending on whether it's deep space or tiny space -->
+
+    <body>
+        <div class="main-div rainbow-border" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+            <!-- header-->
+            <h1 class="rainbow-header" style="text-transform: initial; margin-top: 0; padding: 10px; line-height: 1.2; font-size: 180%; margin-bottom: 10px;">You are now approaching...</h1>
+            <div style="width: 200px; height: fit-content; position: relative;">
+                <img src="/graphics/sitestuff/tinyspace/tiny_space_logo.png" style="width: 100%; height: auto;"> <!--logo -->
+                <!-- left -->
+                <div class="bouncy-object" style="position: absolute; top: 25px; left: -40px;">
+                    <img class="spinning-object" src="/graphics/sitestuff/star_object.png" style="height: 20px; width: auto;">
+                </div>
+                <!-- right -->
+                <div class="bouncy-object" style="position: absolute; bottom: 20px; right: -50px;">
+                    <img class="spinning-object-alternate" src="/graphics/sitestuff/star_object.png" style="height: 20px; width: auto;">
+                </div>
+            </div>
+            <!-- marquee and starting rocket -->
+            <div class="rocket-div">
+                <div class="rocket-marquee">
+                    <a href="/tinyspace/" target="_top"><img id="rocket" class="rocket-bounce" src="/graphics/sitestuff/space_travel_now.gif" style="display: block; width: 100px; margin-top: 8px;"></a>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="rainbow-header" style="text-transform: initial; font-weight: 500; padding: 10px;">
+                <p style="margin: 5px 0 0 0;">Greetings, space travellers! To enter, click on the rocket!</p>
+                <p style="margin: 0 0 5px 0;">This area is mobile-friendly. No need to turn on autoplay, but beware of some flashing images!</p>
+            </div>
+        </div>
+    </body>
+
+
+</html>

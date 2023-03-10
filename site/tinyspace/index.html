@@ -1,363 +1,264 @@
-<!-- hello, internet stranger! i see you're taking a look at my code! :o -->
-<!-- well, that's quite alright!! feel free to take what you need.
-    good luck with coding your own website! ^w^ -->
-<!-- (oh and please don't mind the mess in here ToT)-->
+<!-- hello, internet stranger! take note: it's a mess around here ^^; -->
+<!-- if you're fine with that, then feel free to take a look at my code! -->
+<!-- i hope you find whatever it is you're looking for! :] -->
 
 <!-- this is the main page that users visit first -->
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>a tiny space in space</title>
-        <link rel="icon" type="image/x-icon" href="/graphics/sitestuff/star_favicon.gif">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>a tiny space in space</title>
+    <link rel="icon" type="image/x-icon" href="/graphics/assets/favicon-star.gif">
+
+    <link rel="stylesheet" href="tinyindex.css">
+    <link rel="stylesheet" href="tinyfeatures.css">
+
+    <style>
+        /* styling for the webrings */
         
-        <link rel="stylesheet" href="/globalfeatures.css">
-        <link rel="stylesheet" href="mainpage.css">
+    </style>
 
-        <style>
-            body {
-                /* space bg */
-                background-image: url(/graphics/sitestuff/space_bg_1.gif);
-                background-attachment: fixed;
-                background-color:#0e0d10;
-            }
-
-            /* widgets */
-
-            /* yesterweb webring */
-            .yw-widget-mini {
-                border: 2px solid #E4CAED;
-                background-image: url(/graphics/sitestuff/space_bg_3.gif);
-                height: 70px !important;
-                margin: 0 !important;
-                padding: 10px !important;
-                width: 200px;
-            }
-
-            .yw-widget-mini .yw-content {
-                height: fit-content;
-                margin: 0 !important;
-            }
-
-            .yw-widget-mini .yw-title {
-                color: transparent !important;
-                background-image: linear-gradient(to right, rgb(255, 54, 104), rgb(255, 132, 95), rgb(255, 210, 126),rgb(93, 255, 185), rgb(105, 185, 255), rgb(109, 96, 255), rgb(218, 85, 255));
-                background-clip: text;
-                font-size: 12px !important;
-            }
-
-            .yw-widget-mini .yw-link {
-                color: #a468ff !important;
-                font-size: 10px !important;
-            }
-
-            /* retro gaming webring */
-            :root {
-                /* background! */
-                --w9p1h3-background-image: url("/graphics/sitestuff/tinyspace/retro_gaming.jpg") !important;
-                --w9p1h3-background-size:cover !important;
-                --w9p1h3-background-color: #bc31d1 !important;
-                --w9p1h3-background-size: cover !important;
-                --w9p1h3-border: 2px solid #E4CAED !important;
-                --w9p1h3-border-radius: 2px !important;
-                
-                /* sizing */
-                --w9p1h3-width:200px !important;
-                --w9p1h3-height:80px !important;
-                --w9p1h3-padding:8px !important;
-                
-
-                /* title! */
-                --w9p1h3-title-font:'Arial' !important;
-                --w9p1h3-title-color:#ff52d4 !important;
-                --w9p1h3-title-size:30px !important;
-                --w9p1h3-title-align:center !important;
-                --w9p1h3-title-margin: 0 !important;
-                
-                /* line height & letter spacing */
-                --w9p1h3-title-height:1em !important;
-                --w9p1h3-title-spacing:0.5px !important;
-                --w9p1h3-title-weight:bold !important;
+    <!-- needs to be at head because of iframe script -->
+    <!-- ...well, it works but "mainFrame" keeps returning as null...-->
+    <script src="/tinyspace/iframelink.js"></script>
+    <script src="/tinyspace/iframesize.js"></script>
+    <script src="/tinyspace/iframeResizer.min.js"></script>
+</head>
 
 
-                /* text! */
-                --w9p1h3-text-family:sans-serif !important;
-                --w9p1h3-text-color:#E4CAED !important;
-                --w9p1h3-text-size:12px !important;
-                --w9p1h3-text-align:center !important;
-                --w9p1h3-text-spacing:0 !important;
-                --w9p1h3-text-height:1em !important;
-                --w9p1h3-text-margin: 5px 0 !important;
+<body>
+    <!-- site layout -->
+    <div class="l-site">
+    <div class="l-site__center">
 
-                /* links! */
-                --w9p1h3-link-family:sans-serif !important;
-                --w9p1h3-link-color:#8aceff !important;
-                --w9p1h3-link-decoration:none !important;
-                --w9p1h3-link-weight:bold !important;
-                --w9p1h3-link-size:10px !important;
-            }
-           
-        </style>
+    <!-- main container -->
+    <div class="l-main-container">
 
-        <!-- needs to be at head because of iframe script -->
-        <!-- ...well, it works but "mainFrame" keeps returning as null...-->
-        <script src="/tinyspace/tinyspace_iframe.js"></script>
-        
-    </head>
-    
-    <body>
-        <!-- little loading/arriving screen -->
-        <!-- will add soon -->
-        <!--
-        <div id="preload" style="opacity: 1;">
-            <img>
+    <!-- header -->
+    <header class="m-header">
+        <!-- site title -->
+        <div class="c-site-title">
+            <img src="/graphics/assets/title-tiny-space.gif">
         </div>
-        -->
+        <!---------------->
 
-        <div class="actual-site">
-        <div class="actual-site-center">
+        <!-- status -->
+        <div class="c-status">
+            <!-- text -->
+            <div id="statuscafe" class="u-status-positioning">
+                <div id="statuscafe-username"><a href="https://status.cafe/users/starrs" target="_blank"></a></div>
+                <div id="statuscafe-content"></div>
+            </div>
+            <script src="https://status.cafe/current-status.js?name=starrs" defer=""></script>
 
-        <!-- main container for spacing-->
-        <div class="main-container">
+            <!-- cloud -->
+            <img src="/graphics/assets/misc-status-cloud.png">
+        </div>
+        <!----------->
 
-            <!-- header START!!!-->
-            <header class="header-container">
-                <!-- the marquee-->
-                <div class="opening-marquee round-corners graphics-row"> <!-- marquee div (parent)-->
-                    <ul class="graphics-row-item second-graphics second-graphics-row-animation" style="padding-left: 0px;">
-                        <!-- marquee starts here -->
-                        <li><img src="/graphics/webgoodies/stamps/neon_old_computer.gif" alt="neon computer"></li>
-                        <li><img src="/graphics/webgoodies/stamps/neon_buildings.png" alt="neon buildings"></li>
-                        <li><img src="/graphics/webgoodies/stamps/nothing_i_say_makes_sense.png" alt="nothing i say makes sense"></li>
-                        <li><img src="/graphics/webgoodies/stamps/uwu.gif" alt="uwu"></li>
-                        <li><img src="/graphics/webgoodies/stamps/everything_will_be_alright.png" alt="everything will be alright"></li>
-                        <li><img src="/graphics/webgoodies/stamps/neon_rainbow.png" alt="rainbow"></li>
-                        <li><img src="/graphics/webgoodies/stamps/i_love_colors.gif" alt="i love colors"></li>
-                        <li><img src="/graphics/webgoodies/stamps/rainbow_computer_window.gif" alt="rainbow window"></li>
-                        <li><img src="/graphics/webgoodies/stamps/rainbow_llama.png" alt="rainbow llama"></li>
-                        <li><img src="/graphics/webgoodies/stamps/rainbow_gradients_are_awesome.gif" alt="rainbow gradients are awesome"></li>
-                        <li><img src="/graphics/webgoodies/stamps/the_internet_is_cool_because.png" alt="the internet is cool because"></li>
-                        <li><img src="/graphics/webgoodies/stamps/css_stamp.png" alt="stamp described in css"></li>
-                        <li><img src="/graphics/webgoodies/stamps/star_tree.png" alt="star tree"></li>
-                        <li><img src="/graphics/webgoodies/stamps/yellow_moon_and_stars.png" alt="yellow moon and stars"></li>
-                        <li><img src="/graphics/webgoodies/stamps/i_love_stars.gif" alt="i love stars"></li>
-                        <li><img src="/graphics/webgoodies/stamps/shiny_moon_and_stars.png" alt="shiny moon and stars"></li>
-                        <li><img src="/graphics/webgoodies/stamps/purple_night_sky.gif" alt="purple glitter"></li>
-                        <li><img src="/graphics/webgoodies/stamps/what.png" alt="what"></li>
-                        <li><img src="/graphics/webgoodies/stamps/i_love_old_web.png" alt="i love old web"></li>
-                        <li><img src="/graphics/webgoodies/stamps/i_heart_nintendo_wii.gif" alt="i love my nintendo wii"></li>
-                        <li><img src="/graphics/webgoodies/stamps/3ds_owner.jpg" alt="3ds owner"></li>
-                        <li><img src="/graphics/webgoodies/stamps/gameboy.gif" alt="gameboy"></li>
-                        <li><img src="/graphics/webgoodies/stamps/ow.png" alt="ow"></li>
-                        <li><img src="/graphics/webgoodies/stamps/life_love_luigi.jpg" alt="live love luigi"></li>
-                        <li><img src="/graphics/webgoodies/stamps/slight_smiley_face.gif" alt="smiley face"></li>
-                        <li><img src="/graphics/webgoodies/stamps/this_cat_thinks.png" alt="this cat thinks u're 12/10"></li>
-                        <li><img src="/graphics/webgoodies/stamps/always_tired.gif" alt="always tired"></li>
-                        <li><img src="/graphics/webgoodies/stamps/you_must_die.png" alt="you must die"></li>
-                        <!-- add more graphics here! -->
+        <!-- marquee -->
+        <div class="c-stamp-container"> <!-- marquee div (parent)-->
+            <ul class="c-stamp-container__marquee">
+                <!-- marquee starts here -->
+                <li><img src="/graphics/goodies/stamps/neon-old-computer.gif" alt="neon computer"></li>
+                <li><img src="/graphics/goodies/stamps/neon-buildings.png" alt="neon buildings"></li>
+                <li><img src="/graphics/goodies/stamps/nothing-i-say-makes-sense.png" alt="nothing i say makes sense"></li>
+                <li><img src="/graphics/goodies/stamps/uwu.gif" alt="uwu"></li>
+                <li><img src="/graphics/goodies/stamps/everything-will-be-alright.png" alt="everything will be alright"></li>
+                <li><img src="/graphics/goodies/stamps/neon-rainbow.png" alt="rainbow"></li>
+                <li><img src="/graphics/goodies/stamps/i-love-colors.gif" alt="i love colors"></li>
+                <li><img src="/graphics/goodies/stamps/rainbow-computer-window.gif" alt="rainbow window"></li>
+                <li><img src="/graphics/goodies/stamps/rainbow-llama.png" alt="rainbow llama"></li>
+                <li><img src="/graphics/goodies/stamps/rainbow-gradients-are-awesome.gif" alt="rainbow gradients are awesome"></li>
+                <li><img src="/graphics/goodies/stamps/rainbow-sparkles.png" alt="rainbow sparkles on a black background"></li>
+                <li><img src="/graphics/goodies/stamps/arcade-carpet.png" alt="outline of colorful shapes on a black background"></li>
+                <li><img src="/graphics/goodies/stamps/atari.gif" alt="atari starting screen"></li>
+                <li><img src="/graphics/goodies/stamps/the-internet-is-cool-because.png" alt="the internet is cool because"></li>
+                <li><img src="/graphics/goodies/stamps/css-stamp.png" alt="stamp described in css"></li>
+                <li><img src="/graphics/goodies/stamps/star-tree.png" alt="star tree"></li>
+                <li><img src="/graphics/goodies/stamps/yellow-moon-and-stars.png" alt="yellow moon and stars"></li>
+                <li><img src="/graphics/goodies/stamps/i-love-stars.gif" alt="i love stars"></li>
+                <li><img src="/graphics/goodies/stamps/shiny-moon-and-stars.png" alt="shiny moon and stars"></li>
+                <li><img src="/graphics/goodies/stamps/purple-night-sky.gif" alt="purple glitter"></li>
+                <li><img src="/graphics/goodies/stamps/what.png" alt="what"></li>
+                <li><img src="/graphics/goodies/stamps/i-love-old-web.png" alt="i love old web"></li>
+                <li><img src="/graphics/goodies/stamps/heart-computer.png" alt="computer with a heart on the screen"></li>
+                <li><img src="/graphics/goodies/stamps/i-heart-nintendo-wii.gif" alt="i love my nintendo wii"></li>
+                <li><img src="/graphics/goodies/stamps/3ds-owner.jpg" alt="3ds owner"></li>
+                <li><img src="/graphics/goodies/stamps/gameboy.gif" alt="gameboy"></li>
+                <li><img src="/graphics/goodies/stamps/ow.png" alt="ow"></li>
+                <li><img src="/graphics/goodies/stamps/life-love-luigi.jpg" alt="live love luigi"></li>
+                <li><img src="/graphics/goodies/stamps/slight-smiley-face.gif" alt="smiley face"></li>
+                <li><img src="/graphics/goodies/stamps/this-cat-thinks.png" alt="this cat thinks u're 12/10"></li>
+                <li><img src="/graphics/goodies/stamps/whats-gender.gif" alt="gender?"></li>
+                <li><img src="/graphics/goodies/stamps/always-tired.gif" alt="always tired"></li>
+                <li><img src="/graphics/goodies/stamps/neon-n64.png" alt="neon-colored n64"></li>
+                <li><img src="/graphics/goodies/stamps/you-must-die.png" alt="you must die"></li>
+                <!-- add more graphics here! -->
+            </ul>
+        </div>
+        <!------------>
+    </header>
+
+    <!-- content container -->
+    <div class="l-content-container">
+        <!-- left column -->
+        <aside class="m-left-column">
+            <!-- navigation -->
+            <div class="c-link-nav">
+                <div class="o-box-label" style="margin-bottom: 10px; font-size: unset;">Navigation</div>
+                <nav>
+                    <ul>
+                        <li><a href="home.html" onclick="iframeScroll('home.html')" target="mainFrame">home</a></li>
+                        <li><a href="about.html" onclick="iframeScroll('about.html')" target="mainFrame">about me</a></li>
+                        <li><a href="thoughts.html" onclick="iframeScroll('thoughts.html')" target="mainFrame">thoughts</a></li>
+                        <li><a href="creations.html" onclick="iframeScroll('creations.html')" target="mainFrame">creations</a></li>
                     </ul>
-                </div>
-                <!-- the website title -->
-                <div class="website-title">
-                    <img src="/graphics/sitestuff/tinyspace/tiny_space_title.gif">
-                </div>
-                <!-- the status cloud -->
-                <div class="status-cloud">
-                        <div id="statuscafe" class="status-positioning" style="display: flex; flex-direction: column; place-content: center;">
-                            <div id="statuscafe-username"><a href="https://status.cafe/users/starrs" target="_blank"></a></div>
-                           <div id="statuscafe-content" style="text-align:center;"></div>
-                       </div>
-                       <script src="https://status.cafe/current-status.js?name=starrs" defer=""></script>
-                    <img src="/graphics/sitestuff/tinyspace/status_cloud.png">
-                </div>
-            </header>
-            
-                
-
-
-
-
-            <!-- content container START!!! -->
-            <div class="content-container">
-
-                <!-- --- LEFT COLUMN --- -->
-                <aside class="left-column">
-                    <!-- navigation -->
-                    <div class="link-navigation box-content" style="color:#E4CAED;">
-                        <div class="box-label" style="margin-bottom: 10px;">Navigation</div>
-                        <nav>
-                            <ul>
-                                <li><a href="home.html" onclick="iframeScroll('home.html')" target="mainFrame">home</a></li>
-                                <li><a href="about.html" onclick="iframeScroll('about.html')" target="mainFrame">about me</a></li>
-                                <li><a href="thoughts.html" onclick="iframeScroll('thoughts.html')" target="mainFrame">thoughts</a></li>
-                                <li><a href="creations.html" onclick="iframeScroll('creations.html')" target="mainFrame">creations</a></li>
-                            </ul>
-                            <hr class="dashed-divider" style="margin: 12px 0;">
-                            <ul>
-                                <li><a href="ocs.html" onclick="iframeScroll('ocs.html')" target="mainFrame">OCs</a></li>
-                                <li><a href="shrines.html" onclick="iframeScroll('shrines.html')" target="mainFrame">e-shrines</a></li>
-                            </ul>
-                            <hr class="dashed-divider" style="margin: 12px 0;">
-                            <ul>
-                                <li><a href="resources.html" onclick="iframeScroll('resources.html')" target="mainFrame">resources</a></li>
-                                <li><a href="neighbors.html" onclick="iframeScroll('neighbors.html')" target="mainFrame">neighbors</a></li>
-                            </ul>
-                            <hr class="dashed-divider" style="margin: 12px 0;">
-                            <ul>        
-                                <li><a href="sitemap.html" onclick="iframeScroll('sitemap.html')" target="mainFrame">sitemap</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <!-- music player-->
-                    <div class="music-box">
-                        <!-- music graphics-->
-                        <div style="position: relative; width: 0px; height: 0px;"> <!-- parent div -->
-                            <div class="music-guy" style="width: fit-content; height: fit-content;">
-                                <a href="vgm.html" target="mainFrame">
-                                    <img src="/graphics/webgoodies/misc/kirb.gif" style="width: 100px;" title="(Click on me for more music!)">
-                                </a>
-                            </div>
-                            <div class="music-bubble-text">
-                                <p style="margin-bottom: 5px; font-weight: 600;" id="musicDialogue">"Poyo!"</p>
-                                <button onclick="playMainMusic()" style="color:#7531db; cursor: url(/graphics/sitestuff/star_cursor_click.png), pointer;" id="musicButton">Okay!</button>
-                            </div>
-                            <img src="/graphics/sitestuff/tinyspace/speech_bubble_music.gif" class="music-bubble">
-                        </div>
-                        <!-- music marquee -->
-                        <div style="overflow: hidden; height: 30px; display:flex; justify-content: center; align-items: center;"> <!-- now playing marquee -->
-                            <p class="marqueeMusic" style="margin: 1px 0 0 0;">Now playing: "The Island at Night" from the game "Tomodachi Collection"</p>
-                        </div>
-                        <!-- audio file -->
-                        <audio loop style="width: 140px; height: 34px; margin-bottom: 0px;" id="musicPlayer"> <!-- the play button is hidden. -->
-                            <source src="https://docs.google.com/uc?id=1Emd4frqB05x_bI9OjVE81OYrac1PFlma&export=download" type="audio/mpeg">
-                            <span>Your browser does not support the audio element.</span>
-                        </audio>
-                    </div>
-                </aside>
-
-                
-
-
-                <!-- --- MIDDLE COLUMN --- -->
-                
-                <main id="middleColumn" class="middle-column">
-                    <span id="helloWorld"></span> <!-- take into account the margin of the invisible span when calculating the height of the iframe! -->
-                    <iframe id="mainFrame" name="mainFrame" src="home.html" frameborder="0" scrolling="auto" style="width: 100%; height: calc(100% + 20px);"></iframe>
-                </main>
-
-                
-                
-
-                <!-- --- RIGHT COLUMN --- -->
-                <aside class="right-column">
-                    <!-- first box -->
-                    <div class="right-first-box" style="display: flex; gap: 15px; justify-content: center; align-items: center; height: 70px;">
-                        <img src="/graphics/webgoodies/pixels/waving_cat.gif" style="height: 35px; width: auto; image-rendering: pixelated;">
-                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 60px;">
-                            <script type="text/javascript" src="//counter.websiteout.net/js/7/5/0/1"></script>
-                            <p style="margin: -5px 0px 0px 0px; font-size: 10px;">Unique visitors!</p>
-                        </div>
-                    </div>
-
-                    <!-- second box -->
-                    <span style="height: 0; width: 0; position: relative; margin-left:100%; margin-top: -10px;">
-                        <img src="/graphics/webgoodies/pixels/type_type_type.gif" class="guestbook-buddy" style="image-rendering: pixelated; position: absolute; height: 50px; width: auto; top: -13px; left: -40px;">
-                        <div class="guestbook-text" style="color: #241C2D; font-size: 8px; text-align: center; z-index: 1; position: absolute; top: -11px; left: -95px; width: 50px;">Sign my <a href="http://starrs.123Guestbook.com/" target="_blank">guestbook</a>!</div>
-                        <img src="/graphics/sitestuff/tinyspace/speech_bubble_guestbook.png" class="guestbook-bubble" style="height: 40px; width: 60px; position: absolute; top: -15px; left: -100px;">
-                    </span>
-                    <div class="right-second-box" style="overflow: hidden;">
-                        <iframe src="https://www3.cbox.ws/box/?boxid=3518663&boxtag=voBcYQ" width="100%" height="219px" allowtransparency="yes" allow="autoplay" marginheight="0" marginwidth="0" scrolling="auto" frameborder="0"></iframe>
-                    </div>
-
-                    <!-- third box -->
-                    <div class="right-third-box box-content main-box-style">
-                        <h3 class="rainbow-header">Webrings</h3>
-                        <p style="margin:2px; text-align:center;">*collects webrings like pokemon cards*</p>
-                        <!-- yesterweb widget start -->
-                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; font-size: 11px; display: none;">
-                            <div class="rainbow-border" style="text-align: center; padding: 8px; width: 100%; background-color: #241C2D; background: url('/graphics/sitestuff/space_bg_3.gif');">
-                                <div style="text-decoration: wavy;">
-                                    Explore the  <a href="https://yesterweb.org/webring/" target="_top" class="webring-title rainbow-text">Yesterweb</a> Webring!
-                                </div>
-                                <div>
-                                    <a href="https://webring.yesterweb.org/noJS/index.php?d=prev&url=https://starrs.neocities.org/" target="_top">&#8592; Previous</a> //
-                                    <a href="https://webring.yesterweb.org/noJS/index.php?d=rand&url=https://starrs.neocities.org/" target="_top">Random</a> //
-                                    <a href="https://webring.yesterweb.org/noJS/index.php?d=next&url=https://starrs.neocities.org/" target="_top">Next &#8594;</a>
-                                </div>
-                            </div>                    
-                        </div>
-                        <!-- yesterweb widget end -->
-
-                        <!-- yesterweb webring -->
-                        <div class="yw-widget-mini" data-yw-url="https://starrs.neocities.org/"></div>
-                        <script src="https://yesterweb.org/js/widget.js"></script>
-                        
-                        <!-- retro gaming webring -->
-                        <script src="https://nippoverse.xyz/retroring/webring.js"></script><ring-063 site="https://starrs.neocities.org/"></ring-063>
-
-                        <!-- 
-                        <div style="display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); grid-template-rows: repeat(auto-fit, minmax(25px, 1fr)); justify-items: center;">
-                            <img src="/graphics/webgoodies/blinkies/artist.gif" style="image-rendering: pixelated; height: 25px;">
-                            <img src="/graphics/webgoodies/blinkies/alone_but_not_lonely.gif" style="image-rendering: pixelated; height: 25px;">
-                            <img src="/graphics/webgoodies/blinkies/go_stupid.gif" style="image-rendering: pixelated; height: 25px;">
-                            <img src="/graphics/webgoodies/blinkies/help_im_online.gif" style="image-rendering: pixelated; height: 25px;">
-                            <img src="/graphics/webgoodies/blinkies/let_your_true_colors_shine_through.gif" style="image-rendering: pixelated; height: 25px;">
-                            <img src="/graphics/webgoodies/blinkies/twinkle_twinkle_dark.gif" style="image-rendering: pixelated; height: 25px;">
-                        </div>
-                        -->
-                    </div>
-                </aside>
-                
+                    <hr class="o-dashed-divider" style="margin: 12px 0;">
+                    <ul>
+                        <li><a href="ocs.html" onclick="iframeScroll('ocs.html')" target="mainFrame">OCs</a></li>
+                        <li><a href="shrines.html" onclick="iframeScroll('shrines.html')" target="mainFrame">e-shrines</a></li>
+                    </ul>
+                    <hr class="o-dashed-divider" style="margin: 12px 0;">
+                    <ul>
+                        <li><a href="resources.html" onclick="iframeScroll('resources.html')" target="mainFrame">resources</a></li>
+                        <li><a href="neighbors.html" onclick="iframeScroll('neighbors.html')" target="mainFrame">neighbors</a></li>
+                    </ul>
+                    <hr class="o-dashed-divider" style="margin: 12px 0;">
+                    <ul>        
+                        <li><a href="sitemap.html" onclick="iframeScroll('sitemap.html')" target="mainFrame">sitemap</a></li>
+                    </ul>
+                </nav>
             </div>
 
-            <!-- content container END :( -->
+            <!-- music player-->
+            <div class="c-music"> <!-- music box -->
+                <!-- music guy you can interact with -->
+                <div class="u-music-positioning">
+                    <!-- guy who is just vibing  -->
+                    <div class="c-music__guy">
+                        <a href="vgm.html" target="mainFrame">
+                            <img src="/graphics/goodies/misc/kirb.gif" title="(Click on me for more music!)">
+                        </a>
+                    </div>
+                    <!-- guy is now talking -->
+                    <div class="c-music__text">
+                        <p id="js-main-music-dialogue">"Poyo!"</p> <!-- how did i do these quotation marks again? -->
+                        <button id="js-main-music-button" onclick="playMainMusic()">Okay!</button>
+                    </div>
+                    <img class="c-music__bubble" src="/graphics/assets/bubble-music.gif">
+                </div>
+                <!-- music marquee -->
+                <div class="c-music__title-container">
+                    <p class="c-music__marquee">Now playing: "The Island at Night" from the game "Tomodachi Collection"</p>
+                </div>
+                <!-- audio file -->
+                <audio loop id="js-main-music"> <!-- the play button is hidden. -->
+                    <source src="https://docs.google.com/uc?id=1c8hzfHEG5Q9HC33t3A9uAH8de_ZzP6R1&export=download" type="audio/mpeg">
+                    <span>Your browser does not support the audio element.</span>
+                </audio>
+            </div>
+        </aside>
+        <!----------------->
 
+        <!-- middle column -->
+        <main id="js-middle-column" class="m-middle-column u-middle-no-js">
+            <span id="u-screen-redirect"></span> <!-- take into account the margin of the invisible span when calculating the height of the iframe! -->
+            <iframe id="js-main-frame" class="c-main-frame" name="mainFrame" src="home.html" frameborder="0" scrolling="auto"></iframe>
+            <script>
+                hasJS();
+                iFrameResize({}, '#js-main-frame');
+            </script>
+        </main>
+        <!------------------->
 
-            <!-- blinkies!!! -->
-            <div class="footer-graphics">
-                <img src="/graphics/webgoodies/blinkies/artist.gif">
-                <img src="/graphics/webgoodies/blinkies/alone_but_not_lonely.gif">
-                <img src="/graphics/webgoodies/blinkies/go_stupid.gif">
-                <img src="/graphics/webgoodies/blinkies/help_im_online.gif">
-                <img src="/graphics/webgoodies/blinkies/let_your_true_colors_shine_through.gif">
-                <img src="/graphics/webgoodies/blinkies/twinkle_twinkle_dark.gif">
+        <!-- right column -->
+        <aside class="m-right-column">
+            <!-- first box -->
+            <div class="c-counter">
+                <img class="c-counter__image" src="/graphics/goodies/pixels/waving-cat.gif">
+                <div class="c-counter__visitors">
+                    <script type="text/javascript" src="//counter.websiteout.net/js/7/5/0/1"></script>
+                    <p>Unique visitors!</p>
+                </div>
             </div>
 
+            <!-- second box -->
+            <!-- guestbook (note: has to be separated from and before the chat box) -->
+            <span class="c-guestbook">
+                <img class="c-guestbook__buddy" src="/graphics/goodies/pixels/typing.gif">
+                <div class="c-guestbook__text">Sign my <a href="http://starrs.123Guestbook.com/" target="_blank">guestbook</a>!</div>
+                <img class="c-guestbook__bubble" src="/graphics/assets/bubble-guestbook.png">
+            </span>
+            <!-- chatbox -->
+            <div class="c-chatbox">
+                <iframe src="https://www3.cbox.ws/box/?boxid=3518663&boxtag=voBcYQ" id="u-chatbox" width="100%" height="219px" allowtransparency="yes" allow="autoplay" marginheight="0" marginwidth="0" scrolling="auto" frameborder="0"></iframe>
+            </div>
 
-            <!-- footer START!!! -->
-            <footer>
-                <div class="footer box-content round-corners">
-                    <span>
-                        &#9734; hosted on <a href="https://neocities.org/site/starrs" target="_blank">neocities</a>!
-                    </span>
-                    <span>
-                        &#9734; source code found on <a href="https://github.com/starrs41/starrs-at-neocities" target="_blank">github</a>
-                    </span>
-                    <span>
-                        &#9734; mobile-friendly (theoretically)
-                    </span>
-                    <span>
-                        &#9734; date created: 6/23/22
-                    </span>
-                    <span>
-                        &#9734; <a href="credits.html" onclick="iframeScroll('credits.html')" target="mainFrame">credits</a>
-                    </span>
-                </div>
-            </footer>
-            
-                            
+            <!-- third box -->
+            <div class="c-webrings">
+                <h3 class="o-box-label">Webrings</h3>
+                <p style="margin:2px; text-align:center;">*collects webrings like pokemon cards*</p>
 
+                <!-- yesterweb webring -->
+                <div class="yw-widget-mini" data-yw-url="https://starrs.neocities.org/"></div>
+                <script src="https://yesterweb.org/js/widget.js"></script>
+                
+                <!-- retro gaming webring -->
+                <script src="https://nippoverse.xyz/retroring/webring.js"></script><ring-063 site="https://starrs.neocities.org/"></ring-063>
+
+                <!-- add more here! -->
+            </div>
+        </aside>
+        <!------------------>
+    </div>
+
+    <!-- web goodies -->
+    <div class="c-collection">
+        <img src="/graphics/goodies/blinkies/artist.gif">
+        <img src="/graphics/goodies/blinkies/alone-but-not-lonely.gif">
+        <img src="/graphics/goodies/blinkies/silly.gif">
+        <img src="/graphics/goodies/blinkies/help-im-online.gif">
+        <img src="/graphics/goodies/blinkies/in-search-of-sanity.gif">
+        <img src="/graphics/goodies/blinkies/i-gaze-at-stars.gif">
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="c-footer">
+            <span>
+                &#9734; hosted on <a href="https://neocities.org/site/starrs" target="_blank">neocities</a>!
+            </span>
+            <span>
+                &#9734; source code found on <a href="https://github.com/starrs41/starrs-at-neocities" target="_blank">github</a>
+            </span>
+            <span>
+                &#9734; mobile-friendly (theoretically)
+            </span>
+            <span>
+                &#9734; date created: 6/23/22
+            </span>
+            <span>
+                &#9734; <a href="credits.html" onclick="iframeScroll('credits.html')" target="mainFrame">credits</a>
+            </span>
         </div>
+    </footer>
 
-        </div>
-        </div>
+    <!-- the main container again -->
+    </div>
 
-        <script src="/tinyspace/tinyspace_features.js"></script>
-        <script src="/tinyspace/tinyspace_music.js"></script>
+    <!-- the layouts again -->
+    </div>
+    </div>
 
-    </body>
+    <!-- the rest of the scripts -->
+    <script src="/tinyspace/tinyfeatures.js"></script>
+    <script src="/tinyspace/tinymusic.js"></script>
+</body>
+
+
 </html>

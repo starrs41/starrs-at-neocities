@@ -1,0 +1,32 @@
+/*
+    for all art pages!
+*/
+
+.l-main-box {
+    border: none;
+    background: none;
+}
+
+@media
+only screen and (max-width: 800px) {
+
+    .l-main-box {
+        margin: 20px auto 20px auto;
+        padding: 5px;
+    }
+
+}
+
+.o-art {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+.o-art-caption {
+    text-align: center;
+    background: #241C2D;
+    padding: 15px;
+    border: 5px double #5A388E;
+}

@@ -1,95 +1,100 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>a tiny space in space</title>
-        <link rel="icon" type="image/x-icon" href="/graphics/sitestuff/star_favicon.gif">
-        
-        <link rel="stylesheet" href="/globalfeatures.css">
-        <link rel="stylesheet" href="../otherpages.css">
 
-        <base target="_blank">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <style>
-            .grid-gallery {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); /* min value depends on image */
-                grid-template-rows: repeat(auto-fill, minmax(32px, 1fr)); /* min value depends on image */
-                gap: 8px;
-                justify-items: center;
-                height: fit-content;
-            }
-
-            .grid-gallery img {
-                width: 92px;
-                height: 32px;
-            }
-
-            .gallery img {
-                width: 99px;
-                height: auto;
-            }
-
-            a > img:hover {
-                transform: scale(0.98);
-                opacity: 0.7;
-                transition: all 0.5s;
-            }
-        </style>
-    </head>
+    <title>a tiny space in space</title>
+    <link rel="icon" type="image/x-icon" href="/graphics/assets/favicon-star.gif">
     
-    <body>
+    <link rel="stylesheet" href="/tinyspace/tinyfeatures.css">
+    <link rel="stylesheet" href="/tinyspace/tinysub.css">
 
-        <div class="main-div">
+    <base target="_blank">
 
-            <!-- going back? -->
-            <div id="backVortex" style="width: fit-content; margin: 0 auto 15px auto;">
-                <div style="width: fit-content; margin: auto;">
-                    <a href="/tinyspace/neighbors.html" target="_self"><img src="/graphics/sitestuff/back.gif" style="width:60px; height: auto;"></a>
-                </div>
-            </div>
+    <style>
+        .c-misc-neighbors {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); /* min value depends on image */
+            grid-template-rows: repeat(auto-fill, minmax(32px, 1fr)); /* min value depends on image */
+            gap: 8px;
+            justify-items: center;
+            height: fit-content;
+        }
 
-            <!-- START -->
+        .c-misc-neighbors img {
+            width: 92px;
+            height: 32px;
+        }
+
+        a > img:hover {
+            transform: scale(0.98);
+            opacity: 0.7;
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+    
+
+<body>
+    <!-- main box -->
+    <div class="l-main-box">
+        <!-- back header -->
+        <div class="o-back-header">
             <div>
-                <!-- heading -->
-                <div class="article-title">
-                    Miscellaneous Sites and Communities
-                </div>
-                <!-- opening statement -->
-                <div style="max-width: 650px; text-align: center; margin: 10px auto 20px auto;">
-                    <p>
-                        Wanna meet others? Or are you looking for materials? Try checking out these websites! :D
-                    </p>
-                    <p>
-                        Also, feel free to inform me if a link is broken or if a site no longer exists ^^ (Last Updated: 10/23/22)
-                    </p>
-                </div>
+                <a href="/tinyspace/neighbors.html" target="_self"><img src="/graphics/assets/feature-back.gif"></a>
             </div>
-    
-            <hr class="rainbow-divider" style="margin-top: 0;">
-    
-            <!-- the button collection GOOO-->
-            <div class="grid-gallery" style="margin-bottom: 20px;">
-                <a href="https://districts.neocities.org/"><img src="/graphics/webgoodies/buttons/users/districts.png" title="a collection of various neocities websites!"></a>
-                <a href="https://yesterweb.org/"><img src="/graphics/webgoodies/buttons/users/yesterweb.png" title="the official site of the yesterweb community!"></a>
-                <a href="https://forum.melonking.net/"><img src="/graphics/webgoodies/buttons/users/melonlandforum.gif" title="a forum based on the old web."></a>
-                <a href="https://status.cafe/"><img src="/graphics/webgoodies/buttons/users/statuscafe.png" title="check out peoples' statuses and share your own!"></a>
-                <a href="https://cybergrunge.net/"><img src="/graphics/webgoodies/buttons/users/cybergrunge.gif" title="a website that hosts a lot of different digital resources."></a>
-                <a href="https://99gifshop.neocities.org/"><img src="/graphics/webgoodies/buttons/users/99gifshop.png" title="a collection of gifs reminiscent of the old web, and in the form of an online shop!"></a>
-                <!-- add more here! -->
-            </div>
+        </div>
+        <!----------------->
 
-            <div style="width: fit-content; margin: 20px auto auto auto; font-size: 65%;">
-                <a target="_self" onclick=window.scroll(0,0);>Back to top?</a> // 
-                <a href="/tinyspace/?e=/tinyspace/neighbors/miscsites.html" target="_top">Outside the iframe?</a>
+        <!-- welcome area -->
+        <div>
+            <!-- title -->
+            <div class="o-blog-title">
+                Miscellaneous Sites and Communities
             </div>
-
+            <!-- message -->
+            <div style="max-width: 650px; text-align: center; margin: 10px auto 20px auto;">
+                <p>
+                    Wanna meet others? Or are you looking for materials? Try checking out these websites! :D
+                </p>
+                <p>
+                    Also, feel free to inform me if a link is broken or if a site no longer exists ^^
+                </p>
+                <p class="o-last-update">
+                    Last updated: 1/22/23
+                </p>
+            </div>
         </div>
 
-        <script src="/tinyspace/tinyspace_features.js"></script>
+        <hr class="o-rainbow-divider" style="margin-top: 0;">
 
-    </body>
+        <!-- cool miscellaneous sites!!! -->
+        <div class="c-misc-neighbors" style="margin-bottom: 20px;">
+            <a href="https://districts.neocities.org/"><img src="/graphics/goodies/buttons/users/districts.png" title="a collection of various neocities websites!"></a>
+            <a href="https://yesterweb.org/"><img src="/graphics/goodies/buttons/users/yesterweb.png" title="the official site of the yesterweb community!"></a>
+            <a href="https://forum.melonking.net/"><img src="/graphics/goodies/buttons/users/melonlandforum.gif" title="a forum based on the old web."></a>
+            <a href="https://status.cafe/"><img src="/graphics/goodies/buttons/users/statuscafe.png" title="check out peoples' statuses and share your own!"></a>
+            <a href="https://cybergrunge.net/"><img src="/graphics/goodies/buttons/users/cybergrunge.gif" title="a website that hosts a lot of different digital resources."></a>
+            <a href="https://99gifshop.neocities.org/"><img src="/graphics/goodies/buttons/users/99gifshop.png" title="a collection of gifs reminiscent of the old web, and in the form of an online shop!"></a>
+            <!-- add more here! -->
+        </div>
+        <!--------------------------------->
+
+        <!-- back footer -->
+        <div class="o-back-footer">
+            <a target="_self" onclick=scrollToTop();>Back to top?</a> // 
+            <a href="/tinyspace/?e=/tinyspace/neighbors/miscsites.html" target="_top">Outside the iframe?</a>
+        </div>
+        <!----------------->
+    </div>
+
+    <!-- scripts -->
+    <script src="/tinyspace/tinyfeatures.js"></script>
+    <script src="/tinyspace/iframeResizer.contentWindow.min.js"></script>
+</body>
+
+
 </html>

@@ -22,11 +22,28 @@
   height: fit-content;
   width: fit-content;
   padding: 1rem 2rem;
+  position: relative;
+}
+
+.o-mii:hover::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid black; */
+  background: url("../../graphics/misc/miiverse/mii-pointer.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 10px;
+  bottom: 50px;
+  z-index: 2;
 }
 
 .o-mii__thumbnail {
   width: 150px;
   height: auto;
+  position: relative;
 }
 
 .o-mii__name {

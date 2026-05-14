@@ -16,6 +16,37 @@
   font-family: "Dita";
 }
 
+.o-mii-summary__portrait-container {
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  height: fit-content;
+  position: relative;
+}
+
+.o-mii-summary__portrait-container::after {
+  content: "";
+  position: absolute;
+  background: url("../../../graphics/misc/miiverse/mii-portrait-border.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.o-mii-summary__portrait {
+  mask-image: url(../../../graphics/misc/miiverse/mii-portrait-mask.svg);
+  mask-size: 100%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
 .o-mii-summary__bio {
   display: flex;
   flex-direction: column;

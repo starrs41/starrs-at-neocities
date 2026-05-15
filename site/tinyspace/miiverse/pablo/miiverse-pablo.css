@@ -126,3 +126,57 @@
   width: 22ch;
   font-size: 0.9rem;
 }
+
+.o-mii-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.188rem;
+  margin-top: 6rem;
+}
+
+.o-mii-details__heading {
+  font-family: "Dreamlife";
+  font-size: 2.6rem;
+}
+
+.o-mii-details__list {
+  background: #faf9e7FF;
+  box-shadow: 0px 8px 0px 0px #ffc336FF;
+  padding: 2.5rem 3.125rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 80%;
+  height: fit-content;
+}
+
+.o-mii-details__item {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.o-mii-details__label {
+  font-family: "Dita Bold";
+  padding: 1rem 2rem;
+  background: #efa300;
+  border-radius: 50px;
+  color: #FFFFFF;
+}
+
+.o-mii-details__info {
+  font-family: "Dita";
+}
+
+.o-mii-details__item--trivia {
+  align-items: flex-start;
+  margin-top: 1rem;
+  gap: 3rem;
+}

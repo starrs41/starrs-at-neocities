@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
   padding: 2rem 10rem;
   font-family: "Dita";
 }
@@ -60,4 +60,51 @@
   border-radius: 50px;
   padding: 2.5rem 3.125rem;
   width: 50ch;
+}
+
+.o-mii-personality {
+  position: absolute;
+  bottom: -50px;
+  right: -100px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1rem 2rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.o-mii-personality::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url("../../../graphics/misc/miiverse/personality-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  filter: invert(94%) sepia(8%) saturate(1066%) hue-rotate(144deg) brightness(96%) contrast(94%);
+}
+
+.o-mii-personality__name {
+  width: fit-content;
+  text-align: center;
+  font-family: "Dita Bold";
+  font-size: 1.1rem;
+  /* -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #FFFFFF; */
+  color: #04a1b3;
+  text-shadow:
+    -1px -1px 0 #FFFFFF,  
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF;
+}
+
+.o-mii-personality__desc {
+  width: 22ch;
+  font-size: 0.9rem;
 }

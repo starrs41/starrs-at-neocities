@@ -136,7 +136,7 @@
   margin-top: 6rem;
 }
 
-.o-mii-details__heading {
+.o-mii-heading {
   font-family: "Dreamlife";
   font-size: 2.6rem;
 }
@@ -179,4 +179,115 @@
   align-items: flex-start;
   margin-top: 1rem;
   gap: 3rem;
+}
+
+.o-mii-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  height: fit-content;
+}
+
+.o-game-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 80%;
+  height: fit-content;
+}
+
+.o-game {
+  padding: 0.8rem 1.5rem 0.8rem 1.3rem;
+  border: none;
+  border-radius: 100px;
+  background: #fdfefe;
+  font-family: "Dita Bold";
+  color: #03243d;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  box-shadow: 0px 4px 0px 0px #e1e1dbFF, 0px 8px 0px 0px #c9ac53FF;
+}
+
+.o-game:hover, .o-game input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.o-game input[type="checkbox"] {
+  /* remove default appearance */
+  appearance: none;
+  background-color: #fff; /* For iOS < 15 to remove gradient background */
+  margin: 0;
+  /* add custom appearance */
+  font: inherit;
+  color: #e1e1db;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #e1e1db;
+  border-radius: 100px;
+  background: none;
+  display: grid;
+  place-content: center;
+}
+
+.o-game input[type="checkbox"]::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 100px;
+  background: #dc6830;
+  background: url("../../../graphics/misc/miiverse/checked.svg");
+  background-size: 98%;
+  visibility: hidden;
+}
+
+.o-game input[type="checkbox"]:checked::before {
+  visibility: visible;
+}
+
+.o-picture-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  width: 80%;
+  padding-top: 2rem;
+  height: fit-content;
+}
+
+.o-thumbnail-container {
+  aspect-ratio: 16/9;
+  width: 300px;
+  height: auto;
+  border: 5px solid #efa300;
+  overflow: hidden;
+  position: relative;
+}
+
+.o-thumbnail-container:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0px 4px 0px 0px #c9ac53FF;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+
+.o-thumbnail {  
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 }

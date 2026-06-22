@@ -291,3 +291,120 @@
   bottom: 0;
   margin: auto 0;
 }
+
+.o-lightbox {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #13222dd6;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Dita";
+  gap: 1rem;
+}
+
+.o-lightbox__other {
+  display: flex;
+  flex: 0 0 auto; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem 0 5rem;
+  width: 100%;
+  height: fit-content;
+}
+
+.o-lightbox-info > img {
+  width: 50px;
+  height: auto;
+}
+
+.o-lightbox-close > img {
+  width: 40px;
+  height: auto;
+}
+
+.o-lightbox__spacing {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.o-lightbox__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* gap: 2rem; */
+  width: 100%;
+  height: 100%;
+  /* padding: 0 2rem; */
+}
+
+.o-lightbox-nav, .o-lightbox-info, .o-lightbox-close {
+  background: none;
+  border: none;
+}
+
+.o-lightbox-nav {
+  padding: 0 0rem;
+}
+
+.o-lightbox-nav > img {
+  width: 40px;
+  height: auto;
+}
+
+.o-lightbox-nav:hover {
+  cursor: pointer;
+}
+
+.o-picture-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 2rem 0;
+}
+
+.o-picture {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* will decide if i need this later */
+
+.u-remove-scroll {
+  overflow: hidden;
+}
+
+@media screen and (max-height: 750px) {
+  .o-lightbox-nav > img {
+    width: 30px;
+    height: auto;
+  }
+
+  .o-lightbox-info > img, .o-lightbox-close > img {
+    width: 35px;
+    height: auto;
+  }
+  .o-lightbox__other {
+    padding: 2rem 4rem 0 4rem
+  }
+}

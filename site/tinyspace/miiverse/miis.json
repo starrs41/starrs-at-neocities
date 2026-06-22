@@ -1,0 +1,22 @@
+{
+  "miis": [
+    {
+      "slug": "pablo",
+      "name": "Pablo",
+      "desc": "This mii doesn't have much plans of his own, going along with whatever life throws at him. It's hard to see with his shades and his general laid-back attitude, but he cares deeply about his friends and does what he can to be there for them.",
+      "details": {
+        "birthday": "April 5",
+        "pronouns": "he/him",
+        "gender": "Male (Cis)",
+        "datingprefs": "Male/Female/Nonbinary (Bisexual)",
+        "outfitprefs": "Masculine",
+        "trivia": [
+          "He was originally made in Miitopia with help from my family.",
+          "He wears shades constantly because his eyes are sensitive to light. He only feels comfortable removing them indoors.",
+          "He has dreams to travel and become a chef in a world-famous restaurant but is too indecisive and afraid to pursue them.",
+          "He had been living with family for a while, but decided to move out to gain more independence and to prove something to both his family and himself. After seeing an ad for the island, he made his way there."
+        ]
+      }
+    }
+  ]
+}

@@ -10,6 +10,20 @@ let pictures = document.querySelectorAll(".o-picture");
 
 let lightbox = document.querySelector(".o-lightbox");
 
+window.addEventListener("keydown", (event) => {
+  if (!lightbox.classList.contains("u-hidden")) {
+    if (event.key == "Escape") {
+      lightbox.classList.toggle("u-hidden");
+    }
+    if (event.key == "a" || event.key == "ArrowLeft") {
+      goToPrevSlide();
+    }
+    if (event.key == "d" || event.key == "ArrowRight") {
+      goToNextSlide();
+    }
+  }
+})
+
 for (let i = 0; i < thumbnails.length; i++) {
   thumbnails[i].addEventListener("click", (event) => {
     changeSlide(i)
@@ -31,22 +45,30 @@ lightboxClose.addEventListener("click", (event) => {
 })
 
 lightboxPrev.addEventListener("click", (event) => {
+  goToPrevSlide();
+})
+
+lightboxNext.addEventListener("click", (event) => {
+  goToNextSlide();
+})
+
+function goToPrevSlide() {
   if (currentSlide > 0) {
     changeSlide(currentSlide - 1);
   }
   else {
     changeSlide(pictures.length - 1);
   }
-})
+}
 
-lightboxNext.addEventListener("click", (event) => {
+function goToNextSlide() {
   if (currentSlide < pictures.length - 1) {
     changeSlide(currentSlide + 1);
   }
   else {
     changeSlide(0);
   }
-})
+}
 
 function changeSlide(newSlide) {
   pictures[currentSlide].classList.toggle("u-hidden");

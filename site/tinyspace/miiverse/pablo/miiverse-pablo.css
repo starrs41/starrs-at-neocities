@@ -354,6 +354,7 @@
 .o-lightbox-nav, .o-lightbox-info, .o-lightbox-close {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .o-lightbox-nav {
@@ -392,6 +393,10 @@
 
 .u-remove-scroll {
   overflow: hidden;
+}
+
+.u-hidden {
+  display: none;
 }
 
 @media screen and (max-height: 750px) {

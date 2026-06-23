@@ -1,8 +1,9 @@
 let currentSlide = 0;
 
 /*
-IMPORTANT NOTE: thumbnails and pictures should be in
-the same order for them to be matched up correctly
+  IMPORTANT NOTE: thumbnails, pictures, and descriptions
+  should have the same length and be in the same order
+  for them to be matched up correctly
 */
 
 let thumbnails = document.querySelectorAll(".o-thumbnail");
@@ -38,6 +39,19 @@ let lightboxNext = document.querySelector("#lightboxNext");
 
 lightboxInfo.addEventListener("click", (event) => {
   console.log("you clicked info");
+})
+
+let descriptions = document.querySelectorAll(".o-lightbox-info-box__content");
+
+lightboxInfo.addEventListener("mouseenter", (event) => {
+  console.log(descriptions[currentSlide]);
+  descriptions[currentSlide].parentNode.classList.toggle("u-hidden");
+  descriptions[currentSlide].classList.toggle("u-hidden");
+})
+
+lightboxInfo.addEventListener("mouseleave", (event) => {
+  descriptions[currentSlide].parentNode.classList.toggle("u-hidden");
+  descriptions[currentSlide].classList.toggle("u-hidden");
 })
 
 lightboxClose.addEventListener("click", (event) => {

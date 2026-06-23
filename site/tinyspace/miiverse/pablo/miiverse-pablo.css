@@ -330,6 +330,33 @@
   height: auto;
 }
 
+.o-lightbox-info {
+  position: relative;
+}
+
+.o-lightbox-info-box {
+  position: absolute;
+  z-index: 3;
+  left: 30px;
+  top: 30px;
+  background: #faf9e7;
+  padding: 2.5rem 3.125rem;
+  border-radius: 50px;
+  width: fit-content;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+
+.o-lightbox-info-box__content {
+  display: block;
+  text-align: left;
+  width: fit-content;
+  height: fit-content;
+}
+
 .o-lightbox__spacing {
   flex: 1;
   display: flex;

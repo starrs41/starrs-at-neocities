@@ -256,13 +256,12 @@
   visibility: visible;
 }
 
-.o-picture-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+.o-thumbnail-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1fr);
+  justify-items: center;
   gap: 1.2rem;
-  flex-wrap: wrap;
   width: 80%;
   padding-top: 2rem;
   height: fit-content;
@@ -399,6 +398,8 @@
   display: none;
 }
 
+/* height */
+
 @media screen and (max-height: 750px) {
   .o-lightbox-nav > img {
     width: 30px;
@@ -411,5 +412,13 @@
   }
   .o-lightbox__other {
     padding: 2rem 4rem 0 4rem
+  }
+}
+
+/* width */
+
+@media screen and (max-width: 1200px) {
+  .o-thumbnail-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

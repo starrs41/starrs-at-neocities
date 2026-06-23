@@ -2,6 +2,7 @@
   margin-top: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: fit-content;
 }
@@ -413,6 +414,23 @@
   object-position: center;
   width: 100%;
   height: 100%;
+}
+
+.o-top-btn {
+  background: #efa300;
+  border: none;
+  border-radius: 35px;
+  color: #ffffff;
+  font-family: "Dita Bold";
+  font-size: 1.1rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.563rem 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.o-top-btn:hover {
+  cursor: pointer;
 }
 
 /* will decide if i need this later */

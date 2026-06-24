@@ -90,3 +90,84 @@ h1 {
 .o-navbar__center {
   margin-left: 10rem;
 }
+
+/* shared css */
+
+.o-button {
+  padding: 0.8rem 1.5rem 0.8rem 1.3rem;
+  border: none;
+  border-radius: 100px;
+  background: #fdfefe;
+  font-family: "Dita Bold";
+  color: #03243d;
+  box-shadow: 0px 4px 0px 0px #e1e1dbFF, 0px 8px 0px 0px #c9ac53FF;
+}
+
+.o-button:hover {
+  cursor: pointer;
+}
+
+.o-button--checkbox {
+  display: grid;
+  grid-template-columns: 1rem auto;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.o-button--checkbox input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.o-button--checkbox input[type="checkbox"] {
+  /* remove default appearance */
+  appearance: none;
+  background-color: #fff; /* For iOS < 15 to remove gradient background */
+  margin: 0;
+  /* add custom appearance */
+  font: inherit;
+  color: #e1e1db;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #e1e1db;
+  border-radius: 100px;
+  background: none;
+  display: grid;
+  place-content: center;
+}
+
+.o-button--checkbox input[type="checkbox"]::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 100px;
+  background: #dc6830;
+  background: url("../../../graphics/misc/miiverse/checked.svg");
+  background-size: 98%;
+  visibility: hidden;
+}
+
+.o-button--checkbox input[type="checkbox"]:checked::before {
+  visibility: visible;
+}
+
+.o-button--icon {
+  padding: 0.8rem 0.938rem 0.8rem 0.8rem;
+  border: none;
+  border-radius: 100px;
+  background: #fdfefe;
+  font-family: "Dita Bold";
+  color: #03243d;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 0.625rem;
+  box-shadow: 0px 4px 0px 0px #e1e1dbFF, 0px 8px 0px 0px #c9ac53FF;
+}
+
+.o-button--icon:hover {
+  transform: translateY(4px);
+  box-shadow: 0px 4px 0px 0px #c9ac53FF;
+} 

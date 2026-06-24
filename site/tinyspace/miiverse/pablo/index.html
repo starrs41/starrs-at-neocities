@@ -10,13 +10,17 @@
 <body>
   <div class="o-navbar">
     <div class="o-navbar__left">
-      <a class="o-home-button" href="../">
+      <a class="o-button--icon" href="../">
         <img src="../../../graphics/misc/miiverse/home.svg" alt="Home Icon"><span>Home</span>
       </a>
     </div>
     <div class="o-navbar__right">
-      <button>Music: OFF</button>
-      <button>Animations: OFF</button>
+      <label for="musicToggle" class="o-button o-button--checkbox">
+          <input type="checkbox" id="musicToggle" /> Music: OFF
+      </label>
+      <label for="animationToggle" class="o-button o-button--checkbox">
+        <input type="checkbox" id="animationToggle" /> Animations: OFF
+      </label>
     </div>
   </div>
   <div class="o-main--mii">
@@ -112,22 +116,22 @@
         Gallery
       </h2>
       <div class="o-game-list">
-        <label for="tlld" class="o-game">
+        <label for="tlld" class="o-button o-button--checkbox">
           <input type="checkbox" id="tlld" checked /> Tomodachi Life: Living the Dream (Switch)
         </label>
-        <label for="tl" class="o-game">
+        <label for="tl" class="o-button o-button--checkbox">
           <input type="checkbox" id="tl" checked /> Tomodachi Life (3DS)
         </label>
-        <label for="tc" class="o-game">
+        <label for="tc" class="o-button o-button--checkbox">
           <input type="checkbox" id="tc" checked /> Tomodachi Collection (DS)
         </label>
-        <label for="miitopiaswitch" class="o-game">
+        <label for="miitopiaswitch" class="o-button o-button--checkbox">
           <input type="checkbox" id="miitopiaswitch" checked /> Miitopia (Switch)
         </label>
-        <label for="miitopia3ds" class="o-game">
+        <label for="miitopia3ds" class="o-button o-button--checkbox">
           <input type="checkbox" id="miitopia3ds" checked /> Miitopia (3DS)
         </label>
-        <label for="misc" class="o-game">
+        <label for="misc" class="o-button o-button--checkbox">
           <input type="checkbox" id="misc" checked /> Miscellaneous
         </label>
       </div>

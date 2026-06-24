@@ -10,15 +10,22 @@
 <body>
   <div class="o-navbar">
     <div class="o-navbar__left">
-      <a href="../">Home</a>
-    </div>
-    <div class="o-navbar__center">
-      <h1>Miivers</h1>
+      <a class="o-button--icon" href="../">
+        <img src="../../../graphics/misc/miiverse/home.svg" alt="Home Icon"><span>Back to Main Website</span>
+      </a>
     </div>
     <div class="o-navbar__right">
-      <button>Music: OFF</button>
-      <button>Animations: OFF</button>
+      <label for="musicToggle" class="o-button o-button--checkbox">
+          <input type="checkbox" id="musicToggle" /> Music: OFF
+      </label>
+      <label for="animationToggle" class="o-button o-button--checkbox">
+        <input type="checkbox" id="animationToggle" /> Animations: OFF
+      </label>
     </div>
+  </div>
+  <div class="o-heading--main">
+    <h1>Miivers</h1>
+    <h2>Tomodachi Life</h2>
   </div>
   <div class="o-main--index">
     <!-- will be generated using SSG -->

@@ -43,6 +43,12 @@ h1 {
   font-weight: normal;
 }
 
+h2 {
+  font-family: "Dreamland";
+  font-size: 2rem;
+  font-weight: normal;
+}
+
 @keyframes animate-bg {
   0% {
     background-position: 0 0;
@@ -87,11 +93,24 @@ h1 {
   }
 }
 
-.o-navbar__center {
-  margin-left: 10rem;
+.o-navbar__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* shared css */
+.o-heading--main {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
 
 .o-button {
   padding: 0.8rem 1.5rem 0.8rem 1.3rem;
@@ -160,7 +179,7 @@ h1 {
   font-family: "Dita Bold";
   color: #03243d;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   align-items: center;
   justify-items: center;
   gap: 0.625rem;

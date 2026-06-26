@@ -424,7 +424,7 @@
 
 .o-thumbnail-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr ));
   grid-template-rows: repeat(1fr);
   justify-items: center;
   gap: 1.2rem;

@@ -100,7 +100,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
+} 
 
 .o-heading--main {
   width: 100%;
@@ -208,6 +208,9 @@ h2 {
 .u-pause-animation::after {
   /* animation: none !important; */
   animation-play-state: paused;
+}
+
+@media screen and (max-width: 1200px) {
 }
 
 @media screen and (max-width: 790px) {

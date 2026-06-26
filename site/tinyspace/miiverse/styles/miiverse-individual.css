@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  padding: 4rem 10rem;
+  padding: 4rem 0rem;
   font-family: "Dita";
 }
 
@@ -72,6 +72,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  position: relative;
 }
 
 .o-mii-summary__character {
@@ -215,8 +216,8 @@
 
 .o-mii-personality {
   position: absolute;
-  bottom: -50px;
-  right: -100px;
+  bottom: -100px;
+  left: -220px;
   z-index: 3;
   display: flex;
   flex-direction: column;
@@ -227,7 +228,6 @@
   width: fit-content;
   height: fit-content;
   filter: drop-shadow(2px 4px 0px rgba(0, 0, 0, 0.2));
-  /* filter: drop-shadow(2px 4px 0px rgba(255, 195, 54, 1)); */
 }
 
 .o-mii-personality::after {
@@ -293,6 +293,10 @@
   width: auto;
 }
 
+.o-mii-quirk > span {
+  text-align: center;
+}
+
 .o-mii-details {
   display: flex;
   flex-direction: column;
@@ -329,6 +333,12 @@
   align-items: center;
 }
 
+.o-mii-details__item--trivia {
+  align-items: flex-start;
+  margin-top: 1rem;
+  gap: 3rem;
+}
+
 .o-mii-details__label {
   font-family: "Dita Bold";
   padding: 1rem 2rem;
@@ -339,12 +349,6 @@
 
 .o-mii-details__info {
   font-family: "Dita";
-}
-
-.o-mii-details__item--trivia {
-  align-items: flex-start;
-  margin-top: 1rem;
-  gap: 3rem;
 }
 
 .o-mii-gallery {
@@ -424,8 +428,8 @@
 
 .o-thumbnail-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr ));
-  grid-template-rows: repeat(1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
   justify-items: center;
   gap: 1.2rem;
   width: 80%;
@@ -629,6 +633,163 @@
 
 @media screen and (max-width: 1200px) {
   .o-thumbnail-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .o-mii-summary {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    padding: 4rem 0rem 0rem 0rem;
+    font-family: "Dita";
+    width: 70%;
+  }
+
+  .o-mii-summary__bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .o-mii-summary__character {
+    margin-left: 0rem;
+    background: #faf9e7FF;
+    box-shadow: 0px 8px 0px 0px #ffc336FF;
+    border-radius: 50px;
+    padding: 2.5rem 3.125rem;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .o-mii-personality {
+    position: absolute;
+    bottom: -90px;  
+    left: auto;
+    right: 0px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.1rem 2rem;
+    width: fit-content;
+    height: fit-content;
+    filter: drop-shadow(2px 4px 0px rgba(0, 0, 0, 0.2));
+  }
+
+  .o-mii-quirk-list {
+    background: #ffd032;
+    border-radius: 30px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 70%;
+    height: fit-content;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .o-thumbnail-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 1.2rem;
+    width: 80%;
+    padding-top: 2rem;
+    height: fit-content;
+  }
+
+  .o-thumbnail-container {
+    aspect-ratio: 16/9;
+    width: 250px;
+    height: auto;
+    border: 5px solid #efa300;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .o-mii-details__list {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .o-mii-details__item {
+    background: #faf9e7FF;
+    box-shadow: 0px 8px 0px 0px #ffc336FF;
+    padding: 2.5rem 3.125rem;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .o-mii-details__item--trivia {
+    align-items: center;
+    margin-top: 0;
+    gap: 1.5rem;
+  }
+
+  .o-mii-details__info {
+    text-align: center;
+  }
+  
+  .o-mii-details__info--trivia {
+    text-align: left;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .o-mii-personality {
+    position: absolute;
+    bottom: -90px;  
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.1rem 2rem;
+    width: fit-content;
+    height: fit-content;
+    filter: drop-shadow(2px 4px 0px rgba(0, 0, 0, 0.2));
   }
 }

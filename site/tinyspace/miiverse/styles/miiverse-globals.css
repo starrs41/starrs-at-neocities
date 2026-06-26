@@ -63,6 +63,7 @@ h2 {
   width: 100%;
   height: fit-content;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   padding: 3rem 4rem;
@@ -119,6 +120,7 @@ h2 {
   background: #fdfefe;
   font-family: "Dita Bold";
   color: #03243d;
+  text-align: center;
   box-shadow: 0px 4px 0px 0px #e1e1dbFF, 0px 8px 0px 0px #c9ac53FF;
 }
 
@@ -206,4 +208,13 @@ h2 {
 .u-pause-animation::after {
   /* animation: none !important; */
   animation-play-state: paused;
+}
+
+@media screen and (max-width: 790px) {
+  .o-navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
 }

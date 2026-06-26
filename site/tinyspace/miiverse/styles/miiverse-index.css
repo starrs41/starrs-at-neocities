@@ -3,7 +3,8 @@
   width: 100%;
   height: fit-content;
   display: grid;
-  grid: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1fr);
   align-items: center;
   align-content: start;
   justify-items: center;
@@ -65,4 +66,10 @@
   position: absolute;
   z-index: -1;
   overflow: visible;
+}
+
+@media screen and (max-width: 1280px) {
+  .o-main--index {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
 }

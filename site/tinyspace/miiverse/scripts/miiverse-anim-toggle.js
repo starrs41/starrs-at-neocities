@@ -1,4 +1,5 @@
-let animToggle = document.querySelector("#animationToggle");
+let animationToggle = document.querySelector("#animationToggle");
+let animationToggleText = document.querySelector("#animationToggleText");
 
 let animatedElements = [];
 
@@ -18,8 +19,8 @@ if (animationPref) {
   }
 }
 
-animToggle.addEventListener("click", (event) => {
-  if (animToggle.checked) {
+animationToggle.addEventListener("click", (event) => {
+  if (animationToggle.checked) {
     playAnimations();
     setAnimationPref("true");
   }
@@ -33,12 +34,14 @@ function playAnimations() {
   for (const element in animatedElements) {
     animatedElements[element].classList.remove("u-pause-animation");
   }
+  animationToggleText.innerText = "Animations: ON";
 }
 
 function pauseAnimations() {
   for (const element in animatedElements) {
     animatedElements[element].classList.add("u-pause-animation");
   }
+  animationToggleText.innerText = "Animations: OFF";
 }
 
 function getAnimationPref() {
@@ -50,5 +53,5 @@ function setAnimationPref(value) {
 }
 
 function setAnimationToggle(value) {
-  animToggle.checked = value;
+  animationToggle.checked = value;
 }

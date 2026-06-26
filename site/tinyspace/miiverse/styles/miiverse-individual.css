@@ -83,6 +83,136 @@
   width: 50ch;
 }
 
+/* yes there will be a class for all 16 personalities. i know it sucks */
+
+.o-mii-personality--sweetie .o-mii-personality__name {
+  color: #E59822;
+}
+
+.o-mii-personality--sweetie::after {
+  filter: brightness(0) saturate(100%) invert(86%) sepia(39%) saturate(210%) hue-rotate(352deg) brightness(102%) contrast(96%);
+}
+
+.o-mii-personality--cheerleader .o-mii-personality__name {
+  color: #CEB010;
+}
+
+.o-mii-personality--cheerleader::after {
+  filter: brightness(0) saturate(100%) invert(73%) sepia(3%) saturate(3863%) hue-rotate(17deg) brightness(121%) contrast(109%);
+}
+
+.o-mii-personality--buddy .o-mii-personality__name {
+  color: #DA9F07;
+}
+
+.o-mii-personality--buddy::after {
+  filter: brightness(0) saturate(100%) invert(85%) sepia(33%) saturate(429%) hue-rotate(349deg) brightness(103%) contrast(96%);
+}
+
+.o-mii-personality--daydreamer .o-mii-personality__name {
+  color: #D89B04;
+}
+
+.o-mii-personality--daydreamer::after {
+  filter: brightness(0) saturate(100%) invert(84%) sepia(35%) saturate(458%) hue-rotate(329deg) brightness(104%) contrast(97%);
+}
+
+.o-mii-personality--charmer .o-mii-personality__name {
+  color: #D45385;
+}
+
+.o-mii-personality--charmer::after {
+  filter: brightness(0) saturate(100%) invert(77%) sepia(18%) saturate(439%) hue-rotate(303deg) brightness(104%) contrast(96%);
+}
+
+.o-mii-personality--go-getter .o-mii-personality__name {
+  color: #B8011B;
+}
+
+.o-mii-personality--go-getter::after {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(12%) saturate(2703%) hue-rotate(295deg) brightness(99%) contrast(96%);
+}
+
+.o-mii-personality--merrymaker .o-mii-personality__name {
+  color: #DD4E1B;
+}
+
+.o-mii-personality--merrymaker::after {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(5%) saturate(3443%) hue-rotate(320deg) brightness(116%) contrast(95%);
+}
+
+.o-mii-personality--dynamo .o-mii-personality__name {
+  color: #9B460F;
+}
+
+.o-mii-personality--dynamo::after {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(90%) saturate(4058%) hue-rotate(295deg) brightness(99%) contrast(107%);
+}
+
+.o-mii-personality--strategist .o-mii-personality__name {
+  color: #6DAA04;
+}
+
+.o-mii-personality--strategist::after {
+  filter: brightness(0) saturate(100%) invert(94%) sepia(16%) saturate(686%) hue-rotate(31deg) brightness(93%) contrast(92%);
+}
+
+.o-mii-personality--perfectionist .o-mii-personality__name {
+  color: #077057;
+}
+
+.o-mii-personality--perfectionist::after {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(7%) saturate(1163%) hue-rotate(96deg) brightness(108%) contrast(92%);
+}
+
+.o-mii-personality--observer .o-mii-personality__name {
+  color: #046C67;
+}
+
+.o-mii-personality--observer::after {
+  filter: brightness(0) saturate(100%) invert(82%) sepia(6%) saturate(618%) hue-rotate(103deg) brightness(91%) contrast(92%);
+}
+
+.o-mii-personality--thinker .o-mii-personality__name {
+  color: #008340;
+}
+
+.o-mii-personality--thinker::after {
+  filter: brightness(0) saturate(100%) invert(93%) sepia(56%) saturate(303%) hue-rotate(49deg) brightness(88%) contrast(80%);
+}
+
+.o-mii-personality--achiever .o-mii-personality__name {
+  color: #04a1b3;
+}
+
+.o-mii-personality--achiever::after {
+  filter: invert(94%) sepia(8%) saturate(1066%) hue-rotate(144deg) brightness(96%) contrast(94%);
+}
+
+.o-mii-personality--visionary .o-mii-personality__name {
+  color: #0A6FAB;
+}
+
+.o-mii-personality--visionary::after {
+  filter: brightness(0) saturate(100%) invert(82%) sepia(4%) saturate(3292%) hue-rotate(183deg) brightness(98%) contrast(90%);
+}
+
+.o-mii-personality--rogue .o-mii-personality__name {
+  color: #0637B9;
+}
+
+.o-mii-personality--rogue::after {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(9%) saturate(1129%) hue-rotate(200deg) brightness(98%) contrast(90%);
+}
+
+.o-mii-personality--maverick .o-mii-personality__name {
+  color: #7760B7;
+}
+
+.o-mii-personality--maverick::after {
+  filter: brightness(0) saturate(100%) invert(80%) sepia(9%) saturate(1589%) hue-rotate(207deg) brightness(98%) contrast(88%);
+}
+
 .o-mii-personality {
   position: absolute;
   bottom: -50px;
@@ -96,6 +226,8 @@
   padding: 1.1rem 2rem;
   width: fit-content;
   height: fit-content;
+  filter: drop-shadow(2px 4px 0px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(2px 4px 0px rgba(255, 195, 54, 1)); */
 }
 
 .o-mii-personality::after {
@@ -107,7 +239,6 @@
   background-size: 100%;
   width: 100%;
   height: 100%;
-  filter: invert(94%) sepia(8%) saturate(1066%) hue-rotate(144deg) brightness(96%) contrast(94%);
 }
 
 .o-mii-personality__name {
@@ -117,12 +248,11 @@
   font-size: 1.1rem;
   /* -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #FFFFFF; */
-  color: #04a1b3;
   text-shadow:
-    -1px -1px 0 #FFFFFF,  
-    1px -1px 0 #FFFFFF,
-    -1px 1px 0 #FFFFFF,
-    1px 1px 0 #FFFFFF;
+    -2px -2px 0 #FFFFFF,  
+    2px -2px 0 #FFFFFF,
+    -2px 2px 0 #FFFFFF,
+    2px 2px 0 #FFFFFF;
 }
 
 .o-mii-personality__desc {

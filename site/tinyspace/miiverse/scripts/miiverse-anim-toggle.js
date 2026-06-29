@@ -22,11 +22,11 @@ if (animationPref) {
 animationToggle.addEventListener("click", (event) => {
   if (animationToggle.checked) {
     playAnimations();
-    setAnimationPref("true");
+    setAnimationPref(true);
   }
   else {
     pauseAnimations();
-    setAnimationPref("false");
+    setAnimationPref(false);
   }
 });
 
@@ -49,7 +49,12 @@ function getAnimationPref() {
 }
 
 function setAnimationPref(value) {
-  localStorage.setItem("hasAnimations", value);
+  if (value === true) {
+    localStorage.setItem("hasAnimations", "true");
+  }
+  else {
+    localStorage.setItem("hasAnimations", "false");
+  }
 }
 
 function setAnimationToggle(value) {

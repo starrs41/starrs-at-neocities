@@ -16,7 +16,7 @@
     </div>
     <div class="o-navbar__right">
       <label for="musicToggle" class="o-button o-button--checkbox">
-          <input type="checkbox" id="musicToggle" /><span id="musicToggleText">Music: OFF</span>
+          <input type="checkbox" id="musicToggle" data-music-id="index" /><span id="musicToggleText">Music: OFF</span>
       </label>
       <label for="animationToggle" class="o-button o-button--checkbox">
         <input type="checkbox" id="animationToggle" /><span id="animationToggleText">Animations: OFF</span>
@@ -70,6 +70,15 @@
       <p class="o-mii__name">Pablo</p>
     </a>
   </div>
+  <audio id="js-bgm">
+    <source src="https://file.garden/akJr1M5SUwY64beP/TLLD%20-%20Title%2C%20Part%201.mp3" type="audio/mpeg">
+    <span>Your browser does not support the audio element.</span>
+  </audio>
+  <audio loop id="js-bgm">
+    <source src="https://file.garden/akJr1M5SUwY64beP/TLLD%20-%20Title%2C%20Part%202.mp3" type="audio/mpeg">
+    <span>Your browser does not support the audio element.</span>
+  </audio>
   <script src="scripts/miiverse-anim-toggle.js"></script>
+  <script src="scripts/miiverse-music-toggle.js"></script>
 </body>
 </html>

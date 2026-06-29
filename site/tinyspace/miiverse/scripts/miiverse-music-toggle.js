@@ -16,33 +16,33 @@ let musicPref = getMusicPref();
 if (musicPref) {
   if (musicPref === "true") {
     playMusic();
-    setMusicToggle(true);
   }
   else {
     pauseMusic();
-    setMusicToggle(false);
   }
 }
 
 musicToggle.addEventListener("click", (event) => {
   if (musicToggle.checked) {
     playMusic();
-    setMusicPref(true);
   }
   else {
     pauseMusic();
-    setMusicPref(false);
   }
 });
 
 function playMusic() {
   musicContent[currentIdx].play();
   musicToggleText.innerText = "Music: ON";
+  setMusicToggle(true);
+  setMusicPref(true);
 }
 
 function pauseMusic() {
   musicContent[currentIdx].pause();
   musicToggleText.innerText = "Music: OFF";
+  setMusicToggle(false);
+  setMusicPref(false);
 }
 
 function getMusicPref() {
@@ -56,7 +56,6 @@ function setMusicPref(value) {
   else {
     localStorage.setItem("hasMusic", "false");
   }
-  
 }
 
 function setMusicToggle(value) {

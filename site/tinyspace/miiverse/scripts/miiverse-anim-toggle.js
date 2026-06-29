@@ -11,22 +11,18 @@ let animationPref = getAnimationPref();
 if (animationPref) {
   if (animationPref === "true") {
     playAnimations();
-    setAnimationToggle(true);
   }
   else {
     pauseAnimations();
-    setAnimationToggle(false);
   }
 }
 
 animationToggle.addEventListener("click", (event) => {
   if (animationToggle.checked) {
     playAnimations();
-    setAnimationPref(true);
   }
   else {
     pauseAnimations();
-    setAnimationPref(false);
   }
 });
 
@@ -35,6 +31,8 @@ function playAnimations() {
     animatedElements[element].classList.remove("u-pause-animation");
   }
   animationToggleText.innerText = "Animations: ON";
+  setAnimationToggle(true);
+  setAnimationPref(true);
 }
 
 function pauseAnimations() {
@@ -42,6 +40,8 @@ function pauseAnimations() {
     animatedElements[element].classList.add("u-pause-animation");
   }
   animationToggleText.innerText = "Animations: OFF";
+  setAnimationToggle(false);
+  setAnimationPref(false);
 }
 
 function getAnimationPref() {

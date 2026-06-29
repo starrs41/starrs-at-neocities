@@ -602,16 +602,6 @@
   cursor: pointer;
 }
 
-/* will decide if i need this later */
-
-.u-remove-scroll {
-  overflow: hidden;
-}
-
-.u-hidden {
-  display: none;
-}
-
 /* height */
 
 @media screen and (max-height: 750px) {

@@ -87,5 +87,4 @@ function changeSlide(newSlide) {
   pictures[currentSlide].classList.toggle("u-hidden");
   pictures[newSlide].classList.toggle("u-hidden");
   currentSlide = newSlide;
-  console.log("current slide: " + currentSlide);
 }

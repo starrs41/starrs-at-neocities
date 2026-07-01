@@ -30,7 +30,7 @@
 .o-mii-summary__portrait-container::after {
   content: "";
   position: absolute;
-  background: url("../../../graphics/misc/miiverse/mii-portrait-border.svg");
+  background: url("../../../../graphics/misc/miiverse/mii-portrait-border.svg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 }
 
 .o-mii-summary__portrait {
-  mask-image: url(../../../graphics/misc/miiverse/mii-portrait-mask.svg);
+  mask-image: url(../../../../graphics/misc/miiverse/mii-portrait-mask.svg);
   mask-size: 100%;
   mask-position: center;
   mask-repeat: no-repeat;
@@ -58,7 +58,7 @@
 
 .o-mii-summary__name::after {
   content: "";
-  background: url("../../../graphics/misc/miiverse/mii-underline.svg");
+  background: url("../../../../graphics/misc/miiverse/mii-underline.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -234,7 +234,7 @@
   content: "";
   position: absolute;
   z-index: -1;
-  background: url("../../../graphics/misc/miiverse/personality-bg.svg");
+  background: url("../../../../graphics/misc/miiverse/personality-bg.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -417,7 +417,7 @@
   border: none;
   border-radius: 100px;
   background: #dc6830;
-  background: url("../../../graphics/misc/miiverse/checked.svg");
+  background: url("../../../../graphics/misc/miiverse/checked.svg");
   background-size: 98%;
   visibility: hidden;
 }

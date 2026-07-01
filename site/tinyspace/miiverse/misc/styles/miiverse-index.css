@@ -33,7 +33,7 @@
   height: 60px;
   /* border: 1px solid black; */
   transform: rotate(-45deg) scale(0.8);  
-  background: url("../../../graphics/misc/miiverse/mii-pointer.png");
+  background: url("../../../../graphics/misc/miiverse/mii-pointer.png");
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -55,7 +55,7 @@
 
 .o-mii__name::after {
   content: "";
-  background: url("../../../graphics/misc/miiverse/mii-underline.svg");
+  background: url("../../../../graphics/misc/miiverse/mii-underline.svg");
   background-repeat: no-repeat;
   background-position: 0;
   background-size: 100% auto;

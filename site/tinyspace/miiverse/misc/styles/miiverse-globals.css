@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Dreamlife";
-  src: url("../../../fonts/miiverse/DreamLife.ttf");
+  src: url("../../../../fonts/miiverse/DreamLife.ttf");
 }
 
 @font-face {
   font-family: "Dreamland";
-  src: url("../../../fonts/miiverse/Dreamland.otf");
+  src: url("../../../../fonts/miiverse/Dreamland.otf");
 }
 
 @font-face {
   font-family: "Dita";
-  src: url("../../../fonts/miiverse/Dita.otf");
+  src: url("../../../../fonts/miiverse/Dita.otf");
 }
 
 @font-face {
   font-family: "Dita Bold";
-  src: url("../../../fonts/miiverse/Dita-Bold.otf");
+  src: url("../../../../fonts/miiverse/Dita-Bold.otf");
 }
 
 * {
@@ -31,7 +31,7 @@ a {
 }
 
 body {
-  background-image: url("../../../graphics/misc/miiverse/mii-bg1.png");
+  background-image: url("../../../../graphics/misc/miiverse/mii-bg1.png");
   background-size: 50%;
   background-position: 0 0;
   animation: animate-bg 60s linear infinite;
@@ -75,7 +75,7 @@ audio {
 
 .o-navbar::after {
   content: "";
-  background: url("../../../graphics/misc/miiverse/mii-nav-wave.svg");
+  background: url("../../../../graphics/misc/miiverse/mii-nav-wave.svg");
   background-repeat: repeat-x;
   background-position: 0;
   background-size: 200% 100%;
@@ -173,7 +173,7 @@ audio {
   border: none;
   border-radius: 100px;
   background: #dc6830;
-  background: url("../../../graphics/misc/miiverse/checked.svg");
+  background: url("../../../../graphics/misc/miiverse/checked.svg");
   background-size: 98%;
   visibility: hidden;
 }
@@ -232,7 +232,7 @@ audio {
 }
 
 .o-warning-popup__content {
-  background: url("../../../graphics/misc/miiverse/popup.svg");
+  background: url("../../../../graphics/misc/miiverse/popup.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

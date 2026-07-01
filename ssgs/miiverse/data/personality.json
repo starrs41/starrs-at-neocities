@@ -1,0 +1,66 @@
+{
+  "sweetie": {
+    "name": "Sweetie",
+    "description": "Empathetic and sentimental. Sensitive, emotional, and in tune with the feelings of others."
+  },
+  "cheerleader": {
+    "name": "Cheerleader",
+    "description": "Positive, enthusiastic and always beaming. Smiles for their own sake and to help others smile too."
+  },
+  "buddy": {
+    "name": "Buddy",
+    "description": "Trustworthy and considerate. Puts their friends first and works hard to make sure everyone gets along."
+  },
+  "daydreamer": {
+    "name": "Daydreamer",
+    "description": "Idealistic and romantic. Often has their head in the clouds, but finds a lot of great ideas up there."
+  },
+  "charmer": {
+    "name": "Charmer",
+    "description": "Radiant and always on form. Their effortless style is admired by all. Easily adapts to new situations."
+  },
+  "go-getter": {
+    "name": "Go-Getter",
+    "description": "Bold and captivating. Their wit and charm light up a room. It's never a dull moment when they're around!"
+  },
+  "merrymaker": {
+    "name": "Merrymaker",
+    "description": "Outgoing and pleasant to be around. Makes friends easily, and can turn any bad situation into a good one."
+  },
+  "dynamo": {
+    "name": "Dynamo",
+    "description": "Assertive and highly regarded. Trusts their own instincts, and easily commands the respect of others."
+  },
+  "strategist": {
+    "name": "Strategist",
+    "description": "Unique, carefree, creative, laid-back. They're self-reliant, doing things their own way and thinking outside the box."
+  },
+  "perfectionist": {
+    "name": "Perfectionist",
+    "description": "Imaginative and inspired. Happiest when creating something. Finds beauty in everyone and everything."
+  },
+  "observer": {
+    "name": "Observer",
+    "description": "Self-sufficient and highly individual. Doesn't show much outward emotion, but has a lot going on deep down."
+  },
+  "thinker": {
+    "name": "Thinker",
+    "description": "Thoughtful and introspective. Great at thinking things through and analyzing issues from every angle."
+  },
+  "achiever": {
+    "name": "Achiever",
+    "description": "Diligent, productive, and highly efficient. Equally as skilled at planning and executing plans."
+  },
+  "visionary": {
+    "name": "Visionary",
+    "description": "Risk taking and ambitious. Full of energy, and acts on many whims. Once they start, they don't stop!"
+  },
+  "rogue": {
+    "name": "Rogue",
+    "description": "Intelligent and not afraid to show it. Knowledgeable in a wide range of subjects. Answers with confidence."
+  },
+  "maverick": {
+    "name": "Maverick",
+    "description": "A determined self-starter. Cuts their own path, letting nothing stand in their way. Quick to execute plans."
+  }
+}

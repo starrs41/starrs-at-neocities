@@ -1,13 +1,322 @@
-{
-  "gallery": [
-    {
-      "filename": "miiverse-1.png",
-      "desc": "lallalallaa",
-      "miis": [
-        "pablo",
-        "bloo",
-        "miko"
-      ]
-    }
-  ]
-}
+[
+  {
+    "category": "tc",
+    "filename": "miiverse-1.jpg",
+    "description": "idk what to put here :P",
+    "alt": "Pablo posing in front of a beach with a blue and somewhat cloudy sky above.",
+    "miis": [
+      "pablo"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-2.jpg",
+    "description": "let's ignore the fact that Miko has a different hairstyle here okay ! she wanted that !!",
+    "alt": "A news segment titled 'But Stop... Doesn't' showing Riku, Alan, and Miko running after a bus stop sign. There is dialogue about the news segment below that goes like this: 'I just wanted to ride the bus. Now I'm being forced to exercise,' one resident gasped. 'I want to hate it, but I do feel amazing,' they grumbled while logging their stats into a running app.",
+    "miis": [
+      "riku",
+      "alan",
+      "miko"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-3.jpg",
+    "description": "they're so sweet RAHHH",
+    "alt": "Bloo singing 'Happy birthday to you' to Pablo. There is a miniature Pablo among the lit candles on the birthday cake, with various foods and drinks on the table. The room they're in, which is Pablo's, is also filled with decorations.",
+    "miis": [
+      "bloo",
+      "pablo"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-4.jpg ",
+    "description": "i lovee the Miitopia gang. unfortunately they don't all fit here",
+    "alt": "A variety of pictures on a corkboard. In one picture, Bloo has her arms wide open with Pablo running towards her from behind. In another, Miko leans against a car. Another has Casper and Max jumping and posing in the air. One has Shigeo and Akio posing together in front of a building. And the last one has Ross's face peeking out from below the picture.",
+    "miis": [
+      "bloo",
+      "pablo",
+      "miko",
+      "casper",
+      "max",
+      "shigeo",
+      "alan",
+      "ross"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-7.jpg",
+    "description": "idk what to put here :P",
+    "alt": "Alan is standing, saying: Hey, if someone was like, 'Let's go throwing rocks at people,' would you want to get in on that?",
+    "miis": [
+      "alan"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-9.jpg",
+    "description": "yeah they'd mess with Pablo for sure",
+    "alt": "Ross and Bloo's faces hog the screen, with Pablo's shocked face barely hidden behind them.",
+    "miis": [
+      "ross",
+      "bloo",
+      "pablo"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-10.jpg",
+    "description": "random assortment of Miitopia gang being silly",
+    "alt": "A group of Miis posing, displayed on a canvas.",
+    "miis": [
+      "ross",
+      "shigeo",
+      "akio",
+      "bloo",
+      "miko",
+      "pablo",
+      "max",
+      "casper"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-11.jpg",
+    "description": "the three of them :3 really tried to find a template that would be good for only three people...",
+    "alt": "Pablo stands in the center of a windowframe, with Bloo and Miko peeking out from the left and right respectively.",
+    "miis": [
+      "bloo",
+      "pablo",
+      "miko"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-12.jpg",
+    "description": "the same random assortment of miitopia gang but in another template :P",
+    "alt": "A group of Miis posing against a beige background, with the Tomodachi Life: Living the Dream logo in the center.",
+    "miis": [
+      "ross",
+      "shigeo",
+      "akio",
+      "bloo",
+      "miko",
+      "pablo",
+      "max",
+      "casper"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-13.jpg",
+    "description": "i find this screenshot hilarious because bro is so short that when he kneels like this his hair hides his entire body ajgfhjdsgfj",
+    "alt": "Riku is kneeling down on the floor in such a way that his long hair covers his entire body.",
+    "miis": [
+      "riku"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-14.jpg",
+    "description": "another assortment of the Miitopia gang. i really love that, somehow, they all ended up in the same house. and now they're having another adventure up in space",
+    "alt": "A group of Miis in space suits, floating around as if in zero gravity. They are against a blue background. A label is on the upper-left portion of the screen, with the words: The Heroes of Miitopia's Outer Space Tour",
+    "miis": [
+      "bloo",
+      "pablo",
+      "miko",
+      "maria",
+      "max",
+      "alan",
+      "casper",
+      "ross"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-15.jpg",
+    "description": "a sneak peek of their adventures in space. their alien headbands are so funny to me. also, i'm not sure what Bloo was trying to do in the center..",
+    "alt": "A group of Miis posing against a Martian landscape.",
+    "miis": [
+      "bloo",
+      "pablo",
+      "max",
+      "alan",
+      "maria"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-18.jpg",
+    "description": "i swear every time i open the game all I ever see Maria do is read yuri and honestly i love her for that",
+    "alt": "Maria sits on the beach, reading a book with the word 'yuri' on it's cover. She looks invested in it.",
+    "miis": [
+      "maria"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-19.jpg",
+    "description": "they love yuri so much they introduced it to their kid. dawg.",
+    "alt": "A smiling Max and Casper are shown from a baby's point of view. Max is holding a camera, while Casper is holding a book entitled 'yuri'.",
+    "miis": [
+      "max",
+      "casper"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-20.jpg",
+    "description": "more of the Miitopia gang and their household shenangians. i love them sm",
+    "alt": "A group of smiling Miis holding out various items to a Mii in the center, who looks shocked. They are telling her the words 'You're the ultimate rizzler.'",
+    "miis": [
+      "bloo",
+      "pablo",
+      "miko",
+      "maria",
+      "max",
+      "alan",
+      "casper",
+      "ross"
+    ]
+  },
+  {
+    "category": "tc",
+    "filename": "miiverse-21.jpg",
+    "description": "i like how his clothes matches the colors of the sunset behind him here",
+    "alt": "Pablo is standing in front of a sunset that's nearing its end, with the black outline of palm trees against the red and grey sky.",
+    "miis": [
+      "pablo"
+    ]
+  },
+  {
+    "category": "miitopia3ds",
+    "filename": "miiverse-22.jpg",
+    "description": "i love how they look in the 3DS version of Miitopia honestly. they're so tiny. and the hearts around them when they do this move is cute too rahhh",
+    "alt": "Bloo, Miko, and Pablo are in battle, with Pablo looking over at Bloo. There are pink hearts around him, and he is saying 'Nice, Bloo.' Near the top of the screen, the sentence 'Bloo's turn.' is displayed.",
+    "miis": [
+      "bloo",
+      "miko",
+      "pablo"
+    ]
+  },
+  {
+    "category": "miitopiaswitch",
+    "filename": "miiverse-23.jpg",
+    "description": "this screenshot i took by accident still cracks me up like look at Pablo's face i'm crying. why'd she have to push him like that",
+    "alt": "Gran is standing firmly with her arms out, yelling 'Look out!' To the side, a very surprised Pablo is in the process of falling from having been pushed.",
+    "miis": [
+      "pablo",
+      "gran"
+    ]
+  },
+  {
+    "category": "tc",
+    "filename": "miiverse-24.jpg",
+    "description": "they're so crispy here because of DS graphics. but also i'm in love with how happy Bloo looks here",
+    "alt": "Bloo and Pablo are standing in front of a Wii, with Wii Remotes in their hands. Bloo smiles from winning, while Pablo looks sad.",
+    "miis": [
+      "pablo",
+      "bloo"
+    ]
+  },
+  {
+    "category": "misc",
+    "filename": "miiverse-25.jpg",
+    "description": "me and my family were using Mii avatars in Go Vacation and it was really fun!!",
+    "alt": "Jay, Casper, and Ross are standing in a cabin. Casper has his arms crossed.",
+    "miis": [
+      "jay",
+      "casper",
+      "ross"
+    ]
+  },
+  {
+    "category": "misc",
+    "filename": "miiverse-26.jpg",
+    "description": "zzzz sleepy",
+    "alt": "Jay is lying down on a bed, sleeping.",
+    "miis": [
+      "jay"
+    ]
+  },
+  {
+    "category": "tl",
+    "filename": "miiverse-27.jpg",
+    "description": "i like to imagine that Ross here is going \"YOU ALL STARTED WITHOUT ME?!\" because she loooves just having a good time",
+    "alt": "Ross looking angrily at a group of Miis, who have stopped mid-dance and are looking at Ross, surprised.",
+    "miis": [
+      "biscuit",
+      "hansuke",
+      "maria",
+      "nick",
+      "hinata",
+      "ross"
+    ]
+  },
+  {
+    "category": "tl",
+    "filename": "miiverse-28.JPG",
+    "description": "Miko sucks at cooking so she's trying to show off this time (not pictured is her not catching the egg in time)",
+    "alt": "Miko angrily holding a cooking pan, looking at an egg she flung into the air. Ross, Pablo, and Shigeo look on in shock.",
+    "miis": [
+      "miko",
+      "ross",
+      "pablo",
+      "shigeo"
+    ]
+  },
+  {
+    "category": "miitopia3ds",
+    "filename": "miiverse-29.JPG",
+    "description": "as usual, Casper is worried about Bloo getting into shenanigans",
+    "alt": "Casper cries, saying that \"This journey's a taking a real mental toll on Bloo...\" while Pablo and Bloo look at him in shock and indifference respectively",
+    "miis": [
+      "pablo",
+      "casper",
+      "bloo"
+    ]
+  },
+  {
+    "category": "tl",
+    "filename": "miiverse-30.jpg",
+    "description": "when i see a picture where Akio is doing something silly, i must Save it",
+    "alt": "A Mii News segment entitled \"Stretch-Face Challenge,\" with a warning below that reads \"Do not try this at home.\" Akio's face is stretched horizontally.",
+    "miis": [
+      "akio"
+    ]
+  },
+  {
+    "category": "tl",
+    "filename": "miiverse-31.JPG",
+    "description": "i love that they're being silly here. like yes Alan cheer for Ross like your life depends on it!!",
+    "alt": "A group of Miis listening to Ross playing a guitar at the fountain. Alan is in the air, cheering, while Shigeo looks at him in surprise.",
+    "miis": [
+      "ross",
+      "alan",
+      "shigeo",
+      "manda",
+      "miko"
+    ]
+  },
+  {
+    "category": "tl",
+    "filename": "miiverse-32.JPG",
+    "description": "i'll never get tired of Akio being silly",
+    "alt": "A zoomed-in picture of Akio with a big smile on his face.",
+    "miis": [
+      "akio"
+    ]
+  },
+  {
+    "category": "tl",
+    "filename": "miiverse-33.jpg",
+    "description": "i like to imagine that Ross likes to surprise Maria for fun. and what better way than to do whatever this is?",
+    "alt": "A Mii News segment entitled \"Legendary Leg Lengthening,\" with Maria looking up in shock to Ross high up in the sky with her long legs.",
+    "miis": [
+      "maria",
+      "ross"
+    ]
+  }
+]

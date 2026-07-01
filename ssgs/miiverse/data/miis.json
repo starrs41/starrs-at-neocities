@@ -1,22 +1,254 @@
-{
-  "miis": [
-    {
-      "slug": "pablo",
-      "name": "Pablo",
-      "desc": "This mii doesn't have much plans of his own, going along with whatever life throws at him. It's hard to see with his shades and his general laid-back attitude, but he cares deeply about his friends and does what he can to be there for them.",
-      "details": {
-        "birthday": "April 5",
-        "pronouns": "he/him",
-        "gender": "Male (Cis)",
-        "datingprefs": "Male/Female/Nonbinary (Bisexual)",
-        "outfitprefs": "Masculine",
-        "trivia": [
-          "He was originally made in Miitopia with help from my family.",
-          "He wears shades constantly because his eyes are sensitive to light. He only feels comfortable removing them indoors.",
-          "He has dreams to travel and become a chef in a world-famous restaurant but is too indecisive and afraid to pursue them.",
-          "He had been living with family for a while, but decided to move out to gain more independence and to prove something to both his family and himself. After seeing an ad for the island, he made his way there."
-        ]
-      }
+[
+  {
+    "slug": "bloo",
+    "name": "Bloo",
+    "description": "Many describe Bloo as having a heart of gold, never hesitating to be there for her friends. But as many close to her have observed (and tried to stop), it is often at the cost of not caring for herself.",
+    "personality": "buddy",
+    "quirks": [
+      "greets eagerly",
+      "eats cutely",
+      "big eater",
+      "cries when angry",
+      "smiley",
+      "snores loudly",
+      "sleeps restlessly"
+    ],
+    "details": {
+      "birthday": "April 20",
+      "pronouns": "she/her",
+      "gender": "Female (Cisgender)",
+      "dating preferences": "None (Aroace)",
+      "outfit preferences": "Any",
+      "trivia": [
+        "She can easily, and without meaning to, get distracted if a task is too boring.",
+        "She loves to exercise, it boosts her mood when she does. Her usual workout is jogging around the island.",
+        "If she's being honest, she doesn't really have any big plans for her future. She's mostly just enjoying her life on the island.",
+        "She came from a pretty small town. Because of that, she's really excited to meet new Miis.",
+        "She and Pablo are queerplatonic partners."
+      ]
     }
-  ]
-}
+  },
+  {
+    "slug": "pablo",
+    "name": "Pablo",
+    "description": "This mii doesn't have much plans of his own, going along with whatever life throws at him. It's hard to see with his shades and his general laid-back attitude, but he cares deeply about his friends and does what he can to be there for them.",
+    "personality": "achiever",
+    "quirks": [
+      "greets with a nod",
+      "stands while adjusting glasses",
+      "walks without swinging arms",
+      "eats while savoring",
+      "cries when angry",
+      "sleeps restlessly"
+    ],
+    "details": {
+      "birthday": "April 5",
+      "pronouns": "he/him",
+      "gender": "Male (Cisgender)",
+      "dating preferences": "Male/Female/Nonbinary (Bisexual)",
+      "outfit preferences": "Masculine",
+      "trivia": [
+        "He wears shades constantly because his eyes are sensitive to light. He only feels comfortable removing them indoors.",
+        "He has dreams to travel and become a chef in a world-famous restaurant but is too indecisive and afraid to pursue them.",
+        "He had been living with family for a while, but decided to move out to gain more independence and to prove something to both his family and himself. After seeing an ad for the island, he made his way there.",
+        "He and Bloo are queerplatonic partners.",
+        "He and Miko are romantic partners."
+      ]
+    }
+  },
+  {
+    "slug": "miko",
+    "name": "Miko",
+    "description": "Miko is an individual who has lost much and won much. Although he's still unsure about where to go to next, he for know finds comfort in the island he's made his home.",
+    "personality": "visionary",
+    "quirks": [
+      "greets flirtatiously",
+      "stands smugly",
+      "walks like a model",
+      "eats gracefully",
+      "light eater",
+      "winking",
+      "fashionista",
+      "radiant voice"
+    ],
+    "details": {
+      "birthday": "September 22",
+      "pronouns": "he/him/she/her",
+      "gender": "Female/Male (Genderfluid)",
+      "dating preferences": "Male",
+      "outfit preferences": "Masculine/Feminine",
+      "trivia": [
+        "His preference for a specific pronoun set usually changes. When it does, it's often reflected in the way he presents himself.",
+        "He used to be an idol. He experienced a lot of harassment during that time, and avoids talking about it whenever possible.",
+        "He was able to leave that life behind when he saw the ad for the island. With the help of a friend, he was able to pack up and leave safely.",
+        "He's a lot more confident in himself these days. Miis often approach him for fashion advice, which he's happy to give.",
+        "He and Pablo are romantic partners."
+      ]
+    }
+  },
+  {
+    "slug": "shigeo",
+    "name": "Shigeo",
+    "description": "What an island! With its vibrant community and beautiful landscapes, there's a lot for Shigeo to do and see, and he's excited for what's to come!",
+    "personality": "buddy",
+    "quirks": [
+      "greets eagerly",
+      "walks by bounding",
+      "eats while savoring",
+      "light eater",
+      "smiles when angry",
+      "smiley"
+    ],
+    "details": {
+      "birthday": "November 7",
+      "pronouns": "he/him",
+      "gender": "Male (Cisgender)",
+      "dating preferences": "None (Aroace)",
+      "outfit preferences": "Feminine (Gender Non-Conforming)",
+      "trivia": [
+        "His home was pretty conservative, so he's happy now that he can experiment with more feminine clothing. He's still not confident in the clothes he picks out though, and will often ask for advice from others. (You can see how him and Miko get along quite well in this regard.)",
+        "Even though deep down he wanted a change, he was hesitant at first to take such a big leap and move to the island. After Akio said he'd be going, he found the courage to tag along.",
+        "He's soft-spoken except when he's angry. You don't want to see him when he's angry.",
+        "Him and Akio have been friends ever since they were kids. Even though circumstances have led them to talk less than before, their bond still remains as strong as ever."
+      ]
+    }
+  },
+  {
+    "slug": "akio",
+    "name": "Akio",
+    "description": "Akio didn't really have any plans when he landed on the island. He's the type of Mii to go along with wherever life takes him.",
+    "personality": "sweetie",
+    "quirks": [
+      "eats quickly",
+      "big eater",
+      "closed eyes",
+      "public farter"
+    ],
+    "details": {
+      "birthday": "May 14",
+      "pronouns": "he/him",
+      "gender": "Male (Cisgender)",
+      "dating preferences": "None (Aroace)",
+      "outfit preferences": "Masculine",
+      "trivia": [
+        "Akio tends to wear the same clothes over and over again. He also doesn't really tend to his hair.",
+        "Shigeo doesn't know this (and Akio doesn't plan on saying it to him), but Akio only really moved to the island to persuade Shigeo to move, too. He's finding the island to be a nice place to be in, though.",
+        "He always tags along with other Miis wherever possible and make silly gestures in the background when they talk. He gets happy when people copy him back.",
+        "He's a good listener, but not very good at words. Miis still like hanging out with him though.",
+        "Him and Shigeo have been friends ever since they were kids. Even though circumstances have led them to talk less than before, their bond still remains as strong as ever."
+      ]
+    }
+  },
+  {
+    "slug": "max",
+    "name": "Max",
+    "description": "A Mii that prefers to be by herself. Suprisingly, she feels less that way around the Miis of this island. But she's not going to admit that.",
+    "personality": "maverick",
+    "quirks": [
+      "greets listlessly",
+      "stands with arms crossed",
+      "walks with a swagger",
+      "eats cautiously",
+      "flips out when angry",
+      "smug",
+      "throws tantrums"
+    ],
+    "details": {
+      "birthday": "August 23",
+      "pronouns": "she/her",
+      "gender": "Female (Cisgender)",
+      "dating preferences": "Male/Female/Nonbinary (Bisexual)",
+      "outfit preferences": "Any", 
+      "trivia": [
+        "She likes to ragebait those close to her. Sometimes she goes too far, though.",
+        "She used to steal a lot as a kid and was told off by her parents many times.",
+        "She get's tired easily from social interactions, and won't hesitate to leave a social event when necessary.",
+        "She's always wary of new Miis and acts coldly to them as a result. Many are intimidated by her."
+      ]
+    }
+  },
+  {
+    "slug": "casper",
+    "name": "Casper",
+    "description": "Casper is often quiet, keeping to himself. He believes that if he stays this way, then he'll reduce the chance of anything bad happening.",
+    "personality": "thinker",
+    "quirks": [
+      "greets shyly",
+      "stands leaning forward",
+      "walks nervously",
+      "eats shyly",
+      "cries when angry",
+      "quiet voice",
+      "scaredy-cat",
+      "sleeps restlessly"
+    ],
+    "details": {
+      "birthday": "September 9",
+      "pronouns": "he/him",
+      "gender": "Male (Cisgender)",
+      "dating preferences": "Male/Female/Nonbinary (Bisexual)",
+      "outfit preferences": "Masculine", 
+      "trivia": [
+        "He only really came to the island because he knew Pablo, a close friend he made in high school, would be there. Now that he's here, he's regretting it a bit, though.",
+        "He's quiet with everyone except close friends, in which case he'll constantly either talk about his interests or whatever's been bothering him at the moment.",
+        "His energy drains easily from interacting with large groups of Miis, especially those he isn't familiar with. He tends to force himself to stay, though."
+      ]
+    }
+  },
+  {
+    "slug": "ross",
+    "name": "Ross",
+    "description": "Ross is an energetic Mii who's constantly inviting others to hang out with her. Many can't keep up with her energy, though.",
+    "personality": "go-getter",
+    "quirks": [
+      "greets in a hyped-up style",
+      "eats with gusto",
+      "big eater",
+      "flips out when angry",
+      "smug",
+      "loud voice",
+      "snores loudly",
+      "sleeps restlessly"
+    ],
+    "details": {
+      "birthday": "Febuary 26",
+      "pronouns": "she/her",
+      "gender": "Female (Cisgender)",
+      "dating preferences": "Female",
+      "outfit preferences": "Masculine", 
+      "trivia": [
+        "Ross loves playing sports. She constantly invites Bloo to do them with her, but notices that Bloo struggles to keep up with her. So, for Bloo's sake, she invites her out to jog too.",
+        "Something Ross wants to pick up is skateboarding, which she drags Max into because she heard that Max used to skateboard in the past.",
+        "Ross isn't afraid to tell a friend the truth, even if it may be hard to hear. (Although she does feel bad afterwards.)",
+        "She doesn't really understand Miis who would rather be alone or stay indoors. She finds it difficult to be in that position."
+      ]
+    }
+  },
+  {
+    "slug": "maria",
+    "name": "Maria",
+    "description": "Maria often has her head in the clouds, reading books at every opportunity. You'll only see her without one when she's hanging out with a friend.",
+    "personality": "buddy",
+    "quirks": [
+      "greets eagerly",
+      "stands while adjusting glasses",
+      "eats while savoring",
+      "cries when angry",
+      "smiley",
+      "scaredy-cat",
+      "fashionista"
+    ],
+    "details": {
+      "birthday": "July 27",
+      "pronouns": "she/her",
+      "gender": "Female (Cisgender)",
+      "dating preferences": "Female",
+      "outfit preferences": "Feminine",
+      "trivia": [
+        "Maria used to want to be a researcher in the field of chemistry, but didn't have faith in herself enough to enter academia. Sometimes it's still all she thinks about.",
+        "She likes to read most of her books outdoors, as she likes the island scenery. If she's reading something steamy, she stays inside instead. Those close to her have figured this out.",
+        "Her and Shigeo chat a lot about the latest island happenings. She likes hearing about how the others are doing."
+      ]
+    }
+  }
+]

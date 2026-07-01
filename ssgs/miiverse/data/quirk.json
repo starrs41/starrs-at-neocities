@@ -1,0 +1,224 @@
+{
+  "greets confidently": {
+    "category": "greeting"
+  },
+  "greets eagerly": {
+    "category": "greeting"
+  },
+  "greets energetically": {
+    "category": "greeting"
+  },
+  "greets flirtatiously": {
+    "category": "greeting"
+  },
+  "greets in a hyped-up style": {
+    "category": "greeting"
+  },
+  "greets karate-style": {
+    "category": "greeting"
+  },
+  "greets listlessly": {
+    "category": "greeting"
+  },
+  "greets proudly": {
+    "category": "greeting"
+  },
+  "greets shyly": {
+    "category": "greeting"
+  },
+  "greets with a curtsy": {
+    "category": "greeting"
+  },
+  "greets with a forward bow": {
+    "category": "greeting"
+  },
+  "greets with a nod": {
+    "category": "greeting"
+  },
+  "greets with a sweeping bow": {
+    "category": "greeting"
+  },
+  "won't greet others": {
+    "category": "greeting"
+  },
+  "stands at attention": {
+    "category": "stand"
+  },
+  "stands cutely": {
+    "category": "stand"
+  },
+  "stands leaning forward": {
+    "category": "stand"
+  },
+  "stands like a rodeo rider": {
+    "category": "stand"
+  },
+  "stands moving to the rhythm": {
+    "category": "stand"
+  },
+  "stands proudly": {
+    "category": "stand"
+  },
+  "stands restlessly": {
+    "category": "stand"
+  },
+  "stands shyly": {
+    "category": "stand"
+  },
+  "stands smugly": {
+    "category": "stand"
+  },
+  "stands while adjusting glasses": {
+    "category": "stand"
+  },
+  "stands while shaking hips": {
+    "category": "stand"
+  },
+  "stands while wiping sweat": {
+    "category": "stand"
+  },
+  "stands with arms crossed": {
+    "category": "stand"
+  },
+  "stands with hands folded": {
+    "category": "stand"
+  },
+  "floats instead of walking": {
+    "category": "walk"
+  },
+  "walks by bounding": {
+    "category": "walk"
+  },
+  "walks cutely": {
+    "category": "walk"
+  },
+  "walks leaning forward": {
+    "category": "walk"
+  },
+  "walks like a model": {
+    "category": "walk"
+  },
+  "walks like a robot": {
+    "category": "walk"
+  },
+  "walks like a rodeo rider": {
+    "category": "walk"
+  },
+  "walks nervously": {
+    "category": "walk"
+  },
+  "walks with a rhythm": {
+    "category": "walk"
+  },
+  "walks with a swagger": {
+    "category": "walk"
+  },
+  "walks without swinging arms": {
+    "category": "walk"
+  },
+  "walks with tiny steps": {
+    "category": "walk"
+  },
+  "eats cautiously": {
+    "category": "eat"
+  },
+  "eats cutely": {
+    "category": "eat"
+  },
+  "eats gracefully": {
+    "category": "eat"
+  },
+  "eats quickly": {
+    "category": "eat"
+  },
+  "eats shyly": {
+    "category": "eat"
+  },
+  "eats voraciously": {
+    "category": "eat"
+  },
+  "eats while savoring": {
+    "category": "eat"
+  },
+  "eats with gusto": {
+    "category": "eat"
+  },
+  "big eater": {
+    "category": "appetite"
+  },
+  "light eater": {
+    "category": "appetite"
+  },
+  "cries when angry": {
+    "category": "anger"
+  },
+  "flips out when angry": {
+    "category": "anger"
+  },
+  "smiles when angry": {
+    "category": "anger"
+  },
+  "blissful": {
+    "category": "expression"
+  },
+  "closed eyes": {
+    "category": "expression"
+  },
+  "nonchalant": {
+    "category": "expression"
+  },
+  "raised eyebrows": {
+    "category": "expression"
+  },
+  "smiley": {
+    "category": "expression"
+  },
+  "smug": {
+    "category": "expression"
+  },
+  "unimpressed": {
+    "category": "expression"
+  },
+  "wide-eyed": {
+    "category": "expression"
+  },
+  "winking": {
+    "category": "expression"
+  },
+  "creepy voice": {
+    "category": "voice"
+  },
+  "loud voice": {
+    "category": "voice"
+  },
+  "quiet voice": {
+    "category": "voice"
+  },
+  "radiant voice": {
+    "category": "voice"
+  },
+  "blinks a lot": {
+    "category": "others"
+  },
+  "fashionista": {
+    "category": "others"
+  },
+  "night owl": {
+    "category": "others"
+  },
+  "public farter": {
+    "category": "others"
+  },
+  "scaredy-cat": {
+    "category": "others"
+  },
+  "sleeps restlessly": {
+    "category": "others"
+  },
+  "snores loudly": {
+    "category": "others"
+  },
+  "throws tantrums": {
+    "category": "others"
+  }
+}

@@ -27,3 +27,7 @@ pablo_icon2.png
 
 # and the vgm page (unfinished)
 vgm.html
+
+# as of 7/2/26
+
+__pycache__/

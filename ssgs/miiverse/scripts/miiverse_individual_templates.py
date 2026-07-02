@@ -63,6 +63,9 @@ main_template = """
         Gallery
       </h2>
       <div class="o-game-list">
+        <label for="all" class="o-button o-button--checkbox">
+          <input type="checkbox" id="all" checked /> All
+        </label>
         <label for="tlld" class="o-button o-button--checkbox">
           <input type="checkbox" id="tlld" checked /> Tomodachi Life: Living the Dream (Switch)
         </label>

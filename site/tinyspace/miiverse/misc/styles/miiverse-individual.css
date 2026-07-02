@@ -430,7 +430,7 @@
 
 .o-thumbnail-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   align-items: center;
   justify-items: center;
   gap: 1.2rem;
@@ -703,7 +703,7 @@
 @media screen and (max-width: 760px) {
   .o-thumbnail-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     align-items: center;
     justify-items: center;
     gap: 1.2rem;

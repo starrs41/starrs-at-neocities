@@ -36,7 +36,7 @@ main_template = """
         <div class="o-mii-summary__character">
           {description}
         </div>
-          {personality}
+        {personality}
       </div>
     </div>
     <div class="o-mii-quirk-list">

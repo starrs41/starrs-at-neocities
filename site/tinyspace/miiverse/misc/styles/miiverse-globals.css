@@ -227,22 +227,21 @@ audio {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
   z-index: 5;
 }
 
 .o-warning-popup__content {
-  background: url("../../../../graphics/misc/miiverse/popup.svg");
+  background: url(../../../../graphics/misc/miiverse/popup.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 5rem 9rem 5rem 9rem;
+  padding: 8rem 9rem 7rem 9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  height: 60%;
+  width: fit-content;
+  height: fit-content;
 }
 
 .o-warning-popup__text {
@@ -254,7 +253,8 @@ audio {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  margin: 5rem 0;
+  font-size: 1.5rem;
 }
 
 .o-warning-popup__buttons {
@@ -279,11 +279,89 @@ audio {
   display: none !important;
 }
 
+@media screen and (max-width: 1070px) {
+  .o-warning-popup__content {
+    background: url("../../../../graphics/misc/miiverse/popup.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 7rem 9rem 7rem 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 2rem;
+  }
+}
+
 @media screen and (max-width: 790px) {
   .o-navbar {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .o-warning-popup__text {
+    font-family: "Dita Bold";
+    text-align: center;
+    vertical-align: middle;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+  }
+
+  .o-button--popup {
+    background: #F47915FF;
+    color: #ffffff;
+    box-shadow: 0px 4px 0px 0px #c2702dFF, 0px 8px 0px 0px #c9ac53FF;
+    font-size: 1.1rem;
+    width: 13ch;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .o-warning-popup__content {
+    background: url("../../../../graphics/misc/miiverse/popup.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5rem 3rem 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+  }
+
+  .o-warning-popup__text {
+    font-family: "Dita Bold";
+    text-align: center;
+    vertical-align: middle;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+  }
+
+  .o-button--popup {
+    background: #F47915FF;
+    color: #ffffff;
+    box-shadow: 0px 4px 0px 0px #c2702dFF, 0px 8px 0px 0px #c9ac53FF;
+    font-size: 1rem;
+    width: 13ch;
   }
 }

@@ -217,15 +217,15 @@
 .o-mii-personality {
   position: absolute;
   bottom: -100px;
-  left: -220px;
+  left: -220px; 
   z-index: 3;
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
   justify-content: center;
   align-items: center;
-  padding: 1.1rem 2rem;
-  width: fit-content;
+  padding: 1.5rem 2rem;
+  width: 25ch;
   height: fit-content;
   filter: drop-shadow(2px 4px 0px rgba(0, 0, 0, 0.2));
 }
@@ -236,7 +236,8 @@
   z-index: -1;
   background: url("../../../../graphics/misc/miiverse/personality-bg.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  background-position: center;
   width: 100%;
   height: 100%;
 }
@@ -257,7 +258,8 @@
 
 .o-mii-personality__desc {
   width: 22ch;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  text-align: justify
 }
 
 .o-mii-quirk-list {

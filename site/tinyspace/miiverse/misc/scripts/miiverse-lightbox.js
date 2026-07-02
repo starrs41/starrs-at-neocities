@@ -30,7 +30,7 @@ window.addEventListener("keydown", (event) => {
 
 for (let i = 0; i < thumbnails.length; i++) {
   thumbnails[i].addEventListener("click", (event) => {
-    changeSlide(i)
+    initializeSlide(i);
     lightbox.classList.toggle("u-hidden");
   })
 }
@@ -55,6 +55,7 @@ lightboxInfo.addEventListener("mouseleave", (event) => {
 
 lightboxClose.addEventListener("click", (event) => {
   lightbox.classList.toggle("u-hidden");
+  removeSlide();
 });
 
 lightboxPrev.addEventListener("click", (event) => {
@@ -84,7 +85,24 @@ function goToNextSlide() {
 }
 
 function changeSlide(newSlide) {
-  pictures[currentSlide].classList.toggle("u-hidden");
-  pictures[newSlide].classList.toggle("u-hidden");
+  if (!pictures[currentSlide].classList.contains("u-hidden")) {
+    pictures[currentSlide].classList.add("u-hidden");
+  }
+  if (pictures[newSlide].classList.contains("u-hidden")) {
+    pictures[newSlide].classList.remove("u-hidden");
+  }
   currentSlide = newSlide;
+}
+
+function initializeSlide(selectedSlide) {
+  if (pictures[selectedSlide].classList.contains("u-hidden")) {
+    pictures[selectedSlide].classList.remove("u-hidden");
+  }
+  currentSlide = selectedSlide;
+}
+
+function removeSlide() {
+  if (!pictures[currentSlide].classList.contains("u-hidden")) {
+    pictures[currentSlide].classList.add("u-hidden");
+  }
 }

@@ -153,7 +153,7 @@ main_template = """
       </div>
     </div>
   </div>
-  <footer class="o-footer">
+  <footer class="o-footer u-pause-animation">
     <p>
       Page last updated {date}.
     </p>

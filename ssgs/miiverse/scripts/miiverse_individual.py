@@ -1,4 +1,5 @@
 import json
+import argparse
 from pathlib import Path
 import miiverse_individual_templates as templates
 
@@ -119,8 +120,6 @@ def create_individual_page(mii):
   
   final_content = templates.main_template.strip().format(name=mii["name"], description=mii["description"], personality=personality, quirks=quirks, details=details, trivia=trivia, thumbnails=thumbnails, lightbox_info=lightbox_info, pictures=pictures)
   
-  print(final_content)
-  
   final_directory = f"{output_folder}/{mii["slug"]}/index.html"
     
   final_file = Path(final_directory)
@@ -134,6 +133,14 @@ def create_individual_pages():
   for mii in mii_list:
     create_individual_page(mii)
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-t", "--test")
+args = parser.parse_args()
 
 if __name__ == '__main__':
+  if (args.test == None):
     create_individual_pages()
+  else:
+    for mii in mii_list: # this may tank performance later on when there are more miis
+      if mii["slug"] == args.test:
+        create_individual_page(mii)

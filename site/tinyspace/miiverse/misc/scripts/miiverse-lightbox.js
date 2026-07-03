@@ -37,8 +37,8 @@ for (let i = 0; i < thumbnails.length; i++) {
 
 let lightboxInfo = document.querySelector("#lightboxInfo");
 let lightboxClose = document.querySelector("#lightboxClose");
-let lightboxPrev = document.querySelector("#lightboxPrev");
-let lightboxNext = document.querySelector("#lightboxNext");
+let lightboxPrev = document.querySelectorAll(".o-lightbox-nav--prev");
+let lightboxNext = document.querySelectorAll(".o-lightbox-nav--next");
 
 let descriptions = document.querySelectorAll(".o-lightbox-info-box__content");
 
@@ -58,13 +58,19 @@ lightboxClose.addEventListener("click", (event) => {
   removeSlide();
 });
 
-lightboxPrev.addEventListener("click", (event) => {
-  goToPrevSlide();
-});
+for (let i = 0; i < lightboxPrev.length; i++) {
+  lightboxPrev[i].addEventListener("click", (event) => {
+    console.log("clicked prev");
+    goToPrevSlide();
+  });
+}
 
-lightboxNext.addEventListener("click", (event) => {
-  goToNextSlide();
-});
+for (let i = 0; i < lightboxNext.length; i++) {
+  lightboxNext[i].addEventListener("click", (event) => {
+    console.log("clicked next");
+    goToNextSlide();
+  });
+}
 
 function goToPrevSlide() {
   if (currentSlide > 0) {

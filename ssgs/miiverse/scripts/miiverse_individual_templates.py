@@ -108,16 +108,24 @@ main_template = """
     </div>
     <div class="o-lightbox__spacing">
       <div class="o-lightbox__content">
-        <button class="o-lightbox-nav o-lightbox-nav--prev" id="lightboxPrev">
+        <button class="o-lightbox-nav o-lightbox-nav--prev o-lightbox-nav--pc">
           <img src="../../../graphics/misc/miiverse/left.svg" alt="Previous image" />
         </button>
         <!-- all gallery pictures, hidden by default except for current one -->
         <div class="o-picture-container">
           {pictures}
         </div>
-        <button class="o-lightbox-nav o-lightbox-nav--next" id="lightboxNext">
+        <button class="o-lightbox-nav o-lightbox-nav--next o-lightbox-nav--pc">
           <img src="../../../graphics/misc/miiverse/right.svg" alt="Next image" />
         </button>
+        <div class="o-lightbox-nav-container--mobile">
+          <button class="o-lightbox-nav o-lightbox-nav--prev o-lightbox-nav--mobile">
+            <img src="../../../graphics/misc/miiverse/left.svg" alt="Previous image" />
+          </button>
+          <button class="o-lightbox-nav o-lightbox-nav--next o-lightbox-nav--mobile">
+            <img src="../../../graphics/misc/miiverse/right.svg" alt="Next image" />
+          </button>
+        </div>
       </div>
     </div>
   </div>

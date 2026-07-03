@@ -153,6 +153,14 @@ main_template = """
       </div>
     </div>
   </div>
+  <footer class="o-footer">
+    <p>
+      Page last updated {date}.
+    </p>
+    <p>
+      This website is a personal project made for fun and is not affiliated with Nintendo!
+    </p>
+  </footer>
   <audio loop id="js-bgm">
     <source src="https://file.garden/akJr1M5SUwY64beP/TLLD%20-%20Mii%20Maker.mp3" type="audio/mpeg">
     <span>Your browser does not support the audio element.</span>

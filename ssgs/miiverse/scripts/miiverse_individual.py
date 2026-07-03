@@ -1,5 +1,6 @@
 import json
 import argparse
+from datetime import datetime
 from pathlib import Path
 import miiverse_individual_templates as templates
 
@@ -118,7 +119,7 @@ def create_individual_page(mii):
   lightbox_info = populate_lightbox_info(gallery_items)
   pictures = populate_pictures(gallery_items)
   
-  final_content = templates.main_template.strip().format(name=mii["name"], description=mii["description"], personality=personality, quirks=quirks, details=details, trivia=trivia, thumbnails=thumbnails, lightbox_info=lightbox_info, pictures=pictures)
+  final_content = templates.main_template.strip().format(name=mii["name"], description=mii["description"], personality=personality, quirks=quirks, details=details, trivia=trivia, thumbnails=thumbnails, lightbox_info=lightbox_info, pictures=pictures, date=datetime.today().strftime("%B %d, %Y"))
   
   final_directory = f"{output_folder}/{mii["slug"]}/index.html"
     
@@ -132,6 +133,7 @@ def create_individual_page(mii):
 def create_individual_pages():
   for mii in mii_list:
     create_individual_page(mii)
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-t", "--test")

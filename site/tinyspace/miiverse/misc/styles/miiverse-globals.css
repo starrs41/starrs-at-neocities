@@ -116,6 +116,46 @@ audio {
   margin-top: 6rem;
 }
 
+.o-footer {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 6rem 4rem 2rem 4rem;
+  /* color: #03243d; */
+  font-family: "Dita Bold";
+}
+
+.o-footer::after {
+  content: "";
+  background: url("../../../../graphics/misc/miiverse/mii-nav-wave.svg");
+  background-repeat: repeat-x;
+  background-position: 0;
+  background-size: 200% 100%;
+  transform: scaleY(-1);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  z-index: -1;
+  overflow: visible;
+  animation: animate-footer 20s linear reverse infinite;
+}
+
+@keyframes animate-footer {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
 
 .o-button {
   padding: 0.8rem 1.5rem 0.8rem 1.3rem;

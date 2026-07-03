@@ -5,6 +5,7 @@ let animatedElements = [];
 
 animatedElements.push(document.querySelector("body"));
 animatedElements.push(document.querySelector(".o-navbar"));
+animatedElements.push(document.querySelector(".o-footer"));
 
 let animationPref = getAnimationPref();
 

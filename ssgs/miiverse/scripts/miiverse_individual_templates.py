@@ -180,7 +180,12 @@ personality_template = """
 
 quirk_template = """
       <div class="o-mii-quirk">
-        <img src="../../../graphics/misc/miiverse/icon-{category}.png" alt="{alt} Icon"><span>{name}</span>
+        <div class="o-mii-quirk__icon-container">
+          <img src="../../../graphics/misc/miiverse/icon-{category}.png" alt="{alt} Icon" class="o-mii-quirk__icon">
+        </div>
+        <span class="o-mii-quirk__text">
+          {name}
+        </span>
       </div>
 """
 

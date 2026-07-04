@@ -119,7 +119,7 @@ def create_individual_page(mii):
   lightbox_info = populate_lightbox_info(gallery_items)
   pictures = populate_pictures(gallery_items)
   
-  final_content = templates.main_template.strip().format(name=mii["name"], description=mii["description"], personality=personality, quirks=quirks, details=details, trivia=trivia, thumbnails=thumbnails, lightbox_info=lightbox_info, pictures=pictures, date=datetime.today().strftime("%B %d, %Y"))
+  final_content = templates.main_template.strip().format(name=mii["name"], idle=mii["idle"], description=mii["description"], personality=personality, quirks=quirks, details=details, trivia=trivia, thumbnails=thumbnails, lightbox_info=lightbox_info, pictures=pictures, date=datetime.today().strftime("%B %d, %Y"))
   
   final_directory = f"{output_folder}/{mii["slug"]}/index.html"
     

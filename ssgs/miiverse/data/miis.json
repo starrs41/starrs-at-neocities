@@ -1,6 +1,7 @@
 [
   {
     "slug": "bloo",
+    "idle": "bloo-idle.gif",
     "name": "Bloo",
     "description": "Many describe Bloo as having a heart of gold, never hesitating to be there for her friends. But as many close to her have observed (and tried to stop), it is often at the cost of not caring for herself.",
     "personality": "buddy",
@@ -30,6 +31,7 @@
   },
   {
     "slug": "pablo",
+    "idle": "pablo-idle.gif",
     "name": "Pablo",
     "description": "This mii doesn't have much plans of his own, going along with whatever life throws at him. It's hard to see with his shades and his general laid-back attitude, but he cares deeply about his friends and does what he can to be there for them.",
     "personality": "achiever",
@@ -58,6 +60,7 @@
   },
   {
     "slug": "miko",
+    "idle": "miko-idle.gif",
     "name": "Miko",
     "description": "Miko is an individual who has lost much and won much. Although he's still unsure about where to go to next, he for know finds comfort in the island he's made his home.",
     "personality": "visionary",
@@ -88,6 +91,7 @@
   },
   {
     "slug": "shigeo",
+    "idle": "shigeo-idle.gif",
     "name": "Shigeo",
     "description": "What an island! With its vibrant community and beautiful landscapes, there's a lot for Shigeo to do and see, and he's excited for what's to come!",
     "personality": "buddy",
@@ -115,6 +119,7 @@
   },
   {
     "slug": "akio",
+    "idle": "akio-idle.gif",
     "name": "Akio",
     "description": "Akio didn't really have any plans when he landed on the island. He's the type of Mii to go along with wherever life takes him.",
     "personality": "sweetie",
@@ -141,6 +146,7 @@
   },
   {
     "slug": "max",
+    "idle": "max-idle.gif",
     "name": "Max",
     "description": "A Mii that prefers to be by herself. Suprisingly, she feels less that way around the Miis of this island. But she's not going to admit that.",
     "personality": "maverick",
@@ -169,6 +175,7 @@
   },
   {
     "slug": "casper",
+    "idle": "casper-idle.gif",
     "name": "Casper",
     "description": "Casper is often quiet, keeping to himself. He believes that if he stays this way, then he'll reduce the chance of anything bad happening.",
     "personality": "thinker",
@@ -197,6 +204,7 @@
   },
   {
     "slug": "ross",
+    "idle": "ross-idle.gif",
     "name": "Ross",
     "description": "Ross is an energetic Mii who's constantly inviting others to hang out with her. Many can't keep up with her energy, though.",
     "personality": "go-getter",
@@ -226,6 +234,7 @@
   },
   {
     "slug": "maria",
+    "idle": "maria-idle.gif",
     "name": "Maria",
     "description": "Maria often has her head in the clouds, reading books at every opportunity. You'll only see her without one when she's hanging out with a friend.",
     "personality": "buddy",

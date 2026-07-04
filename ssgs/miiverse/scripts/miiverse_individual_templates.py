@@ -27,7 +27,7 @@ main_template = """
   <div class="o-main--mii">
     <div class="o-mii-summary">
       <div class="o-mii-summary__portrait-container">
-        <img class="o-mii-summary__portrait" src="../../../graphics/misc/miiverse/pablo/pablo-idle.gif" alt="Pablo idling" />
+        <img class="o-mii-summary__portrait" src="../../../graphics/misc/miiverse/miis/{idle}" alt="{name} idling" />
       </div>
       <div class="o-mii-summary__bio">
         <h1 class="o-mii-summary__name">

@@ -1,3 +1,4 @@
+main_template = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,42 +29,7 @@
     <h2>Tomodachi Life</h2>
   </div>
   <div class="o-main--index">
-    <a class="o-mii" href="bloo/">
-      <img class="o-mii__thumbnail" src="../../graphics/misc/miiverse/miis/bloo-thumbnail.png" alt="A picture of Bloo" />
-      <p class="o-mii__name">Bloo</p>
-    </a>
-    <a class="o-mii" href="pablo/">
-      <img class="o-mii__thumbnail" src="../../graphics/misc/miiverse/miis/pablo-thumbnail.png" alt="A picture of Pablo" />
-      <p class="o-mii__name">Pablo</p>
-    </a>
-    <a class="o-mii" href="miko/">
-      <img class="o-mii__thumbnail" src="../../graphics/misc/miiverse/miis/miko-thumbnail.png" alt="A picture of Miko" />
-      <p class="o-mii__name">Miko</p>
-    </a>
-    <a class="o-mii" href="shigeo/">
-      <img class="o-mii__thumbnail" src="../../graphics/misc/miiverse/miis/shigeo-thumbnail.png" alt="A picture of Shigeo" />
-      <p class="o-mii__name">Shigeo</p>
-    </a>
-    <a class="o-mii" href="akio/">
-      <img class="o-mii__thumbnail" src="../../graphics/misc/miiverse/miis/akio-thumbnail.png" alt="A picture of Akio" />
-      <p class="o-mii__name">Akio</p>
-    </a>
-    <a class="o-mii" href="max/">
-      <img class="o-mii__thumbnail" src="../../graphics/misc/miiverse/miis/max-thumbnail.png" alt="A picture of Max" />
-      <p class="o-mii__name">Max</p>
-    </a>
-    <a class="o-mii" href="casper/">
-      <img class="o-mii__thumbnail" src="../../graphics/misc/miiverse/miis/casper-thumbnail.png" alt="A picture of Casper" />
-      <p class="o-mii__name">Casper</p>
-    </a>
-    <a class="o-mii" href="ross/">
-      <img class="o-mii__thumbnail" src="../../graphics/misc/miiverse/miis/ross-thumbnail.png" alt="A picture of Ross" />
-      <p class="o-mii__name">Ross</p>
-    </a>
-    <a class="o-mii" href="maria/">
-      <img class="o-mii__thumbnail" src="../../graphics/misc/miiverse/miis/maria-thumbnail.png" alt="A picture of Maria" />
-      <p class="o-mii__name">Maria</p>
-    </a>
+    {links}
   </div>
   <div class="o-warning-popup u-hidden">
     <div class="o-warning-popup__content u-hidden">
@@ -91,7 +57,7 @@
   </div>
   <footer class="o-footer u-pause-animation">
     <p>
-      Page last updated July 04, 2026.
+      Page last updated {date}.
     </p>
     <p>
       This website is a personal project made for fun and is not affiliated with Nintendo!
@@ -110,3 +76,11 @@
   <script src="misc/scripts/miiverse-warning-popup.js"></script>
 </body>
 </html>
+"""
+
+link_template = """
+    <a class="o-mii" href="{slug}/">
+      <img class="o-mii__thumbnail" src="../../graphics/misc/miiverse/miis/{thumbnail}" alt="A picture of {name}" />
+      <p class="o-mii__name">{name}</p>
+    </a>
+"""

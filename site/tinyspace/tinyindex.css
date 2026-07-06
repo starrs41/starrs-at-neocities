@@ -415,6 +415,7 @@ body {
         /* height: auto; */
         width: fit-content;
         height: fit-content;
+        filter: drop-shadow(0px 5px 1px #000);
     }
 
     .c-music__guy img {

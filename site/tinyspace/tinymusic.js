@@ -1,111 +1,40 @@
 /*
-    for music player functionality inside and outside the iframe.
+    for music player functionality in tinyspace index (outside the iframe)
     best to put this at the bottom of the page!
 
     if someone had javascript disabled they'd be missing out on the music, but oh well :"3
 */
 
-/*
-    only needed on pages where music players are available
-*/
+let musicContent;
+let musicDialogue;
+let musicButton;
 
-var mainMusic;
-var subMusic;
-var musicDialogue;
-var musicButton;
-var subMusicButton;
+let currentIdx;
 
-// FOR THE MUSIC PLAYER INSIDE THE IFRAME
-// well apparently i don't need this anymore :skull:
-// still leaving this here though
 
-function subIsPlaying () {
-    subMusic = document.getElementById("js-sub-music");
-    return !subMusic.paused;
+musicContent = document.querySelectorAll(".js-main-music");
+musicDialogue = document.getElementById("js-main-music-dialogue");
+musicButton = document.getElementById("js-main-music-button");
+
+currentIdx = 0;
+
+if (musicContent.length > 1) {
+    musicContent[currentIdx].addEventListener("ended", (event) => {
+        currentIdx += 1;
+        musicContent[currentIdx].play();
+    });
 }
 
-function playSubMusic () {
-    mainMusic = window.parent.document.getElementById("js-main-music");
-    subMusic = document.getElementById("js-sub-music");
-
-    musicDialogue = window.parent.document.getElementById("js-main-music-dialogue");
-    musicButton = window.parent.document.getElementById("js-main-music-button");
-    subMusicButton = document.getElementById("js-sub-music-button");
-
-    if (mainMusic == undefined) { // the page is not inside the iframe
-        if (!subIsPlaying()) {
-            subMusic.play();
-            subMusicButton.innerHTML = "&#xf28b;"; // pause
-        }
-        else {
-            subMusic.pause();
-            subMusicButton.innerHTML = "&#xf144;"; // play
-        }
+musicButton.addEventListener("click", (event) => {
+    if (musicContent[currentIdx].paused) {
+        musicContent[currentIdx].play();
+        musicDialogue.innerText = '"Poyo?"'; // innerHTML not working for some reason so...
+        musicButton.innerText = "Stop!";
     }
-
-    else { // the page is inside the iframe
-        if (!subIsPlaying()) {
-            subMusic.play();
-            console.log("stopping main music");
-            mainMusic.pause();
-            console.log("playing sub music");
-            musicDialogue.innerText = '"Poyo!"';
-            musicButton.innerText = "Okay!";
-            subMusicButton.innerHTML = "&#xf28b;"; // pause
-        }
-        else {
-            subMusic.pause();
-            subMusicButton.innerHTML = "&#xf144;"; // play
-            console.log("stopping sub music");
-        }
+    else {
+        musicContent[currentIdx].pause();
+        musicDialogue.innerText = '"Poyo!"';
+        musicButton.innerText = "Okay!";
     }
-}
+});
 
-
-// FOR THE MUSIC PLAYER OUTSIDE THE IFRAME
-
-function mainIsPlaying () { // why did i name it like this. returns true if music is playing, otherwise returns false
-    mainMusic = document.getElementById("js-main-music");
-    return(!mainMusic.paused);
-}
-
-function playMainMusic () {
-    mainFrame = document.getElementById("js-main-frame"); // the iframe
-    mainMusic = document.getElementById("js-main-music");
-    subMusic = mainFrame.contentWindow.document.getElementById("js-sub-music");
-
-    musicDialogue = document.getElementById("js-main-music-dialogue");
-    musicButton = document.getElementById("js-main-music-button");
-    subMusicButton = mainFrame.contentWindow.document.getElementById("js-sub-music-button");
-
-    if (subMusic == undefined) { // there is no music playing inside the iframe
-        if (!mainIsPlaying()) {
-            mainMusic.play();
-            musicDialogue.innerText = '"Poyo?"'; // innerHTML not working for some reason so...
-            musicButton.innerText = "Stop!";
-        }
-        else {
-            mainMusic.pause();
-            musicDialogue.innerText = '"Poyo!"';
-            musicButton.innerText = "Okay!";
-        }
-    }
-
-    else { // there is music playing inside the iframe
-        if (!mainIsPlaying()) {
-            mainMusic.play();
-            console.log("playing main");
-            subMusic.pause();
-            console.log("stopping sub");
-            musicDialogue.innerText = '"Poyo?"'; // innerHTML not working for some reason so...
-            musicButton.innerText = "Stop!";
-            subMusicButton.innerHTML = "&#xf144;"; // play
-        }
-        else {
-            mainMusic.pause();
-            console.log("stopping main");
-            musicDialogue.innerText = '"Poyo!"';
-            musicButton.innerText = "Okay!";
-        }
-    }
-}

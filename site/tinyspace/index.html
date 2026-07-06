@@ -148,7 +148,7 @@
                     <!-- guy is now talking -->
                     <div class="c-music__text">
                         <p id="js-main-music-dialogue">"Poyo!"</p> <!-- how did i do these quotation marks again? -->
-                        <button id="js-main-music-button" onclick="playMainMusic()">Okay!</button>
+                        <button id="js-main-music-button">Okay!</button>
                     </div>
                     <img class="c-music__bubble" src="/graphics/assets/bubble-music.gif">
                 </div>
@@ -157,8 +157,12 @@
                     <p class="c-music__marquee">Now playing: "The Island at Night" from the game "Tomodachi Collection"</p>
                 </div>
                 <!-- audio file -->
-                <audio loop id="js-main-music"> <!-- the play button is hidden. -->
-                    <source src="https://docs.google.com/uc?id=1c8hzfHEG5Q9HC33t3A9uAH8de_ZzP6R1&export=download" type="audio/mpeg">
+                <audio class="js-main-music"> <!-- the play button is hidden. -->
+                    <source src="https://file.garden/akJr1M5SUwY64beP/Tomodachi%20Collection%20-%20The%20Island%20at%20Night%20(Part%201).mp3" type="audio/mpeg">
+                    <span>Your browser does not support the audio element.</span>
+                </audio>
+                <audio loop class="js-main-music"> <!-- the play button is hidden. -->
+                    <source src="https://file.garden/akJr1M5SUwY64beP/Tomodachi%20Collection%20-%20The%20Island%20at%20Night%20(Part%202).mp3" type="audio/mpeg">
                     <span>Your browser does not support the audio element.</span>
                 </audio>
             </div>

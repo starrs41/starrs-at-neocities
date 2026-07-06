@@ -57,3 +57,19 @@ function closeThisModal() {
       children[i].style.display = "none";
     }
 }
+
+// for news toggle
+
+let oldNewsToggle = document.querySelector("#newsToggle");
+let oldNews = document.querySelector(".c-news__old");
+
+oldNewsToggle.addEventListener("click", (event) => {
+    if (oldNews.classList.contains("u-hide-news")) {
+        oldNews.classList.remove("u-hide-news");
+        oldNewsToggle.innerHTML = "Read less?";
+    }
+    else {
+        oldNews.classList.add("u-hide-news");
+        oldNewsToggle.innerHTML = "Read more?"
+    }
+});

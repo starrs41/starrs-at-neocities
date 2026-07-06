@@ -36,6 +36,10 @@
             align-items: center;
         }
 
+        .c-news hr {
+            width: 100%;
+        }
+
         /* the box containing all the updates */
 
         .c-news__updates {
@@ -53,6 +57,27 @@
         .c-news__updates li {
             text-align: left;
             margin: 5px 0;
+        }
+
+        .c-news__new, .c-news__old {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .u-hide-news {
+            display: none;
+        }
+
+        .c-news__news-toggle {
+            margin-bottom: 1rem;
+            color: #7531db;
+        }
+
+        .c-news__news-toggle {
+            cursor: pointer;
         }
 
         /* the headings for the update dates */
@@ -224,187 +249,221 @@
                 <div class="c-news__updates">
                     <h3 class="o-rainbow-heading" style="margin-bottom: 10px;">News + Updates</h3>
                         <!-- add more here -->
-                        <h4 class="o-update-heading u-newest-update">December 15, 2022</h4>
-                        <p>haven't been able to update for a while because of studies ^^;</p>
-                        <p>by the way, thanks so much to all the people that left nice messages on my site! i really appreciate them! ;v;</p>
-                        <ul>
-                            <li>created a dedicated box for webrings! (planning on joining a lot >:D)</li>
-                            <li>in fact, i've joined the <a href="https://nippoverse.xyz/retroring/members.html">retroring</a>! retro gaming enthusiasts unite!!</li>
-                            <li>also changed the look of the yesterweb widget. though now it uses javascript ^^;</li>
-                            <li>moved the blinkies to the bottom of the page</li>
-                            <li>added a new blog called <a href="thoughts/blog/struggles_of_web_dev.html" target="_self">"The Struggles of Web Development"</a></li>
-                            <li>added a new blinkie (but you're gonna have to find it >:])</li>
-                        </ul>
-                        <hr class="o-dashed-divider">
+                        <div class="c-news__new">
+                            <section>
+                                <h4 class="o-update-heading u-newest-update">December 15, 2022</h4>
+                                <p>haven't been able to update for a while because of studies ^^;</p>
+                                <p>by the way, thanks so much to all the people that left nice messages on my site! i really appreciate them! ;v;</p>
+                                <ul>
+                                    <li>created a dedicated box for webrings! (planning on joining a lot >:D)</li>
+                                    <li>in fact, i've joined the <a href="https://nippoverse.xyz/retroring/members.html">retroring</a>! retro gaming enthusiasts unite!!</li>
+                                    <li>also changed the look of the yesterweb widget. though now it uses javascript ^^;</li>
+                                    <li>moved the blinkies to the bottom of the page</li>
+                                    <li>added a new blog called <a href="thoughts/blog/struggles_of_web_dev.html" target="_self">"The Struggles of Web Development"</a></li>
+                                    <li>added a new blinkie (but you're gonna have to find it >:])</li>
+                                </ul>
+                            </section>
 
-                        <h4 class="o-update-heading">October 26, 2022</h4>
-                        <p>hey again! it's been 2 months since i made changes to this site. a lot has happened, and i still haven't gotten around to finishing tiny space T_T</p>
-                        <p>who knows when i'll get to working on deep space...</p>
-                        <p>unfortunately, this also means that i wasn't able to do anything special for halloween T_T</p>
-                        <ul>
-                            <li>added more art!</li>
-                            <li>brought back the resources page with a new look! and added some more resources</li>
-                            <li>finally, the neighbors page is here!! go visit their sites!!!!</li>
-                            <li>added a link to the github repository of this site, in case anyone wants to take a look :></li>
-                            <li>added the credits page for some common stuff on the site</li>
-                            <li>added a test blog... which means the blog elements are done!</li>
-                        </ul>
-                        <hr class="o-dashed-divider">
+                            <hr class="o-dashed-divider">
 
-                        <h4 class="o-update-heading">August 12, 2022</h4>
-                        <p>hello! college is starting very soon for me, so i may not have the time to update the site in the upcoming days... :(</p>
-                        <p>was able to get some stuff done on the website though, at least ^^; wish me luck at college! :D</p>
-                        <ul>
-                            <li>added and modified the <a href="creations.html" target="_self">creations</a> and <a href="thoughts.html" target="_self">thoughts</a> pages!</li>
-                            <li>put back the first blog page. another one coming soon!</li>
-                            <li>changed the look of the art galleries. there are also modals for them now! <a href="/tinyspace/creations/art/artof2021.html" target="_self">check it out</a>!</li>
-                            <li>fixed the media queries!</li>
-                            <li>added some more semantic HTML elements!</li>
-                        </ul>
-                        <hr class="o-dashed-divider">
+                            <section>
+                                <h4 class="o-update-heading">October 26, 2022</h4>
+                                <p>hey again! it's been 2 months since i made changes to this site. a lot has happened, and i still haven't gotten around to finishing tiny space T_T</p>
+                                <p>who knows when i'll get to working on deep space...</p>
+                                <p>unfortunately, this also means that i wasn't able to do anything special for halloween T_T</p>
+                                <ul>
+                                    <li>added more art!</li>
+                                    <li>brought back the resources page with a new look! and added some more resources</li>
+                                    <li>finally, the neighbors page is here!! go visit their sites!!!!</li>
+                                    <li>added a link to the github repository of this site, in case anyone wants to take a look :></li>
+                                    <li>added the credits page for some common stuff on the site</li>
+                                    <li>added a test blog... which means the blog elements are done!</li>
+                                </ul>
+                            </section>
 
-                        <h4 class="o-update-heading">August 9, 2022</h4>
-                        <p>it's been a while since i updated, and the site's not quite finished, but here's what i did for now ;u;</p>
-                        <p>(in other news, i got github running and am using it to push changes to my site!! which also means i need to start over a little, hence the broken links)</p>
-                        <ul>
-                            <li>fixed the code for the layout of the whole website (subtle, but it made a lot of big changes)</li>
-                            <li>reworked the whole file hierarchy system (you can't see the effect, but it did make everything harder for me :"D)</li>
-                            <li>finally, the site makes better use of semantic elements TuT</li>
-                            <li>custom bullet colors! everything looks so colorful now!</li>
-                            <li>the about page has been revamped! check it out <a href="about.html" target="_self">here</a>!</li>
-                            <li>the ocs page has been revamped (though the wiki pages themselves are still unavailable)! check it out <a href="ocs.html" target="_self">here</a>!</li>
-                            <li>you probably noticed, but there's a landing page now! :D</li>
-                            <li>reworked the music script for the site! music can now play inside the iframe properly without disrupting kirby's music! (you'll see this in effect soon)</li>
-                            <li>here's an easter egg: each page now has a unique look when outside the iframe! (just thought it would be nice ^^;)</li>
-                            <li>additionally, links have been added at the bottom of the page to either scroll to the top or return to the iframe!</li>
-                            <li>fixed the position of the status</li>
-                            <li>made the span that controls the site's music into a button</li>
-                            <li>added custom link colors when hovered on</li>
-                            <li>made some changes to the mobile version of the site (notably, removed kirby D:)</li>
-                            <li>fixed it so that the contents of the site stay at the center even when the screen is zoomed out</li>
-                        </ul>
-                        <hr class="o-dashed-divider">
+                            <hr class="o-dashed-divider">
 
-                        <h4 class="o-update-heading">July 22, 2022</h4>
-                        <p>a few changes, but good ones! >:3</p>
-                        <p>planning a lot of things for the next update... for now i just want to share the button already ToT</p>
-                        <ul>
-                            <li>like i just mentioned... the site finally has a button! check it out over at the right TwT</li>
-                            <li>switched the locations of the updatelog and chatbox</li>
-                            <li>modified the updatelog a little ^^</li>
-                            <li>a link to the guestbook has FINALLY been added!! <a href="https://starrs.123guestbook.com/" target="_top">leave a message</a> if you like! :D</li>
-                            <li>added a placeholder worm hole to deep space... who knows what's in there? O.O</li>
-                            <li>a custom cursor! hooray!! :D</li>
-                            <li>added a little kitty cat over at the visitor box!</li>
-                            <li>added some more color to the yesterweb widget :Dc</li>
-                        </ul>
-                        <hr class="o-dashed-divider">
+                            <section>
+                                <h4 class="o-update-heading">August 12, 2022</h4>
+                                <p>hello! college is starting very soon for me, so i may not have the time to update the site in the upcoming days... :(</p>
+                                <p>was able to get some stuff done on the website though, at least ^^; wish me luck at college! :D</p>
+                                <ul>
+                                    <li>added and modified the <a href="creations.html" target="_self">creations</a> and <a href="thoughts.html" target="_self">thoughts</a> pages!</li>
+                                    <li>put back the first blog page. another one coming soon!</li>
+                                    <li>changed the look of the art galleries. there are also modals for them now! <a href="/tinyspace/creations/art/artof2021.html" target="_self">check it out</a>!</li>
+                                    <li>fixed the media queries!</li>
+                                    <li>added some more semantic HTML elements!</li>
+                                </ul>
+                            </section>
 
-                        <h4 class="o-update-heading">July 13, 2022</h4>
-                        <p>again, mostly a bunch of invisible changes :P</p>
-                        <p>there are still a lot of changes coming though! i've got a lot of stuff i wanna do >:3c</p>
-                        <ul>
-                            <li>joined the yesterweb webring, so i added the widget! >:D</li>
-                            <li>added some collections in the graphics area!</li>
-                            <li>modified the appearance of some pages...</li>
-                            <li>cleaned up my css... it's more organized now. somewhat</li>
-                            <li>added js by <a href="https://forum.melonking.net/index.php?topic=115.0" target="_blank">melon</a> that fixes
-                            the iframe links on the site. huge shoutout to him! TvT</li>
-                        </ul>
-                        <hr class="o-dashed-divider">
+                            <hr class="o-dashed-divider">
+                            
+                            <button class="c-news__news-toggle" id="newsToggle">
+                                Read more?
+                            </button>
+                        </div>
 
-                        <h4 class="o-update-heading">July 10, 2022</h4>
-                        <p>it's crazy how much i was able to update the website in the span of 2 days...</p>
-                        <p>by the way, i added my first <a href="thoughts/blog/blog1.html" onclick="iframeScroll('thoughts/blog/blog1.html')">blog</a>!! come see >:3</p>
-                        <ul>
-                            <li>fixed the font sizes, margins, padding, and other properties to make it look more compact!</li>
-                            <li>reworked the header and removed the bottom marquee. i think having too many marquees lags the website...</li>
-                            <li>removed, added, and moved around some graphics!</li>
-                            <li>moved the update log here, to the right column.</li>
-                            <li>moved the status up where the header is</li>
-                            <li>finally added a website counter to the left column...</li>
-                            <li>added a bunch of new pages!!! still incomplete though. check the 
-                                <a href="sitemap.html" onclick="iframeScroll('sitemap.html')">sitemap</a> for more details!</li>
-                            <li>made kirby slightly more accurate... i think.</li>
-                            <li>fixed the code for the iframe scroll. now the iframe is centered in the middle of the screen TvT</li>
-                            <li>changed the way links work. still unsatisfied with it though...</li>
-                            <li>tweaked the responsiveness of my site a little >:D</li>
-                        </ul>
-                        <hr class="o-dashed-divider">
+                        <div class="c-news__old u-hide-news">
+                            <section>
+                                <h4 class="o-update-heading">August 9, 2022</h4>
+                                <p>it's been a while since i updated, and the site's not quite finished, but here's what i did for now ;u;</p>
+                                <p>(in other news, i got github running and am using it to push changes to my site!! which also means i need to start over a little, hence the broken links)</p>
+                                <ul>
+                                    <li>fixed the code for the layout of the whole website (subtle, but it made a lot of big changes)</li>
+                                    <li>reworked the whole file hierarchy system (you can't see the effect, but it did make everything harder for me :"D)</li>
+                                    <li>finally, the site makes better use of semantic elements TuT</li>
+                                    <li>custom bullet colors! everything looks so colorful now!</li>
+                                    <li>the about page has been revamped! check it out <a href="about.html" target="_self">here</a>!</li>
+                                    <li>the ocs page has been revamped (though the wiki pages themselves are still unavailable)! check it out <a href="ocs.html" target="_self">here</a>!</li>
+                                    <li>you probably noticed, but there's a landing page now! :D</li>
+                                    <li>reworked the music script for the site! music can now play inside the iframe properly without disrupting kirby's music! (you'll see this in effect soon)</li>
+                                    <li>here's an easter egg: each page now has a unique look when outside the iframe! (just thought it would be nice ^^;)</li>
+                                    <li>additionally, links have been added at the bottom of the page to either scroll to the top or return to the iframe!</li>
+                                    <li>fixed the position of the status</li>
+                                    <li>made the span that controls the site's music into a button</li>
+                                    <li>added custom link colors when hovered on</li>
+                                    <li>made some changes to the mobile version of the site (notably, removed kirby D:)</li>
+                                    <li>fixed it so that the contents of the site stay at the center even when the screen is zoomed out</li>
+                                </ul>
+                            </section>
 
-                        <h4 class="o-update-heading">July 7, 2022</h4>
-                        <p>this site went through a lot of (mostly invisible) changes, so here they are!!</p>
-                        <ul>
-                                <li>
-                                    more buttons, blinkies, and stamps!! looks like there's more color to the site now! i'll be adding them
-                                    all in the collection soon enough :D
-                                </li>
-                                <li>
-                                    changed some fonts!
-                                </li>
-                                <li>
-                                    changed the links on the navigation menu and added some new (but unfinished) pages!
-                                </li>
-                                <li>
-                                    removed the art gallery for now. i'll be revamping it!
-                                </li>
-                                <li>
-                                    changed the divider!
-                                </li>
-                                <li>
-                                    finally cleaned up my code... so some problems with the boxes have been fixed T.T
-                                </li>
-                                <li>
-                                cleaned up the right column. not done yet with the contents...!
-                                </li>
-                                <li>
-                                    overhauled the music player. though i might still fix its appearance on mobile...
-                                </li>
-                                <li>
-                                    new scrollbars!
-                                </li>
-                                <li>
-                                    added code to make the page scroll to the iframe when clicking on a link in the navigation menu.
-                                    works great for mobile!
-                                </li>
-                        </ul>
-                        <hr class="o-dashed-divider">
+                            <hr class="o-dashed-divider">
 
-                        <h4 class="o-update-heading">July 3, 2022</h4>
-                        <p>art fight has gotten me confused as to what i should prioritize first... but anyway, i've made some important changes</p>
-                        <ul>
-                            <li>
-                                changed the way the website works. it now relies on an iframe to show content. this makes it easier for
-                                    things such as the music to carry over between pages! (and it's also super easy to fix problems on each page now...!)
-                                    i'll check if this creates any problems though...
-                            </li>
-                            <li>
-                                changed the music player's appearance in preparation for an overhaul. so for now, it's broken. don't mind that ^^;
-                            </li>
-                            <li>
-                                changed the content of the boxes in the right column. mostly as a reminder for myself
-                            </li>
-                            <li>
-                                updated the art gallery! i've overhauled its appearance and it now shows all the art that I've been meaning to add for a while. i also changed the first paragraph and
-                                removed the dancing cat (sorry). not sure if the first part looks better without an image though...
-                            </li>
-                            <li>
-                                moved the update log to the home page and re-added the status. not yet done with the website counter though, sorry
-                            </li>
-                            <li>
-                                moved the chatbox and guestbook links down. not sure if that's a good idea since it's not immediately
-                                    noticeable, but i'll figure something out.
-                            </li>
-                            <li>
-                                still in the process of overhauling the naming convention for the site's assets and putting everything in the right folders...
-                            </li>
-                            <li>
-                                reduced the height of the main container so the important content can easily be readable in computer screens
-                            </li>
-                            <li>
-                                fixed the footer contents
-                            </li>
-                        </ul>
+                            <section>
+                                <h4 class="o-update-heading">July 22, 2022</h4>
+                                <p>a few changes, but good ones! >:3</p>
+                                <p>planning a lot of things for the next update... for now i just want to share the button already ToT</p>
+                                <ul>
+                                    <li>like i just mentioned... the site finally has a button! check it out over at the right TwT</li>
+                                    <li>switched the locations of the updatelog and chatbox</li>
+                                    <li>modified the updatelog a little ^^</li>
+                                    <li>a link to the guestbook has FINALLY been added!! <a href="https://starrs.123guestbook.com/" target="_top">leave a message</a> if you like! :D</li>
+                                    <li>added a placeholder worm hole to deep space... who knows what's in there? O.O</li>
+                                    <li>a custom cursor! hooray!! :D</li>
+                                    <li>added a little kitty cat over at the visitor box!</li>
+                                    <li>added some more color to the yesterweb widget :Dc</li>
+                                </ul>
+                            </section>
+
+                            <hr class="o-dashed-divider">
+
+                            <section>
+                                <h4 class="o-update-heading">July 13, 2022</h4>
+                                <p>again, mostly a bunch of invisible changes :P</p>
+                                <p>there are still a lot of changes coming though! i've got a lot of stuff i wanna do >:3c</p>
+                                <ul>
+                                    <li>joined the yesterweb webring, so i added the widget! >:D</li>
+                                    <li>added some collections in the graphics area!</li>
+                                    <li>modified the appearance of some pages...</li>
+                                    <li>cleaned up my css... it's more organized now. somewhat</li>
+                                    <li>added js by <a href="https://forum.melonking.net/index.php?topic=115.0" target="_blank">melon</a> that fixes
+                                    the iframe links on the site. huge shoutout to him! TvT</li>
+                                </ul>
+                            </section>
+
+                            <hr class="o-dashed-divider">
+
+                            <section>
+                                <h4 class="o-update-heading">July 10, 2022</h4>
+                                <p>it's crazy how much i was able to update the website in the span of 2 days...</p>
+                                <p>by the way, i added my first <a href="thoughts/blog/blog1.html" onclick="iframeScroll('thoughts/blog/blog1.html')">blog</a>!! come see >:3</p>
+                                <ul>
+                                    <li>fixed the font sizes, margins, padding, and other properties to make it look more compact!</li>
+                                    <li>reworked the header and removed the bottom marquee. i think having too many marquees lags the website...</li>
+                                    <li>removed, added, and moved around some graphics!</li>
+                                    <li>moved the update log here, to the right column.</li>
+                                    <li>moved the status up where the header is</li>
+                                    <li>finally added a website counter to the left column...</li>
+                                    <li>added a bunch of new pages!!! still incomplete though. check the 
+                                        <a href="sitemap.html" onclick="iframeScroll('sitemap.html')">sitemap</a> for more details!</li>
+                                    <li>made kirby slightly more accurate... i think.</li>
+                                    <li>fixed the code for the iframe scroll. now the iframe is centered in the middle of the screen TvT</li>
+                                    <li>changed the way links work. still unsatisfied with it though...</li>
+                                    <li>tweaked the responsiveness of my site a little >:D</li>
+                                </ul>
+                            </section>
+
+                            <hr class="o-dashed-divider">
+
+                            <section>
+                                <h4 class="o-update-heading">July 7, 2022</h4>
+                                <p>this site went through a lot of (mostly invisible) changes, so here they are!!</p>
+                                <ul>
+                                        <li>
+                                            more buttons, blinkies, and stamps!! looks like there's more color to the site now! i'll be adding them
+                                            all in the collection soon enough :D
+                                        </li>
+                                        <li>
+                                            changed some fonts!
+                                        </li>
+                                        <li>
+                                            changed the links on the navigation menu and added some new (but unfinished) pages!
+                                        </li>
+                                        <li>
+                                            removed the art gallery for now. i'll be revamping it!
+                                        </li>
+                                        <li>
+                                            changed the divider!
+                                        </li>
+                                        <li>
+                                            finally cleaned up my code... so some problems with the boxes have been fixed T.T
+                                        </li>
+                                        <li>
+                                        cleaned up the right column. not done yet with the contents...!
+                                        </li>
+                                        <li>
+                                            overhauled the music player. though i might still fix its appearance on mobile...
+                                        </li>
+                                        <li>
+                                            new scrollbars!
+                                        </li>
+                                        <li>
+                                            added code to make the page scroll to the iframe when clicking on a link in the navigation menu.
+                                            works great for mobile!
+                                        </li>
+                                </ul>
+                            </section>
+
+                            <hr class="o-dashed-divider">
+
+                            <section>
+                                <h4 class="o-update-heading">July 3, 2022</h4>
+                                <p>art fight has gotten me confused as to what i should prioritize first... but anyway, i've made some important changes</p>
+                                <ul>
+                                    <li>
+                                        changed the way the website works. it now relies on an iframe to show content. this makes it easier for
+                                            things such as the music to carry over between pages! (and it's also super easy to fix problems on each page now...!)
+                                            i'll check if this creates any problems though...
+                                    </li>
+                                    <li>
+                                        changed the music player's appearance in preparation for an overhaul. so for now, it's broken. don't mind that ^^;
+                                    </li>
+                                    <li>
+                                        changed the content of the boxes in the right column. mostly as a reminder for myself
+                                    </li>
+                                    <li>
+                                        updated the art gallery! i've overhauled its appearance and it now shows all the art that I've been meaning to add for a while. i also changed the first paragraph and
+                                        removed the dancing cat (sorry). not sure if the first part looks better without an image though...
+                                    </li>
+                                    <li>
+                                        moved the update log to the home page and re-added the status. not yet done with the website counter though, sorry
+                                    </li>
+                                    <li>
+                                        moved the chatbox and guestbook links down. not sure if that's a good idea since it's not immediately
+                                            noticeable, but i'll figure something out.
+                                    </li>
+                                    <li>
+                                        still in the process of overhauling the naming convention for the site's assets and putting everything in the right folders...
+                                    </li>
+                                    <li>
+                                        reduced the height of the main container so the important content can easily be readable in computer screens
+                                    </li>
+                                    <li>
+                                        fixed the footer contents
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
                 </div>
             </div>
             <!-- site button -->

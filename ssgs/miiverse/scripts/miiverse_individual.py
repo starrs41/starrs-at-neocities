@@ -30,7 +30,7 @@ def populate_personality(mii):
   name = personality_list[slug]["name"]
   description = personality_list[slug]["description"]
   
-  return templates.personality_template.strip().format(slug=slug, name=name, description=description)
+  return templates.personality_template.strip().format(slug=slug, name=name, description=description);
 
 
 def populate_quirks(mii):
@@ -39,7 +39,7 @@ def populate_quirks(mii):
   for quirk in mii["quirks"]:
     name = quirk
     category = quirk_list[quirk]["category"]
-    quirk_block = templates.quirk_template.rstrip().format(category=category, alt=category.title(), name=name)
+    quirk_block = templates.quirk_template.rstrip().format(category=category, alt=category.title(), name=name);
     all_quirk_blocks.append(quirk_block)
 
   return "".join(all_quirk_blocks).lstrip()
@@ -52,7 +52,7 @@ def populate_details(mii):
     if not detail == "trivia":
       label = detail.title()
       info = mii["details"][detail]
-      detail_block = templates.detail_template.rstrip().format(label=label, info=info)
+      detail_block = templates.detail_template.rstrip().format(label=label, info=info);
       all_detail_blocks.append(detail_block)
   
   return "".join(all_detail_blocks).lstrip()
@@ -62,7 +62,7 @@ def populate_trivia(mii):
   all_trivia_blocks = []
   
   for trivia in mii["details"]["trivia"]:
-    trivia_block = templates.trivia_item_template.rstrip().format(content=trivia)
+    trivia_block = templates.trivia_item_template.rstrip().format(content=trivia);
     all_trivia_blocks.append(trivia_block)
   
   return "".join(all_trivia_blocks).lstrip()
@@ -83,7 +83,7 @@ def populate_thumbnails(items):
   all_thumbnail_blocks = []
   
   for item in items:
-    thumbnail_block = templates.thumbnail_template.rstrip().format(category=item["category"], filename=item["filename"], alt=item["alt"])
+    thumbnail_block = templates.thumbnail_template.rstrip().format(category=item["category"], filename=item["filename"], alt=item["alt"], description=item["description"]);
     all_thumbnail_blocks.append(thumbnail_block)
   
   return "".join(all_thumbnail_blocks).lstrip()
@@ -119,7 +119,7 @@ def create_individual_page(mii):
   lightbox_info = populate_lightbox_info(gallery_items)
   pictures = populate_pictures(gallery_items)
   
-  final_content = templates.main_template.strip().format(name=mii["name"], idle=mii["idle"], description=mii["description"], personality=personality, quirks=quirks, details=details, trivia=trivia, thumbnails=thumbnails, lightbox_info=lightbox_info, pictures=pictures, date=datetime.today().strftime("%B %d, %Y"))
+  final_content = templates.main_template.strip().format(name=mii["name"], idle=mii["idle"], description=mii["description"], personality=personality, quirks=quirks, details=details, trivia=trivia, thumbnails=thumbnails, lightbox_info=lightbox_info, pictures=pictures, date=datetime.today().strftime("%B %d, %Y"));
   
   final_directory = f"{output_folder}/{mii["slug"]}/index.html"
     
@@ -127,7 +127,7 @@ def create_individual_page(mii):
   final_file.parent.mkdir(exist_ok=True, parents=True)
   final_file.write_text(final_content)
   
-  print(f"Page for {mii["name"]} created in {final_directory}")
+  print(f"Page for {mii["name"]} created in {final_directory}") 
 
 
 def create_individual_pages():
@@ -136,13 +136,20 @@ def create_individual_pages():
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-t", "--test")
+parser.add_argument("-m", "--mii")
 args = parser.parse_args()
 
 if __name__ == '__main__':
-  if (args.test == None):
+  if (args.mii == None):
     create_individual_pages()
   else:
-    for mii in mii_list: # this may tank performance later on when there are more miis
-      if mii["slug"] == args.test:
-        create_individual_page(mii)
+    miis_to_generate = args.mii.split(",")
+    for mii_slug in miis_to_generate:
+      has_found = False
+      for mii in mii_list: # this may tank performance later on when there are more miis  
+        if mii["slug"] == mii_slug:
+          create_individual_page(mii)
+          has_found = True
+          break;
+      if not has_found:
+        print(f"Info for {mii_slug} not found") 

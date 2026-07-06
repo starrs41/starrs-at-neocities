@@ -1,0 +1,35 @@
+.glightbox-themed {
+  font-family: "Dita";
+}
+
+.glightbox-themed .gslide-desc {
+  margin-top: 1rem; 
+  color: #FFFFFF;
+}
+
+.glightbox-themed .gprev, .glightbox-themed .gnext, .glightbox-themed .gclose {
+  position: fixed;
+  background: none;
+  filter: drop-shadow(2px 0px 4px #03243d);
+}
+
+.glightbox-themed .gprev > img, .glightbox-themed .gnext > img, .glightbox-themed .gclose > img {
+  width: auto;
+  height: 100%;
+}
+
+.glightbox-themed .gprev {
+  top: 50%;
+  left: 1rem;
+}
+
+.glightbox-themed .gnext {
+  top: 50%;
+  right: 1rem;
+}
+
+.glightbox-themed .gclose {
+  top: 1rem;
+  right: 1rem;
+  height: 35px;
+}

@@ -7,6 +7,8 @@ main_template = """
   <title>Miiverse - {name}</title>
   <link rel="stylesheet" href="../misc/styles/miiverse-globals.css">
   <link rel="stylesheet" href="../misc/styles/miiverse-individual.css">
+  <link rel="stylesheet" href="../misc/styles/glightbox.css">
+  <link rel="stylesheet" href="../misc/styles/miiverse-lightbox.css">
 </head>
 <body class="u-pause-animation">
   <div class="o-navbar u-pause-animation">
@@ -165,12 +167,12 @@ main_template = """
     <source src="https://file.garden/akJr1M5SUwY64beP/TLLD%20-%20Mii%20Maker.mp3" type="audio/mpeg">
     <span>Your browser does not support the audio element.</span>
   </audio>
-  <script src="../misc/scripts/miiverse-lightbox.js"></script>
   <script src="../misc/scripts/miiverse-gallery-filter.js"></script>
   <script src="../misc/scripts/miiverse-top-button.js"></script>
   <script src="../misc/scripts/miiverse-anim-toggle.js"></script>
   <script src="../misc/scripts/miiverse-music-toggle.js"></script>
   <script src="../misc/scripts/miiverse-warning-popup.js"></script>
+  <script type="module" src="../misc/scripts/miiverse-lightbox.js"></script>
 </body>
 </html>
 """
@@ -218,9 +220,14 @@ trivia_item_template = """
 """
 
 thumbnail_template = """
-        <div class="o-thumbnail-container">
+        <a class="o-thumbnail-container"
+            href="../../../graphics/misc/miiverse/gallery/{filename}"
+            data-description="{description}"
+            data-alt="{alt}"
+            data-effect="fade"
+          >
           <img data-game="{category}" class="o-thumbnail" src="../../../graphics/misc/miiverse/gallery/{filename}" alt="{alt}" />
-        </div>
+        </a>
 """
 
 lightbox_info_template = """

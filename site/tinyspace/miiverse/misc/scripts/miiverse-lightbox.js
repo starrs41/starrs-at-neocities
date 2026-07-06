@@ -1,114 +1,25 @@
-let currentSlide = 0;
+import "./glightbox.js";
 
-/*
-  IMPORTANT NOTE: thumbnails, pictures, and descriptions
-  should have the same length and be in the same order
-  for them to be matched up correctly
+const nextSVG = `<img src="../../../graphics/misc/miiverse/right.svg" alt="Next image">`
+const prevSVG = `<img src="../../../graphics/misc/miiverse/left.svg" alt="Previous image">`
+const closeSVG = `<img src="../../../graphics/misc/miiverse/close.svg" alt="Close the lightbox">`
 
-  the three of those will be handled by a separate ssg
-  so it should be all good
-*/
+const customLightboxHTML = `<div id="glightbox-body" class="glightbox-container">
+    <div class="gloader visible"></div>
+    <div class="goverlay"></div>
+    <div class="gcontainer">
+    <div id="glightbox-slider" class="gslider"></div>
+    <button class="gnext gbtn" tabindex="0" aria-label="Next" data-customattribute="example">${nextSVG}</button>
+    <button class="gprev gbtn" tabindex="1" aria-label="Previous">${prevSVG}</button>
+    <button class="gclose gbtn" tabindex="2" aria-label="Close">${closeSVG}</button>
+</div>
+</div>`;
 
-let thumbnails = document.querySelectorAll(".o-thumbnail");
-let pictures = document.querySelectorAll(".o-picture");
-
-let lightbox = document.querySelector(".o-lightbox");
-
-window.addEventListener("keydown", (event) => {
-  if (!lightbox.classList.contains("u-hidden")) {
-    if (event.key == "Escape") {
-      lightbox.classList.toggle("u-hidden");
-    }
-    if (event.key == "a" || event.key == "ArrowLeft") {
-      goToPrevSlide();
-    }
-    if (event.key == "d" || event.key == "ArrowRight") {
-      goToNextSlide();
-    }
-  }
-})
-
-for (let i = 0; i < thumbnails.length; i++) {
-  thumbnails[i].addEventListener("click", (event) => {
-    initializeSlide(i);
-    lightbox.classList.toggle("u-hidden");
-  })
-}
-
-let lightboxInfo = document.querySelector("#lightboxInfo");
-let lightboxClose = document.querySelector("#lightboxClose");
-let lightboxPrev = document.querySelectorAll(".o-lightbox-nav--prev");
-let lightboxNext = document.querySelectorAll(".o-lightbox-nav--next");
-
-let descriptions = document.querySelectorAll(".o-lightbox-info-box__content");
-
-lightboxInfo.addEventListener("mouseenter", (event) => {
-  console.log(descriptions[currentSlide]);
-  descriptions[currentSlide].parentNode.classList.toggle("u-hidden");
-  descriptions[currentSlide].classList.toggle("u-hidden");
+const miiGallery = GLightbox({
+  selector: ".o-thumbnail-container",
+  lightboxHTML: customLightboxHTML,
+  skin: "themed",
+  autoplayVideos: true,
+  loop: true,
+  touchNavigation: true,
 });
-
-lightboxInfo.addEventListener("mouseleave", (event) => {
-  descriptions[currentSlide].parentNode.classList.toggle("u-hidden");
-  descriptions[currentSlide].classList.toggle("u-hidden");
-});
-
-lightboxClose.addEventListener("click", (event) => {
-  lightbox.classList.toggle("u-hidden");
-  removeSlide();
-});
-
-for (let i = 0; i < lightboxPrev.length; i++) {
-  lightboxPrev[i].addEventListener("click", (event) => {
-    console.log("clicked prev");
-    goToPrevSlide();
-  });
-}
-
-for (let i = 0; i < lightboxNext.length; i++) {
-  lightboxNext[i].addEventListener("click", (event) => {
-    console.log("clicked next");
-    goToNextSlide();
-  });
-}
-
-function goToPrevSlide() {
-  if (currentSlide > 0) {
-    changeSlide(currentSlide - 1);
-  }
-  else {
-    changeSlide(pictures.length - 1);
-  }
-}
-
-function goToNextSlide() {
-  if (currentSlide < pictures.length - 1) {
-    changeSlide(currentSlide + 1);
-  }
-  else {
-    changeSlide(0);
-  }
-}
-
-function changeSlide(newSlide) {
-  if (!pictures[currentSlide].classList.contains("u-hidden")) {
-    pictures[currentSlide].classList.add("u-hidden");
-  }
-  if (pictures[newSlide].classList.contains("u-hidden")) {
-    pictures[newSlide].classList.remove("u-hidden");
-  }
-  currentSlide = newSlide;
-}
-
-function initializeSlide(selectedSlide) {
-  if (pictures[selectedSlide].classList.contains("u-hidden")) {
-    pictures[selectedSlide].classList.remove("u-hidden");
-  }
-  currentSlide = selectedSlide;
-}
-
-function removeSlide() {
-  if (!pictures[currentSlide].classList.contains("u-hidden")) {
-    pictures[currentSlide].classList.add("u-hidden");
-  }
-}

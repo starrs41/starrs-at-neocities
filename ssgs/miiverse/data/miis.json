@@ -4,7 +4,7 @@
     "thumbnail": "bloo-thumbnail.png",
     "idle": "bloo-idle.gif",
     "name": "Bloo",
-    "description": "Many describe Bloo as having a heart of gold, never hesitating to be there for her friends. But as many close to her have observed (and tried to stop), it is often at the cost of not caring for herself.",
+    "description": "Many describe Bloo as having a heart of gold, never hesitating to be there for her friends. But as many close to her have observed (and tried to stop), this is often at the cost of her not caring for herself.",
     "personality": "buddy",
     "quirks": [
       "greets eagerly",
@@ -26,7 +26,8 @@
         "She loves to exercise, it boosts her mood when she does. Her usual workout is jogging around the island.",
         "If she's being honest, she doesn't really have any big plans for her future. She's mostly just enjoying her life on the island.",
         "She came from a pretty small town. Because of that, she's really excited to meet new Miis.",
-        "She and Pablo are queerplatonic partners."
+        "She and Pablo are queerplatonic partners. Pablo originally fell for her first, but after talking things out, they decided that their current relationship was the best for them both.",
+        "She and Miko are close friends. She looks up to Miko a lot."
       ]
     }
   },
@@ -35,7 +36,7 @@
     "thumbnail": "pablo-thumbnail.png",
     "idle": "pablo-idle.gif",
     "name": "Pablo",
-    "description": "This mii doesn't have much plans of his own, going along with whatever life throws at him. It's hard to see with his shades and his general laid-back attitude, but he cares deeply about his friends and does what he can to be there for them.",
+    "description": "This mii doesn't have much plans of his own, going along with whatever life throws at him. It's hard to see with his shades and his general laid-back attitude, but he cares deeply about the people in his life.",
     "personality": "achiever",
     "quirks": [
       "greets with a nod",
@@ -55,8 +56,8 @@
         "He wears shades constantly because his eyes are sensitive to light. He only feels comfortable removing them indoors.",
         "He has dreams to travel and become a chef in a world-famous restaurant but is too indecisive and afraid to pursue them.",
         "He had been living with family for a while, but decided to move out to gain more independence and to prove something to both his family and himself. After seeing an ad for the island, he made his way there.",
-        "He and Bloo are queerplatonic partners.",
-        "He and Miko are romantic partners."
+        "He and Bloo are queerplatonic partners. Pablo originally fell for her first, but after talking things out, they decided that their current relationship was the best for them both.",
+        "He and Miko are romantic partners. They had a crush on each other but didn't act on it until later. (Thank Bloo for that.)"
       ]
     }
   },
@@ -65,7 +66,7 @@
     "thumbnail": "miko-thumbnail.png",
     "idle": "miko-idle.gif",
     "name": "Miko",
-    "description": "Miko is an individual who has lost much and won much. Although he's still unsure about where to go to next, he for know finds comfort in the island he's made his home.",
+    "description": "Miko is an individual who has lost much and won much. Though he's still unsure about what to do next, he's grateful to have finally found a place that feels like home.",
     "personality": "visionary",
     "quirks": [
       "greets flirtatiously",
@@ -88,7 +89,8 @@
         "He used to be an idol. He experienced a lot of harassment during that time, and avoids talking about it whenever possible.",
         "He was able to leave that life behind when he saw the ad for the island. With the help of a friend, he was able to pack up and leave safely.",
         "He's a lot more confident in himself these days. Miis often approach him for fashion advice, which he's happy to give.",
-        "He and Pablo are romantic partners."
+        "He and Pablo are romantic partners. They had a crush on each other but didn't act on it until later. (Thank Bloo for that.)",
+        "Him and Bloo are close friends. He feels like he can always breathe easier when Bloo is around."
       ]
     }
   },
@@ -97,7 +99,7 @@
     "thumbnail": "shigeo-thumbnail.png",
     "idle": "shigeo-idle.gif",
     "name": "Shigeo",
-    "description": "What an island! With its vibrant community and beautiful landscapes, there's a lot for Shigeo to do and see, and he's excited for what's to come!",
+    "description": "With the island's vibrant community and beautiful landscapes, Shigeo feels that there's a lot for him to do and see this time around. He's hoping for the best!",
     "personality": "buddy",
     "quirks": [
       "greets eagerly",
@@ -117,7 +119,8 @@
         "His home was pretty conservative, so he's happy now that he can experiment with more feminine clothing. He's still not confident in the clothes he picks out though, and will often ask for advice from others. (You can see how him and Miko get along quite well in this regard.)",
         "Even though deep down he wanted a change, he was hesitant at first to take such a big leap and move to the island. After Akio said he'd be going, he found the courage to tag along.",
         "He's soft-spoken except when he's angry. You don't want to see him when he's angry.",
-        "Him and Akio have been friends ever since they were kids. Even though circumstances have led them to talk less than before, their bond still remains as strong as ever."
+        "Him and Akio have been friends ever since they were kids. Even though circumstances have led them to talk less than before, their bond still remains as strong as ever.",
+        "He loves indulging in cute things. He hopes to finally have a plushie collection someday."
       ]
     }
   },
@@ -126,7 +129,7 @@
     "thumbnail": "akio-thumbnail.png",
     "idle": "akio-idle.gif",
     "name": "Akio",
-    "description": "Akio didn't really have any plans when he landed on the island. He's the type of Mii to go along with wherever life takes him.",
+    "description": "Akio didn't really have any plans when he landed on the island, as he's the type of Mii to go along with wherever life takes him. For now, it works.",
     "personality": "sweetie",
     "quirks": [
       "eats quickly",
@@ -154,7 +157,7 @@
     "thumbnail": "max-thumbnail.png",
     "idle": "max-idle.gif",
     "name": "Max",
-    "description": "A Mii that prefers to be by herself. Suprisingly, she feels less that way around the Miis of this island. But she's not going to admit that.",
+    "description": "A Mii that prefers to be by herself. Suprisingly, she feels less that way around the Miis of this island, but she's not going to admit that anytime soon. (Even if you try!)",
     "personality": "maverick",
     "quirks": [
       "greets listlessly",
@@ -175,7 +178,8 @@
         "She likes to ragebait those close to her. Sometimes she goes too far, though.",
         "She used to steal a lot as a kid and was told off by her parents many times.",
         "She get's tired easily from social interactions, and won't hesitate to leave a social event when necessary.",
-        "She's always wary of new Miis and acts coldly to them as a result. Many are intimidated by her."
+        "She's always wary of new Miis and acts coldly to them as a result. Many are intimidated by her.",
+        "She only feels that she can open up with Casper and Ross. Anyone else is out of the question."
       ]
     }
   },
@@ -205,7 +209,9 @@
       "trivia": [
         "He only really came to the island because he knew Pablo, a close friend he made in high school, would be there. Now that he's here, he's regretting it a bit, though.",
         "He's quiet with everyone except close friends, in which case he'll constantly either talk about his interests or whatever's been bothering him at the moment.",
-        "His energy drains easily from interacting with large groups of Miis, especially those he isn't familiar with. He tends to force himself to stay, though."
+        "His energy drains easily from interacting with large groups of Miis, especially those he isn't familiar with. He tends to force himself to stay, though.",
+        "Max's confidence and selfishness baffles Casper, who feels that he can never be that type of Mii. Secretly, he's jealous of Max for it.",
+        "Him and Maria are often yapping about their interests. He feels that Maria gets him."
       ]
     }
   },
@@ -234,7 +240,7 @@
       "outfit preferences": "Masculine", 
       "trivia": [
         "Ross loves playing sports. She constantly invites Bloo to do them with her, but notices that Bloo struggles to keep up with her. So, for Bloo's sake, she invites her out to jog too.",
-        "Something Ross wants to pick up is skateboarding, which she drags Max into because she heard that Max used to skateboard in the past.",
+        "Something Ross wants to pick up is skateboarding. She often drags Max into because she heard that Max used to skateboard in the past. And also, she really just likes hanging out with Max.",
         "Ross isn't afraid to tell a friend the truth, even if it may be hard to hear. (Although she does feel bad afterwards.)",
         "She doesn't really understand Miis who would rather be alone or stay indoors. She finds it difficult to be in that position."
       ]
@@ -264,8 +270,10 @@
       "outfit preferences": "Feminine",
       "trivia": [
         "Maria used to want to be a researcher in the field of chemistry, but didn't have faith in herself enough to enter academia. Sometimes it's still all she thinks about.",
-        "She likes to read most of her books outdoors, as she likes the island scenery. If she's reading something steamy, she stays inside instead. Those close to her have figured this out.",
-        "Her and Shigeo chat a lot about the latest island happenings. She likes hearing about how the others are doing."
+        "She likes to read most of her books outdoors, as she likes the island scenery. Sometimes, she reads indoors though. Many people have suspected that it's because of the contents of the book she's reading...",
+        "Her and Shigeo chat a lot about the latest island happenings. She likes hearing about how the others are doing.",
+        "Her and Casper are often yapping about their interests. She feels that Casper gets him.",
+        "She often tags along out of kindness when Ross invites her. But secretly, she can't keep up with her. She's not the most athletic Mii. Ross won't give up, though...!"
       ]
     }
   }

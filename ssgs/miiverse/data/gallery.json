@@ -2,7 +2,7 @@
   {
     "category": "tc",
     "filename": "miiverse-1.jpg",
-    "description": "idk what to put here :P",
+    "description": "i like his pose here he's really trying his best",
     "alt": "Pablo posing in front of a beach with a blue and somewhat cloudy sky above.",
     "miis": [
       "pablo"
@@ -32,7 +32,7 @@
   {
     "category": "tlld",
     "filename": "miiverse-4.jpg ",
-    "description": "i lovee the Miitopia gang. unfortunately they don't all fit here",
+    "description": "i lovee the Miitopia gang. unfortunately they don't all fit here. also fun fact: the reason why their faces are the default here is because it didn't register to me that the option to change them was there. i was just too excited to have them pose for pictures again after so long xD",
     "alt": "A variety of pictures on a corkboard. In one picture, Bloo has her arms wide open with Pablo running towards her from behind. In another, Miko leans against a car. Another has Casper and Max jumping and posing in the air. One has Shigeo and Akio posing together in front of a building. And the last one has Ross's face peeking out from below the picture.",
     "miis": [
       "bloo",
@@ -43,15 +43,6 @@
       "shigeo",
       "alan",
       "ross"
-    ]
-  },
-  {
-    "category": "tlld",
-    "filename": "miiverse-7.jpg",
-    "description": "idk what to put here :P",
-    "alt": "Alan is standing, saying: Hey, if someone was like, 'Let's go throwing rocks at people,' would you want to get in on that?",
-    "miis": [
-      "alan"
     ]
   },
   {
@@ -95,7 +86,7 @@
   {
     "category": "tlld",
     "filename": "miiverse-12.jpg",
-    "description": "the same random assortment of miitopia gang but in another template :P",
+    "description": "the same random assortment of Miitopia gang but in another template :P",
     "alt": "A group of Miis posing against a beige background, with the Tomodachi Life: Living the Dream logo in the center.",
     "miis": [
       "ross",
@@ -317,6 +308,193 @@
     "miis": [
       "maria",
       "ross"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename":"miiverse-34.jpg",
+    "description": "the usual night at the house of Miitopia's heroes",
+    "alt": "A group of Miis seated around a table, laughing and talking to each other.",
+    "miis": [
+      "maria",
+      "casper",
+      "alan",
+      "miko",
+      "ross",
+      "pablo"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-35.jpg",
+    "description": "wdym cuter, you can be cuter than you are now?!",
+    "alt": "Casper saying \"I wanna wear something cuter than what I have now.\"",
+    "miis": [
+      "casper"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-36.jpg",
+    "description": "love that he's saying this with these sunglasses. he's feeling extra special",
+    "alt": "Akio wearing large flower-themed sunglasses and saying \"I want to shine like the stars! If that's OK with everyone else, hehe...\"",
+    "miis": [
+      "akio"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-37.jpg",
+    "description": "for context, alan is yelling about his feelings for kaito. meanwhile, kaito is right next to him yelling this. i'm crying",
+    "alt": "Alan and Kaito yelling at the beach. Kaito is yelling \"I want to try ragebaiting people with Sans Undertale!\"",
+    "miis": [
+      "alan",
+      "kaito"
+    ]
+  },
+  {
+    "category": "miitopiaswitch",
+    "filename": "miiverse-38.jpg",
+    "description": "can't even describe the tiredness i felt when this happened to me man",
+    "alt": "A quiz segment with four identical Pablos in view, and the player selecting a Pablo. The player is being asked, \"Who is Pablo?\"",
+    "miis": [
+      "pablo"
+    ]
+  },
+  {
+    "category": "miitopiaswitch",
+    "filename": "miiverse-39.jpg",
+    "description": "my first ever Miitopia run that introduced me to Miis <3 this game is the bomb",
+    "alt": "A group of Miis posing together, with a horse at the back.",
+    "miis": [
+      "maria",
+      "casper",
+      "max",
+      "pablo",
+      "bloo",
+      "miko",
+      "ross",
+      "jay",
+      "mia",
+      "robin"
+    ]
+  },
+  {
+    "category": "tc",
+    "filename": "miiverse-40.webp",
+    "description": "i miss the fountain from tomodachi collection, especially when they play music there. also fun fact: Kaito and Shigeo were originally made in this game!",
+    "alt": "Kaito and Shigeo talking while sitting at the fountain at night.",
+    "miis": [
+      "kaito",
+      "shigeo"
+    ]
+  },
+  {
+    "category": "misc",
+    "filename": "miiverse-41.jpg",
+    "description": "i'm actually not sure what we were trying to do here ^^;",
+    "alt": "Ross and Jay jumping together with the night sky and ocean behind them.",
+    "miis": [
+      "jay",
+      "ross"
+    ]
+  },
+  {
+    "category": "tc",
+    "filename": "miiverse-42.gif",
+    "description": "i really love how miis dance in tomodachi collection they're so cute",
+    "alt": "Miko and Pablo dancing together while wearing headphones.",
+    "miis": [
+      "miko",
+      "pablo"
+    ]
+  },
+  {
+    "category": "miitopiaswitch",
+    "filename": "miiverse-43.jpg",
+    "description": "a sneak peek into the hardships i went through in that place that must not be named... pain...",
+    "alt": "Four Miis being attacked by an enemy. One Mii has their HP at 1 after the attack. Another Mii has already fainted.",
+    "miis": [
+      "alan",
+      "mia",
+      "pablo",
+      "bloo"
+    ]
+  },
+  {
+    "category": "miitopiaswitch",
+    "filename": "miiverse-44.jpg",
+    "description": "a really cool screenshot i accidentally took!! i was supposed to redraw this but never did",
+    "alt": "Pablo lifting his staff up with a determined face, with light gathering at the tip of the staff.",
+    "miis": [
+      "pablo"
+    ]
+  },
+  {
+    "category": "tl",
+    "filename": "miiverse-45.jpg",
+    "description": "man he's not even putting the toothbrush in his mouth",
+    "alt": "Alan brushing his teeth, with the toothbrush brushing the outside of his mouth.",
+    "miis": [
+      "alan"
+    ]
+  },
+  {
+    "category": "misc",
+    "filename": "miiverse-46.jpg",
+    "description": "i love that there are photo spots to find with this game. i also love that there's a timer because we would yell if one of us copied the pose of the other",
+    "alt": "A group of Miis and a dog posing in front of a stone structure.",
+    "miis": [
+      "jay",
+      "casper",
+      "pablo",
+      "ross"
+    ]
+  },
+  {
+    "category": "tlld",
+    "filename": "miiverse-47.gif",
+    "description": "a recreation of their original GIF! i love that they're still friends here",
+    "alt": "Kaito and Shigeo talking while sitting at the fountain at night.",
+    "miis": [
+      "kaito",
+      "shigeo"
+    ]
+  },
+  {
+    "category": "miitopia3ds",
+    "filename": "miiverse-48.jpg",
+    "description": "yes i finished Miitopia again on the 3DS. i love this game to pieces",
+    "alt": "A group of Miis posing for a photo.",
+    "miis": [
+      "shigeo",
+      "ross",
+      "miko",
+      "mia",
+      "maria",
+      "max",
+      "pablo",
+      "bloo",
+      "casper",
+      "akio"
+    ]
+  },
+  {
+    "category": "misc",
+    "filename": "miiverse-49.jpg",
+    "description": "i briefly got Miitomo and took soo many pics. this is one of them that i thought was cute!!",
+    "alt": "Bloo posing for a picture with flowers and sparkles behind her.",
+    "miis": [
+      "bloo"
+    ]
+  },
+  {
+    "category": "misc",
+    "filename": "miiverse-50.jpg",
+    "description": "go play Dillon's Dead-Heat Breakers on the 3DS if you haven't, it's a good game! i was suprised but also happy that Pablo ended up being a cat again (flashbacks to Wii Music and Miitopia)",
+    "alt": "Pablo as a cat, with his hands in the air happily. Russ and Dillon are looking at each other, while Russ is saying \"Now, if I remember right, the nearest town is... er, the City.\"",
+    "miis": [
+      "pablo"
     ]
   }
 ]

@@ -799,3 +799,19 @@ blockquote {
     }
 
 }
+
+/* temporary css */
+
+#dsring:has(#dsring-error) {
+    width: 100% !important;
+    height: fit-content !important;
+}
+
+#dsring-error a {
+    font-size: 0.7rem;
+    border: 5px solid transparent
+}
+
+#dsring-error div {
+    padding: 0;
+}

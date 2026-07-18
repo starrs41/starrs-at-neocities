@@ -800,7 +800,22 @@ blockquote {
 
 }
 
-/* temporary css */
+/* webrings */
+
+/* wiiring */
+
+.wiiring {
+    width: 100%;
+    height: 175px;
+}
+
+.wiiring__iframe {
+    border: none;
+    width: 100%;
+    height: 175px;
+}
+
+/* dsring */
 
 #dsring:has(#dsring-error) {
     width: 100% !important;

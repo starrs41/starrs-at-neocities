@@ -806,13 +806,13 @@ blockquote {
 
 .wiiring {
     width: 100%;
-    height: 175px;
+    height: 185px;
 }
 
 .wiiring__iframe {
     border: none;
     width: 100%;
-    height: 175px;
+    height: 185px;
 }
 
 /* dsring */
@@ -829,4 +829,32 @@ blockquote {
 
 #dsring-error div {
     padding: 0;
+}
+
+@media only screen and (max-width: 688px) {
+    .wiiring {
+        width: 50%;
+        height: 57vw;
+        transform: scale(0.7);
+        margin: -3rem 0 -3rem 0;
+    }
+    .wiiring__iframe {
+        border: none;
+        width: 100%;
+        height: 57vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .wiiring {
+        width: 60%;
+        height: 53vw;
+        transform: none;
+        margin: 0;
+    }
+    .wiiring__iframe {
+        border: none;
+        width: 100%;
+        height: 53vw;
+    }
 }

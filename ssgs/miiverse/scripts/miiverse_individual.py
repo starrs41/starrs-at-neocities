@@ -125,7 +125,7 @@ def create_individual_page(mii):
     
   final_file = Path(final_directory)
   final_file.parent.mkdir(exist_ok=True, parents=True)
-  final_file.write_text(final_content)
+  final_file.write_text(json.dump(final_content))
   
   print(f"Page for {mii["name"]} created in {final_directory}") 
 
